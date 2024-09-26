@@ -24,7 +24,7 @@ const FaqIndividual = ({ defaultstate, question, solution, indexed }) => {
                     </div>
 
                     <div className='flex flex-col justify-center flex-grow-[1] flex-shrink-0 basis-0 h-auto relative whitespace-pre-wrap '>
-                        <h3 className={`font-normal text-[#311f40] tml:text-[1.25rem] text-[32px] text-start  tracking-tight leading-[1.2] ${mediumaeonikFont.className} `}>
+                        <h3 className={`font-normal text-[#311f40] tml:text-[1.25rem] text-[32px] text-start  tracking-[.01em] leading-[1.2] ${mediumaeonikFont.className} `}>
                             {question}
                         </h3>
                     </div>
@@ -42,7 +42,7 @@ const FaqIndividual = ({ defaultstate, question, solution, indexed }) => {
             <motion.div initial={{ y: '-40px' }} animate={open ? { y: 0, transitionDuration: '.3s', transitionTimingFunction: 'linear' } : {}} className={`${!open ? "hidden" : "flex"} flex-none items-center justify-center tml:gap-3  gap-12 h-min overflow-hidden relative w-full `}>
                 <div className='w-[42px] flex flex-none self-stretch '></div>
                 <div className='flex flex-grow-[1] flex-shrink-0 basis-0 items-center justify-center relative'>
-                    <p className={`${regularaeonikFont.className} font-normal tml:text-[.875rem] text-[20px] text-[#015840] tracking-tight tml:leading-[1.4] leading-[2rem] text-start `}>{solution}</p>
+                    <p className={`${regularaeonikFont.className} font-normal tml:text-[.875rem] text-[20px] text-[#015840] tracking-[.02em] tml:leading-[1.4] leading-[2rem] text-start `}>{solution}</p>
                 </div>
                 <div className='w-[48px] flex flex-none self-stretch '></div>
             </motion.div>

@@ -11,17 +11,21 @@ import worryemoji from '@/public/about/worryemoji.png'
 import happyemoji from '@/public/about/happyemoji.png'
 import bgdesign from '@/public/about/bgdesign.png'
 import headingstar from '@/public/about/heading star.svg'
+import Revealcompo from '../components/Revealcompo'
 const page = () => {
   return (
     <div className='min-h-screen w-auto overflow-hidden xl:overflow-visible  mx-auto flex flex-col items-center justify-start h-min p-0 relative'>
+
+      {/* about cue */}
       <div className='tml:pt-[72px] tml:px-4 tml:pb-4 btl:pt-20 btl:px-6 btl:pb-6 bmLLL:pt-[116px] lg:mx-auto bmLLL:px-[64px] bmLLL:pb-[64px] pt-[116px] px-16 pb-12 flex items-center flex-none h-min justify-center relative w-full '>
-        <div className='flex flex-col bg-[#cfff92] rounded-[20px] flex-grow-[1] flex-shrink-0 basis-0 gap-0 h-min justify-center  items-center bmL4k:max-w-[1312px] max-w-[1640px] p-0 relative w-full'>
-          <div className='bmLLL:p-[64px] p-[2px] bmLLL:w-full w-[75%] flex flex-col flex-none items-center justify-start gap-6 h-min relative'>
-            <div className='flex justify-start flex-col flex-shrink-0 bmLLL:mt-8 mt-16 flex-none h-auto relative whitespace-pre-wrap w-full'>
+
+        <Revealcompo css={'flex flex-col bg-[#cfff92] rounded-[20px] flex-grow-[1] flex-shrink-0 basis-0 tml:h-auto gap-0 tml:min-h-0 min-h-[600px] justify-start  items-center bmL4k:max-w-[1312px] max-w-[1640px] p-0 relative w-full'}>
+          <div className=' bmLLL:p-[64px] bmL4k:p-[64px] tml:p-3 p-16 bmLLL:pt-0 bmL4k:pt-0 pt-0 tml:w-full bmLLL:w-full w-[75%] flex flex-col flex-none items-center justify-start gap-6 h-min relative'>
+            <div className='flex justify-start flex-col flex-shrink-0 mt-20 flex-none h-auto relative whitespace-pre-wrap w-full'>
               <p className={`${boldaeonikFont.className} font-normal text-[#015840] text-[20px] tracking-normal leading-[2rem] text-center tml:p-2  m-0 p-0`}>About Cue</p>
             </div>
-            <div className='flex-none h-auto relative flex justify-center  whitespace-pre-wrap w-full'>
-              <h2 className={` ${mediumaeonikFont.className} font-medium text-[#015840]/[.85] bmLLL:text-[1.65rem] text-[1.8rem] lg:text-[36px] tml:w-full btl:w-[80%] w-[70%] bmL4k:w-full tracking-[.02em] leading-[1em] md:leading-[2]  text-center `}>
+            <div className='flex-none h-auto relative flex justify-center mt-2  whitespace-pre-wrap w-full'>
+              <h2 className={` ${mediumaeonikFont.className} font-medium text-[#015840]/[.85] text-[1.65rem]   tml:w-full btl:w-[80%] w-[70%]  tracking-[.02em] leading-[1em] md:leading-[2]  text-center `}>
                 Our mission is to be the trusted AI partner for students,
                 simplifying the on-campus placement process and
                 helping them land their dream jobs
@@ -43,7 +47,7 @@ const page = () => {
                 <Image src={assistant} alt='' width={170} height={70} className='lg:hidden absolute bottom-0' />
                 <Image src={assistant} alt='' width={281} height={114} className='hidden lg:block' />
               </div>
-              <div className=' relative flex-grow max-w-[170px] h-[70px] lg:max-w-[293px] -ml-5 lg:-ml-12 lg:h-[100px]'>
+              <div className=' relative flex-grow max-w-[170px] h-[70px] lg:max-w-[293px] -ml-3 lg:-ml-12 lg:h-[100px]'>
 
                 <Image src={oncampus} alt='' fill={true} />
               </div>
@@ -60,12 +64,14 @@ const page = () => {
               {/* </div> */}
             </div>
           </div>
-        </div>
+        </Revealcompo>
       </div>
 
+      {/* the problem */}
 
       <div className='w-full flex flex-none items-center justify-center h-min overflow-hidden tml:p-4  btl:pt-0 btl:px-6 btl:pb-6 bmLLL:pt-0 bmLLL:px-16 bmLLL:pb-16 py-16 px-0 relative'>
-        <div className='bmLLL:max-w-[1180px] bmL4k:max-w-[1312px] max-w-[1640px] flex items-center rounded-[30px] flex-grow flex-shrink-0 basis-0 flex-col h-min justify-start overflow-hidden p-0 relative '>
+
+        <Revealcompo css={'bmLLL:max-w-[1180px] bmL4k:max-w-[1312px] max-w-[1640px] flex items-center rounded-[30px] flex-grow flex-shrink-0 basis-0 flex-col h-min justify-start overflow-hidden p-0 relative '}>
           <div className='w-full min-h-[710px]  bg-[#FFF9F3] flex flex-col  lg:flex-row justify-center mt-16 py-10 md:py-20 tml:px-2 px-10 lg:px-4 gap-4 md:gap-16 rounded-[20px]'>
             <div className=' relative flex-grow  max-w-[200px] h-[200px]'>
 
@@ -85,11 +91,14 @@ const page = () => {
                 placement process with confidence and clarity.</p>
             </div>
           </div>
-        </div>
+        </Revealcompo>
       </div>
 
+      {/* solution */}
+
       <div className='w-full flex flex-none items-center justify-center h-min overflow-hidden tml:p-4 btl:pt-0 btl:px-6 btl:pb-6 bmLLL:pt-0 bmLLL:px-16 bmLLL:pb-16 py-16 px-0 relative'>
-        <div className='bmLLL:max-w-[1180px] bmL4k:max-w-[1312px] max-w-[1640px] flex items-center rounded-[30px] flex-grow flex-shrink-0 basis-0 flex-col h-min justify-start overflow-hidden p-0 relative '>
+
+        <Revealcompo css={'bmLLL:max-w-[1180px] bmL4k:max-w-[1312px] max-w-[1640px] flex items-center rounded-[30px] flex-grow flex-shrink-0 basis-0 flex-col h-min justify-start overflow-hidden p-0 relative '}>
           <div className='w-full min-h-[623px] bg-[#FEAE67]/[.2] flex  flex-col lg:flex-row justify-center mt-10 items-center py-5 tml:px-2 px-8 rounded-[30px]'>
             <div className=' relative flex-grow lg:hidden  mt-5  w-[200px] lg:max-w-[200px] h-[200px]'>
 
@@ -111,15 +120,18 @@ const page = () => {
               <Image src={happyemoji} alt='' fill={true} />
             </div>
           </div>
-        </div>
+        </Revealcompo>
       </div>
 
-      <div className='mt-10 w-full flex flex-none items-center justify-center h-min overflow-hidden tml:p-4 btl:pt-0 btl:px-6 btl:pb-6  bmLLL:pt-0 bmLLL:px-16 bmLLL:pb-16 py-16 px-0 relative '>
-        <div className='bmLLL:max-w-[1180px] bmL4k:max-w-[1312px] max-w-[1640px] flex items-center rounded-[30px] flex-grow flex-shrink-0 basis-0 flex-col h-min justify-start overflow-hidden p-0 relative '>
-          <div className='flex flex-none items-center rounded-[24px] h-min btl:justify-center justify-end bg-[#005840] tml:p-6 p-11 py-28 relative w-full'>
+      {/* Cue */}
 
-            <div className=' absolute tml:hidden left-[-1px] flex-grow  hidden md:flex items-center flex-none h-min justify-center overflow-hidden top-[40%] w-min translate-y-[-50%] z-0 '>
-              <div className='flex-none h-auto [aspect-ratio:1.3305954825462012/1] relative w-[648px]'>
+      <div className='mt-10 w-full flex flex-none items-center justify-center  overflow-hidden tml:p-4 btl:pt-0 btl:px-6 btl:pb-6  bmLLL:pt-0 bmLLL:px-16 bmLLL:pb-16 py-16 px-0 relative '>
+
+        <Revealcompo css={'bmLLL:max-w-[1180px] bmL4k:max-w-[1312px] max-w-[1640px] flex items-center rounded-[30px] flex-grow flex-shrink-0 basis-0 flex-col h-min justify-start overflow-hidden p-0 relative '}>
+          <div className='flex flex-none items-center rounded-[24px] h-[574px] btl:justify-center justify-end bg-[#005840] tml:p-6 p-11 py-28 relative w-full'>
+
+            <div className=' absolute tml:hidden left-[-1px] flex-grow  hidden md:flex items-center flex-none h-min justify-center overflow-hidden top-[38%] w-min translate-y-[-50%] z-0 '>
+              <div className='flex-none  [aspect-ratio:1/1] relative w-[448px] h-full'>
 
                 <Image src={bgdesign} alt='' fill={true} />
               </div>
@@ -130,7 +142,7 @@ const page = () => {
               <h3 className={`${mediumaeonikFont.className} font-medium text-[1.2rem] lg:text-[2rem] leading[1.5] tracking-[.02em] text-[#CFFF92] `}>—because landing your dream job shouldn't be a solo mission!</h3>
             </div>
           </div>
-        </div>
+        </Revealcompo>
       </div>
 
 

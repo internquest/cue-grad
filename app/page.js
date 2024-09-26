@@ -1,3 +1,7 @@
+'use client'
+import { useInView } from 'framer-motion'
+import React, { useRef } from 'react'
+import { motion } from 'framer-motion'
 import { boldaeonikFont, mediumaeonikFont, regularaeonikFont } from "@/utils/font";
 import Image from "next/image";
 import c from '@/public/c_logo.png'
@@ -7,12 +11,18 @@ import tailoredToeach from '@/public/tailered.png'
 import Imagecomponet from "./components/Imagecomponet";
 import Meetndlearn from '@/app/components/Meetndlearn'
 import Faq from "./components/Faq";
+import Revealcompo from './components/Revealcompo';
+
 export default function Home() {
+
+
   return (
     <div className="  flex flex-col bg-white min-h-screen w-auto h-min justify-start p-0 relative ">
       <div className="   overflow-hidden flex relative w-full btl:pt-[80px] btl:px-6 btl:pb-6 bmLLL:pt-[116px] bmLLL:px-16 bmLLL:pb-16 tml:pt-[116px] tml:px-4 tml:pb-4 pt-[116px] px-16 pb-16 flex-none h-min justify-center flex-col items-center">
-        <div className="bg-[#CFFF92]  bmL4k:max-w-[1312px]  max-w-[1640px] flex tml:items-start items-center tml:justify-start rounded-[30px]  flex-grow flex-shrink-0 basis-0 flex-col h-auto tml:pb-4 px-2 w-full ">
-          <h2 className={`w-full   mt-20 lg:mt-36 ${mediumaeonikFont.className} font-medium tml:text-[3rem] tml:text-start text-[2rem] md:text-[3rem] tml:leading-[1.3] leading-[1.7] tml:tracking-tight tracking-[.005em] text-center`}>
+
+        <Revealcompo css={"bg-[#CFFF92]  bmL4k:max-w-[1312px]  max-w-[1640px] flex tml:items-start items-center tml:justify-start rounded-[30px]  flex-grow flex-shrink-0 basis-0 flex-col h-auto tml:pb-4 px-4 w-full "}>
+
+          <h2 className={`w-full tml:mt-10  mt-20 lg:mt-36 ${mediumaeonikFont.className} font-medium tml:text-[3rem] tml:text-start text-[2rem] md:text-[3rem] tml:leading-[1.3] leading-[1.7] tml:tracking-tight tracking-[.005em] text-center`}>
             <span className="inline-block ">
               Your Smart Companion for
             </span>
@@ -57,18 +67,21 @@ export default function Home() {
             </div>
 
           </div>
-        </div>
+
+        </Revealcompo>
       </div>
 
       {/* meet cuegrad */}
 
       <div className="   overflow-hidden flex relative w-full tml:px-4 tml:pb-4  btl:px-6 btl:pb-6 bmLLL:px-16 bmLLL:pb-16 pb-10  px-16 flex-none h-min justify-center flex-col items-center">
-        <div className="bg-[#FDF3EA] bmLLL:max-w-[1180px] bmL4k:max-w-[1312px] max-w-[1640px] flex items-center tml:p-3 p-16 rounded-[30px]  text-[#F9576E] flex-grow flex-shrink-0 basis-0 flex-col w-full">
+
+        <Revealcompo css={"bg-[#FDF3EA] bmLLL:max-w-[1180px] bmL4k:max-w-[1312px] max-w-[1640px] flex items-center tml:p-3 p-16 rounded-[30px]  text-[#F9576E] flex-grow flex-shrink-0 basis-0 flex-col w-full"}>
 
           <h1 className={`${mediumaeonikFont.className} font-medium tml:text-[1.3rem] text-[2rem] md:text-[3.25rem] leading-[2] tracking-normal`}>Meet CueGrad</h1>
           <p className={`${regularaeonikFont.className} font-normal max-w-[600px] lg:max-w-[717px] text-center tml:text-[1.1rem] text-[1.5rem] md:text-[1.75rem] leading-[2] tracking-wide`}>your personalized assistant designed to help you excel
             in on-campus placement drives</p>
-        </div>
+        </Revealcompo>
+
       </div>
 
       {/* students have to say about Cuegrad */}
@@ -112,21 +125,23 @@ export default function Home() {
 
       {/* oncampus placemnt assistant */}
 
-      <div className="bg-white flex flex-none w-full relative overflow-hidden justify-center items-center h-min bmLLL:p-[64px] tml:pt-16 tml:px-4 tml:pb-4 btl:py-[48px] btl:px-6 py-16 px-0 ">
+      <div className="bg-white flex flex-none w-full relative overflow-hidden justify-center items-center h-min bmLLL:py-[64px] bmLLL:pr-0 tml:pt-16 tml:px-4 tml:pb-4 btl:py-[48px]  py-16 px-0 ">
         <div className="flex flex-grow flex-shrink-0 basis-0 flex-col h-min justify-start max-w-[1640px] bmL4k:max-w-[1312px] overflow-hidden p-0 relative ">
 
           <div className="flex flex-col flex-none w-full relative items-center justify-start tml:gap-10 gap-[64px] h-min p-0">
-            <div className="flex flex-col items-center flex-none p-0 w-full gap-3 h-min justify-start ">
+
+            <Revealcompo css={"flex flex-col items-center flex-none p-0 w-full gap-3 h-min justify-start "} >
               <h1 className={`font-medium tml:text-start text-[1.7rem] md:text-[2.25rem] mx-auto text-center text-black leading-[1.7] tracking-normal max-w-[619px] ${mediumaeonikFont.className}`}>On-Campus Placements Assistant to
                 help you get placed</h1>
               <p className={`${regularaeonikFont.className} font-normal  text-center text-[1rem] md:text-[1.25rem] leading-[2] tracking-normal tml:text-start max-w-[532px] text-[#2C2C2C]/[.9]`}>CueGrad is your AI-powered co-pilot, guiding you through
                 every step of the on-campus placement process.  </p>
-            </div>
+            </Revealcompo>
+
 
             <div className="flex flex-col items-center flex-none tml:gap-10 gap-[64px] h-min justify-start p-0 relative w-full mx-auto ">
 
-              <div className="flex flex-row tml:flex-col tml:gap-5 gap-5 md:gap-24 p-0 w-full h-min relative flex-none justify-center  items-center">
 
+              <Revealcompo css={"flex flex-row tml:flex-col tml:pl-0 pl-4 bmLLL:pl-16 tml:gap-5 gap-5 md:gap-24 p-0 w-full h-min relative flex-none justify-center  items-center"}>
                 <div className={`${mediumaeonikFont.className} flex tml:flex-none tml:w-full items-start flex-col flex-grow flex-shrink-0 basis-0 gap-5 h-min justify-start p-0 relative `}>
                   <h2 className="text-[#977DE0] text-[1.2rem] lg:text-[1.625rem]  font-medium leading-[1.1] tracking-normal">Personalized Skill Gap Analyzer</h2>
                   <p className={`${regularaeonikFont.className} font-normal   text-[1rem] lg:text-[1.25rem] leading-[1.5] tracking-[.02em]`}>Evaluate your skills against the job requirements of
@@ -135,17 +150,17 @@ export default function Home() {
                     improvement</p>
                 </div>
 
-                <div className="h-auto tml:flex-none tml:w-full flex-grow flex-shrink-0 basis-0 tml:aspect-[1.2807692307692307/1] aspect-[1.2846563453485/1] relative">
+                <div className=" tml:h-auto btl:h-auto  h-[582px]  tml:flex-none tml:w-full flex-grow flex-shrink-0 basis-0 tml:aspect-square rounded-[20px] btl:aspect-square  relative">
                   {/* <Image src={sdebackend} alt="" fill={true} className="w-full h-full" /> */}
                   <Imagecomponet image={sdebackend} />
                   {/* <Image src={sdebackend} alt="" fill={true} sizes="max((min(max(100vw - 128px, 1px), 1640px) - 96px) / 2, 1px)" /> */}
                 </div>
+              </Revealcompo>
 
-              </div>
 
-              <div className="flex flex-row  tml:flex-col tml:gap-5 gap-5 md:gap-24 p-0  w-full h-min relative flex-none justify-center  items-center">
 
-                <div className=" h-auto tml:flex-none tml:w-full flex-grow tml:order-1 flex-shrink-0 basis-0 tml:aspect-[1.2807692307692307/1] aspect-[1.2846563453485/1] relative">
+              <Revealcompo css={"flex flex-row  tml:flex-col tml:gap-5 gap-5 md:gap-24 p-0  w-full h-min relative flex-none justify-center  items-center"}>
+                <div className=" tml:h-auto btl:h-auto rounded-[20px] h-[582px]  tml:flex-none tml:w-full flex-grow tml:order-1 flex-shrink-0 basis-0 tml:aspect-[1/1] btl:aspect-square  relative">
                   {/* <Image src={sdebackend} alt="" fill={true} className="w-full h-full" /> */}
                   <Imagecomponet image={aifeedback} />
                 </div>
@@ -161,9 +176,10 @@ export default function Home() {
                     the precise actions needed to catch recruiters’ attention</p>
                 </div>
 
-              </div>
+              </Revealcompo>
 
-              <div className="flex flex-row  tml:flex-col tml:gap-5 gap-5 md:gap-24 p-0  w-full h-min relative flex-none justify-center  items-center">
+
+              <Revealcompo css={"flex flex-row  tml:flex-col tml:pl-0 pl-4 tml:gap-5 bmLLL:pl-16 gap-5 md:gap-24 p-0  w-full h-min relative flex-none justify-center  items-center"}>
                 <div className={`${mediumaeonikFont.className} tml:flex-none tml:w-full text-[#2C2C2C]  flex items-start flex-grow flex-shrink-0 basis-0 flex-col justify-start   gap-2 `}>
                   <h2 className="text-[#F9576E] text-[1.2rem] lg:text-[1.625rem]  font-medium leading-[2] tracking-normal">Tailored to Each Company</h2>
                   <p className={`${regularaeonikFont.className} font-normal   text-[1rem] lg:text-[1.125rem] leading-[1.9] tracking-[.005em]`}>Every company looks for something different in their ideal candidates.
@@ -174,11 +190,11 @@ export default function Home() {
                     skills, experiences, and resume with what the company is looking for
                     —ensuring that you’re presenting yourself in the best possible light.</p>
                 </div>
-                <div className="h-auto tml:flex-none tml:w-full flex-grow flex-shrink-0 basis-0 tml:aspect-[1.2807692307692307/1] aspect-[1.2846563453485/1] relative">
+                <div className=" tml:h-auto btl:h-auto h-[582px] rounded-[20px]  tml:flex-none tml:w-full flex-grow flex-shrink-0 basis-0  tml:aspect-[1/1] btl:aspect-square    relative">
                   {/* <Image src={sdebackend} alt="" fill={true} className="w-full h-full" /> */}
                   <Imagecomponet image={tailoredToeach} />
                 </div>
-              </div>
+              </Revealcompo>
 
             </div>
 
@@ -189,7 +205,8 @@ export default function Home() {
       {/* new feature  */}
 
       <div className="flex items-center flex-none h-min justify-center overflow-hidden btl:pt-0 btl:px-6 btl:pb-6 bmLLL:pt-0 tml:pt-6 tml:px-4 tml:pb-4 bmLLL:px-16 bmLLL:pb-16 py-16 px-0 relative w-full">
-        <div className=" bmL4k:max-w-[1312px]  max-w-[1640px] flex items-center rounded-3xl flex-grow flex-shrink-0 basis-0 flex-col justify-start overflow-hidden p-0 relative">
+
+        <Revealcompo css={" bmL4k:max-w-[1312px]  max-w-[1640px] flex items-center rounded-3xl flex-grow flex-shrink-0 basis-0 flex-col justify-start overflow-hidden p-0 relative"}>
           <div className="bg-[#977DE0]   rounded-[5px] tml:gap-6 tml:pt-16 tml:px-4 tml:pb-4 btl:pt-16 btl:px-6 btl:pb-11 pt-16 px-11 pb-20 md:rounded-[24px] overflow-hidden w-full flex flex-col  gap-3 md:gap-16 justify-center items-center h-min ">
 
             <div className="flex flex-col flex-none items-center justify-start gap-2 h-min w-full p-0 relative">
@@ -213,53 +230,66 @@ export default function Home() {
             <div className="flex tml:flex-col btl:flex-col  flex-none gap-6 h-min justify-start p-0 relative w-full">
 
               <div className="flex tml:flex-none tml:w-full flex-col btl:flex-none btl:w-full flex-grow flex-shrink-0 basis-0 h-min items-start justify-start overflow-hidden relative p-0 gap-5 lg:gap-6">
-                <div className="bg-[#CFFF92] border-black border-4 rounded-[20px] flex flex-col justify-center items-start p-8 gap-6  h-min">
+
+                <Revealcompo css={"bg-[#CFFF92] border-black border-4 rounded-[20px] flex flex-col justify-center items-start p-8 gap-6  h-min"}>
                   <h2 className={`${mediumaeonikFont.className} text-[#2C2C2C]/[.8] font-bold text-[1.125rem] lg:text-2xl leading-[1.9] tracking-[.005em]`}>AI-Driven Conversation Prompts</h2>
                   <p className={`${regularaeonikFont.className} text-black font-normal  text-[1rem] lg:text-[1.125rem] leading-[1.8] tracking-[.01em]`}>Have questions you wanna ask recruiters? Use Cue to
                     generate question prompts to seem professional in
                     your conversations with recruiters</p>
-                </div>
-                <div className="bg-[#CFFF92] border-black border-4 rounded-[20px] flex flex-col justify-start items-start p-8 gap-6  h-min">
+                </Revealcompo>
+                <Revealcompo css={"bg-[#CFFF92] border-black border-4 rounded-[20px] flex flex-col justify-start items-start p-8 gap-6  h-min"}>
                   <h2 className={`${mediumaeonikFont.className} text-[#2C2C2C]/[.8] font-bold text-[1.125rem] lg:text-2xl leading-[1.9] tracking-[.005em]`}>Placement Season Stress Manager</h2>
                   <p className={`${regularaeonikFont.className} text-black font-normal  text-[1rem] lg:text-[1.125rem] leading-[1.8] tracking-[.01em]`}>Cue provides personalized stress management
                     techniques based on the student's emotional state
                     throughout the placement process.</p>
-                </div>
+                </Revealcompo>
               </div>
 
               <div className="flex tml:flex-none tml:w-full flex-col btl:flex-none btl:w-full flex-grow flex-shrink-0 basis-0 h-min items-center xl:-mb-10  justify-end  overflow-hidden relative p-0 gap-5 lg:gap-6">
-                <div className="bg-[#CFFF92] border-black border-4 rounded-[20px] flex flex-col justify-start items-start  p-8 gap-6  h-min">
+
+                <Revealcompo css={"bg-[#CFFF92] border-black border-4 rounded-[20px] flex flex-col justify-start items-start  p-8 gap-6  h-min"}>
+
+
                   <h2 className={`${mediumaeonikFont.className} text-[#2C2C2C]/[.8] font-bold text-[1.125rem] lg:text-2xl leading-[1.9] tracking-[.005em]`}>Post-Drive Reflection Tool</h2>
                   <p className={`${regularaeonikFont.className} text-black text-[#2C2C2C]/[.8] font-normal  text-[1rem] lg:text-[1.125rem] leading-[1.8] tracking-[.01em]`}>After each on-campus drive, quickly log your impressions
                     and receive AI-generated suggestions for follow-up
                     actions</p>
-                </div>
-                <div className="bg-[#CFFF92] border-black border-4 rounded-[20px] flex flex-col justify-start items-start  p-8 gap-6  h-min">
+                </Revealcompo>
+
+                <Revealcompo css={"bg-[#CFFF92] border-black border-4 rounded-[20px] flex flex-col justify-start items-start  p-8 gap-6  h-min"}>
+
+
                   <h2 className={`${mediumaeonikFont.className}  text-[#2C2C2C]/[.8] font-bold text-[1.125rem] lg:text-2xl leading-[1.9] tracking-[.005em]`}>Interview Wardrobe Advisor</h2>
                   <p className={`${regularaeonikFont.className} text-black font-normal  text-[1rem] lg:text-[1.125rem] leading-[1.8] tracking-[.01em]`}>Cue suggests appropriate interview attire based on the
                     company culture, role, and current fashion trends</p>
-                </div>
+                </Revealcompo>
               </div>
 
             </div>
+
           </div>
-        </div>
+        </Revealcompo>
+
       </div>
+
 
       {/* take control of your placement journey with Cuegrad */}
 
       <div className=" flex items-center flex-none h-min justify-center overflow-hidden btl:pt-0 btl:px-6 btl:pb-6 bmLLL:pt-0 tml:pt-16 tml:px-4 tml:pb-4 bmLLL:px-16 bmLLL:pb-16 py-16 px-0 relative w-full">
-        <div className="bmLLL:max-w-[1180px] bmL4k:max-w-[1312px]  max-w-[1640px] flex items-center rounded-[30px] flex-grow flex-shrink-0 basis-0 flex-col justify-start overflow-hidden p-0 relative ">
-          <div className="bg-[#FFAE67] text-[#015840]  rounded-[30px]  items-center flex flex-col h-min justify-center  btl:pt-[60px] xl:pt-[100px] tml:p-6 btl:px-[150px] px-[209px] relative w-full flex-none ">
-            <h2 className={`${regularaeonikFont.className} tml:text-start  text-center mx-auto font-normal text-[1.5rem] md:text-[2rem] leading-[1.9] tracking-normal `}>Take control of your placement journey with</h2>
 
-            <h1 className={`max-w-[594px] ${boldaeonikFont.className} tml:text-[6rem] text-[13rem] tml:text-start text-center xl:text-[18.75rem] mx-auto leading-[.8]`}>CUE</h1>
+
+        <Revealcompo css={"bmLLL:max-w-[1180px] bmL4k:max-w-[1312px]  max-w-[1640px] flex items-center rounded-[30px] flex-grow flex-shrink-0 basis-0 flex-col justify-start overflow-hidden p-0 relative "}>
+          <div className="bg-[#FFAE67] text-[#015840]  rounded-[30px]  items-center flex flex-col h-min justify-center  btl:pt-[60px] xl:pt-[100px] tml:p-6 tml:pb-0 btl:px-[150px] px-[209px] relative w-full flex-none ">
+            <h2 className={`${regularaeonikFont.className}   text-center mx-auto font-normal text-[1.5rem] md:text-[2rem] leading-[1.9] tracking-[.01em] `}>Take control of your placement journey with</h2>
+
+            <h1 className={`max-w-[594px] ${boldaeonikFont.className} tml:text-[6rem] text-[13rem] tml:text-start text-center xl:text-[18.75rem] tracking-[.01em] mx-auto leading-[.8]`}>CUE</h1>
           </div>
-        </div>
+        </Revealcompo>
+
       </div>
 
       <Meetndlearn />
       <Faq />
-    </div>
+    </div >
   );
 }

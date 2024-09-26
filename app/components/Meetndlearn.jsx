@@ -4,6 +4,7 @@ import Options from "./Options";
 import { useEffect, useState } from "react";
 import MobileOptions from "./MobileOptions";
 import { boldaeonikFont, mediumaeonikFont, regularaeonikFont } from "@/utils/font";
+import Revealcompo from "./Revealcompo";
 
 const Main = () => {
     const [activedesc, setActivedesc] = useState(1)
@@ -48,7 +49,8 @@ const Main = () => {
 
     return (
         <div className="tml:pt-16 tml:px-4 tml:pb-4 btl:pt-0 btl:px-6 btl:pb-6 bmLLL:pt-0  bmLLL:px-[64px] bmLLL:pb-[64px] py-16 px-0  w-full flex items-center flex-none h-min justify-center relative overflow-hidden">
-            <div className="flex flex-grow-[1] flex-shrink-0 basis-0 h-min mx-auto bmL4k:max-w-[1312px] max-w-[1640px] overflow-hidden">
+
+            <Revealcompo css={"flex flex-grow-[1] flex-shrink-0 basis-0 h-min mx-auto bmL4k:max-w-[1312px] max-w-[1640px] overflow-hidden"}>
                 <div className="contents">
                     <div className="opacity-[1] relative w-full ">
                         <div className="bg-[#cfff92] w-full rounded-[24px] opacity-[1] flex flex-col tml:gap-8 items-center gap-[64px] justify-start overflow-hidden px-[20px] md:px-[44px]  pt-[64px] pb-[44px] relative ">
@@ -57,8 +59,8 @@ const Main = () => {
 
 
                                     {/* <div className="flex-grow h-min w-auto md:whitespace-pre flex-shrink-0 order-1 basis-0 "> */}
-                                    <h2 className={`font-normal text-[#015840] hidden amLL:block text-[44px] tracking-[-.02em] leading-[1]  text-center ${boldaeonikFont.className} `}>Meet and learn from our community</h2>
-                                    <h2 className={`font-normal text-[#015840] amLL:hidden tml:text-[38px]   md:text-[32px] order-1 amLL:text-[44px]   tracking-[-.02em] tml:text-start leading-[1.2] text-center  ${boldaeonikFont.className} `}>Powered <span className="text-[#987de1]">by</span> and <span className="text-[#987de1]">for</span> the people</h2>
+                                    <h2 className={`font-normal text-[#015840] hidden amLL:block text-[44px] tracking-[.01em] leading-[1]  text-center ${boldaeonikFont.className} `}>Meet and learn from our community</h2>
+                                    <h2 className={`font-normal text-[#015840] amLL:hidden tml:text-[38px]   md:text-[32px] order-1 amLL:text-[44px]   tracking-[.01em] tml:text-start leading-[1.2] text-center  ${boldaeonikFont.className} `}>Powered <span className="text-[#987de1]">by</span> and <span className="text-[#987de1]">for</span> the people</h2>
                                     {/* </div> */}
 
 
@@ -76,7 +78,7 @@ const Main = () => {
                                 </div>
 
                                 <div className="flex-none hidden amLL:block h-auto relative whitespace-pre-wrap w-[720px] break-words ">
-                                    <p className={`text-[#015840] font-normal text-[20px] tracking-[-.02em] leading-[1.6] text-center m-0 p-0 ${regularaeonikFont.className}`}>An active and supportive community of like-minded job-seekers to help you navigate this major life change.</p>
+                                    <p className={`text-[#015840] font-normal text-[20px] tracking-[.02em] leading-[1.6] text-center m-0 p-0 ${regularaeonikFont.className}`}>An active and supportive community of like-minded job-seekers to help you navigate this major life change.</p>
                                 </div>
                             </div>
                             <div className="hidden amLL:block w-full">
@@ -99,7 +101,8 @@ const Main = () => {
 
                     </div>
                 </div>
-            </div>
+            </Revealcompo>
+
         </div>
     )
 }

@@ -4,12 +4,18 @@ import React, { useEffect, useRef, useState } from 'react'
 import { useWindowSize } from '@uidotdev/usehooks'
 import Image from 'next/image'
 import prnetuslogo from '@/public/prentuslogo.svg'
-import { useMotionValueEvent, useScroll, motion, animate } from 'framer-motion'
+import { useMotionValueEvent, useScroll, motion, animate, useInView } from 'framer-motion'
 
 const Navbar = () => {
     const [open, setOpen] = useState(false)
-    const [visible, setVisible] = useState(true);
+    const [visible, setVisible] = useState(false);
+    const navref = useRef(null)
+    const [count, setcount] = useState(0)
+    const { width: windowWidth } = useWindowSize()
+    const { scrollY } = useScroll()
     const [prevScrollPos, setPrevScrollPos] = useState(0);
+
+    const inview = useInView(navref, { once: true })
     // const [variantsvalue, setVariantsValue] = useState(
     //     {
     //         initialclose: {
@@ -23,10 +29,7 @@ const Navbar = () => {
 
     //         }
     //     });
-    const navref = useRef(null)
-    const [count, setcount] = useState(0)
-    const { width: windowWidth } = useWindowSize()
-    const { scrollY } = useScroll()
+
     // console.log(scrollY.get());
 
 
@@ -117,10 +120,13 @@ const Navbar = () => {
     // const variantsvalue = open && count ? navbaropen : navbarclose
     // console.log(variantsvalue);
     // console.log(open);
+    console.log(inview);
+    console.log(visible);
+
 
     return (
         <div className='contents'>
-            <div ref={navref} className={`flex-none h-auto fixed top-0 w-full duration-300 delay-75 z-[4] ${visible ? 'translate-y-0' : '-translate-y-full'}`}>
+            <motion.div ref={navref} className={`flex-none h-auto fixed top-0 w-full duration-500 delay-75 z-[4] ${inview && (visible ? 'translate-y-0' : '-translate-y-full')}`}>
                 {windowWidth >= 1200 ?
                     <div className="flex  h-min flex-nowrap   overflow-visible p-[16px] relative items-center justify-center py-6 px-16 w-full bg-[rgba(255,249,243,.08)] backdrop-blur-[22px] shadow-none ">
                         <div className="flex-none bg-[rgba(255,249,242,0)]  bmL4k:max-w-[1312px] max-w-[1640px] w-full flex items-center flex-nowrap h-min justify-between overflow-hidden p-0 relative ">
@@ -161,7 +167,7 @@ const Navbar = () => {
                             </div>
                             <div className='flex items-center justify-center gap-3  relative w-min'>
                                 <div className="flex-none h-auto relative w-auto">
-                                    <a href="" className='flex items-center border hover:border-solid border-white hover:border-[#311f40] rounded-[100px] justify-center cursor-pointer py-4 px-6 relative w-min'>
+                                    <a href="" className='flex items-center border hover:border-solid border-transparent hover:border-[#311f40] duration-200 rounded-[100px] justify-center cursor-pointer py-4 px-6 relative w-min'>
                                         <p className={`${mediumaeonikFont.className} font-normal text-[#311f40] text-[1.125rem] leading-[1] `}>Login</p>
                                     </a>
                                 </div>
@@ -240,7 +246,7 @@ const Navbar = () => {
                         }
                     </motion.div>
                 }
-            </div>
+            </motion.div>
         </div>
     )
 }
