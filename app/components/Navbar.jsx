@@ -8,7 +8,7 @@ import { useMotionValueEvent, useScroll, motion, animate, useInView } from 'fram
 
 const Navbar = () => {
     const [open, setOpen] = useState(false)
-    const [visible, setVisible] = useState(false);
+    const [visible, setVisible] = useState(true);
     const navref = useRef(null)
     const [count, setcount] = useState(0)
     const { width: windowWidth } = useWindowSize()
@@ -120,15 +120,12 @@ const Navbar = () => {
     // const variantsvalue = open && count ? navbaropen : navbarclose
     // console.log(variantsvalue);
     // console.log(open);
-    console.log(inview);
-    console.log(visible);
-
 
     return (
         <div className='contents'>
-            <motion.div ref={navref} className={`flex-none h-auto fixed top-0 w-full duration-500 delay-75 z-[4] ${inview && (visible ? 'translate-y-0' : '-translate-y-full')}`}>
+            <motion.div ref={navref} className={`flex-none h-auto fixed top-0 w-full duration-500 backdrop-blur-[22px]  delay-75 z-[4] ${(inview && visible ? 'translate-y-0 opacity-[1]' : '-translate-y-full opacity-0')}`}>
                 {windowWidth >= 1200 ?
-                    <div className="flex  h-min flex-nowrap   overflow-visible p-[16px] relative items-center justify-center py-6 px-16 w-full bg-[rgba(255,249,243,.08)] backdrop-blur-[22px] shadow-none ">
+                    <div className="flex  h-min flex-nowrap   overflow-visible p-[16px] relative items-center justify-center py-6 px-16 w-full bg-[rgba(255,249,243,.08)] shadow-none ">
                         <div className="flex-none bg-[rgba(255,249,242,0)]  bmL4k:max-w-[1312px] max-w-[1640px] w-full flex items-center flex-nowrap h-min justify-between overflow-hidden p-0 relative ">
                             <div className='flex justify-center flex-1 amLL:flex-none w-min relative overflow-hidden p-0 items-center h-min'>
                                 <a href="" className='flex-none h-[46px] relative w-[200px] '>
@@ -247,7 +244,7 @@ const Navbar = () => {
                     </motion.div>
                 }
             </motion.div>
-        </div>
+        </div >
     )
 }
 
