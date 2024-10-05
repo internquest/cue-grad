@@ -11,7 +11,7 @@ import yourtube from '@/public/youtube.svg'
 import insta from '@/public/insta.svg'
 const Footer = () => {
     return (
-        <div className='flex items-center flex-none justify-center h-min tml:pt-16 tml:px-4 tml:pb-4 btl:pt-0 btl:px-6 btl:pb-6 bmLLL:pt-0 bmLLL:px-16 bmLLL:pb-16 py-[64px] relative w-full '>
+        <div className='flex items-center flex-none justify-center h-min tml:pt-16 tml:px-2 tml:pb-4 btl:pt-0 btl:px-6 btl:pb-6 bmLLL:pt-0 bmLLL:px-16 bmLLL:pb-16 py-[64px] relative w-full '>
             <div className='tml:w-full bmLLL:max-w-[1180px] bmL4k:max-w-[1312px] max-w-[1640px] rounded-[24px] flex flex-grow flex-shrink-0 basis-0 '>
                 <div className='w-full h-auto relative flex-none'>
                     <div className="flex flex-col items-center bg-[#311f40] w-full rounded-[24px]  flex-nowrap gap-[96px] justify-center h-min overflow-hidden p-[44px] relative ">

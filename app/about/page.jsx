@@ -10,6 +10,7 @@ import eyeemji from '@/public/about/eyeemoji.png'
 import worryemoji from '@/public/about/worryemoji.png'
 import happyemoji from '@/public/about/happyemoji.png'
 import bgdesign from '@/public/about/bgdesign.png'
+import cuebg from '@/public/about/star ladder.svg'
 import headingstar from '@/public/about/heading star.svg'
 import Revealcompo from '../components/Revealcompo'
 const page = () => {
@@ -130,10 +131,10 @@ const page = () => {
         <Revealcompo css={'bmLLL:max-w-[1180px] bmL4k:max-w-[1312px] max-w-[1640px] flex items-center rounded-[30px] flex-grow flex-shrink-0 basis-0 flex-col h-min justify-start overflow-hidden p-0 relative '}>
           <div className='flex flex-none items-center rounded-[24px] h-[574px] btl:justify-center justify-end bg-[#005840] tml:p-6 p-11 py-28 relative w-full'>
 
-            <div className=' absolute tml:hidden left-[-1px] flex-grow  hidden md:flex items-center flex-none h-min justify-center overflow-hidden top-[38%] w-min translate-y-[-50%] z-0 '>
-              <div className='flex-none  [aspect-ratio:1/1] relative w-[448px] h-full'>
+            <div className=' absolute tml:hidden left-[-1px] flex-grow  hidden md:flex items-center flex-none h-min justify-center overflow-hidden top-[32%] w-min translate-y-[-50%] z-0 '>
+              <div className='flex-none  [aspect-ratio:1/1] relative w-[448px]   h-full'>
 
-                <Image src={bgdesign} alt='' fill={true} />
+                <Image src={cuebg} alt='' fill={true} />
               </div>
             </div>
             <div className='flex flex-col gap-5 tml:w-full  md:bottom-[95px] right-5 lg:right-12 tml:justify-start justify-end px-3 md:px-0 items-center md:items-end '>

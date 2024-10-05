@@ -48,7 +48,7 @@ const Main = () => {
     }, [])
 
     return (
-        <div className="tml:pt-16 tml:px-4 tml:pb-4 btl:pt-0 btl:px-6 btl:pb-6 bmLLL:pt-0  bmLLL:px-[64px] bmLLL:pb-[64px] py-16 px-0  w-full flex items-center flex-none h-min justify-center relative overflow-hidden">
+        <div className="tml:pt-16 tml:px-2 tml:pb-4 btl:pt-0 btl:px-6 btl:pb-6 bmLLL:pt-0  bmLLL:px-[64px] bmLLL:pb-[64px] py-16 px-0  w-full flex items-center flex-none h-min justify-center relative overflow-hidden">
 
             <Revealcompo css={"flex flex-grow-[1] flex-shrink-0 basis-0 h-min mx-auto bmL4k:max-w-[1312px] max-w-[1640px] overflow-hidden"}>
                 <div className="contents">

@@ -18,11 +18,11 @@ export default function Home() {
 
   return (
     <div className="  flex flex-col bg-white min-h-screen w-auto h-min justify-start p-0 relative ">
-      <div className="   overflow-hidden flex relative w-full btl:pt-[80px] btl:px-6 btl:pb-6 bmLLL:pt-[116px] bmLLL:px-16 bmLLL:pb-16 tml:pt-[116px] tml:px-4 tml:pb-4 pt-[116px] px-16 pb-16 flex-none h-min justify-center flex-col items-center">
+      <div className="   overflow-hidden flex relative w-full btl:pt-[80px] btl:px-6 btl:pb-6 bmLLL:pt-[116px] bmLLL:px-16 bmLLL:pb-16 tml:pt-[116px] tml:px-2 tml:pb-4 pt-[116px] px-16 pb-16 flex-none h-min justify-center flex-col items-center">
 
-        <Revealcompo css={"bg-[#CFFF92]  bmL4k:max-w-[1312px]  max-w-[1640px] flex tml:items-start items-center tml:justify-start rounded-[30px]  flex-grow flex-shrink-0 basis-0 flex-col h-auto tml:pb-4 px-4 w-full "}>
+        <Revealcompo css={"bg-[#CFFF92]  bmL4k:max-w-[1312px]  max-w-[1640px] flex tml:items-start items-center tml:justify-start tml:rounded-bl-[0px] tml:rounded-br-[0px] rounded-[30px]  flex-grow flex-shrink-0 basis-0 flex-col h-auto   px-2 w-full "}>
 
-          <h2 className={`w-full tml:mt-10  mt-20 lg:mt-36 ${mediumaeonikFont.className} font-medium tml:text-[3rem] tml:text-start text-[2rem] md:text-[3rem] tml:leading-[1.3] leading-[1.7] tml:tracking-tight tracking-[.005em] text-center`}>
+          <h2 className={`w-full hidden md:block tml:mt-10 pl-2 mt-20 lg:mt-36 ${mediumaeonikFont.className} font-medium tml:text-[2rem] tml:text-start text-[2rem] md:text-[3rem] tml:leading-[1.6]   leading-[1.7]   text-center`}>
             <span className="inline-block ">
               Your Smart Companion for
             </span>
@@ -31,39 +31,50 @@ export default function Home() {
               On-Campus Placement Success
             </span>
           </h2>
-          {/* <h2 className={`w-full px-2  md:hidden  mt-16 ${mediumaeonikFont.className} font-medium text-[2.2rem]  leading-[1.7] tracking-[.005em] text-center`}>
-            <span className="inline-block -ml-3">
+          <h2 className={`w-full px-2  md:hidden  text-left mt-16 ${mediumaeonikFont.className} font-medium text-[2rem]  leading-[1.7] tracking-[.005em] text-center`}>
+            <span className="inline-block text-left ">
               Your Smart Companion for  On-Campus Placement Success
             </span>
 
-          </h2> */}
+          </h2>
 
-          <p className={`px-2 ${regularaeonikFont.className} font-normal max-w-[659px]  xl:w-[70%] text-[1.1rem] md:text-[1.375rem] leading-[2] tracking-normal tml:text-start text-center text-[#2C2C2C] mt-6`}>
+          <p className={`px-2 ${regularaeonikFont.className} font-normal max-w-[659px]  xl:w-[70%] text-[1.1rem] md:text-[1.375rem] leading-[2] tracking-[.015em] tml:text-start text-center text-[#2C2C2C] mt-4 `}>
             Transform your on-campus placement experience with cutting-
             edge AI solutions designed to guide, support, and empower you
             every step of the way.
           </p>
+          <a href='/signup' class=" tml:self-start  flex flex-grow items-center cursor-pointer  gap-[10px] h-min overflow-visible px-[24px] py-[16px] relative no-underline w-min hover:bg-[#ff7a05] bg-[rgb(255,_143,_62)] opacity-100 mt-8 rounded-[100px]">
+            <div class="   h-auto whitespace-pre w-auto outline-[none] flex flex-col justify-start flex-shrink-0 transform-none opacity-100">
+              <p class={`box-border  m-0 p-0 ${regularaeonikFont.className} text-[1rem] `}>Try free for 7 days →</p>
+            </div>
+          </a>
 
-          <div className="w-full md:max-w-[519px] h-[672px] bg-white border-[10px] mt-12 flex flex-col  pr-5 rounded-t-[40px] border-[#CFFF92]/[.5]">
-
-            <Image src={c} alt="" width={40} height={42} className="mt-14 ml-5" />
-            <div className={`bg-[#CFFF92]/[.2] w-[80%] md:max-w-[412px] h-[288px] ml-5 mt-3 rounded-[10px] flex flex-col gap-5 py-5 px-5 text-[#000000]/[.8] ${regularaeonikFont.className}`} >
+          <div className="w-full md:max-w-[519px] tml:h-min h-[672px] bg-white tml:border-[5px] border-[10px] mt-12 flex flex-col  pr-5 rounded-t-[40px] border-[#CFFF92]/[.5]">
+            <div className='rounded-[20px] h-[40px] flex text-center  justify-center w-[40px] mt-14 ml-5  bg-[#cfff92]'>
+              <h1 className={`text-[1.9rem] mt-[-7px] text-[#000]/[.5] ${mediumaeonikFont.className}  font-medium`}>c</h1>
+              {/* c */}
+            </div>
+            {/* <Image src={c} alt="" width={40} height={42} className="mt-14 ml-5" /> */}
+            <div className={`bg-[#CFFF92]/[.2] w-[80%] md:max-w-[412px] tml:h-min h-[288px] ml-5 mt-3 rounded-[10px] flex flex-col gap-5 py-5   px-5 pr-2 text-[#000000]/[.8] ${regularaeonikFont.className}`} >
               <p className=" text-[1rem] md:text-[1.25rem] leading-[2] font-normal tracking-wide">
                 Hello
               </p>
-              <p className=" max-w-[344px] tracking-normal text-[.9rem] md:text-[1.125rem] font-normal leading-[2]">I’m your helpful AI assistant to navigate
+              <p className=" max-w-[344px] tracking-[.015em] text-[.9rem] md:text-[1.125rem] font-normal leading-[2]">I’m your helpful AI assistant to navigate
                 on-campus placements like a pro. Let
                 me know what you need help with to get
                 started!</p>
             </div>
-            <div className={`bg-[#E2FFBD] w-[80%] px-1 md:max-w-[341px]  mt-12 mr-2 pl-5 py-5     rounded-[10px] font-normal text-[.9rem]  md:text-[1.125rem] leading-[1.8] tracking-normal  self-end  ${regularaeonikFont.className}  `}>
+            <div className={`bg-[#E2FFBD] w-[80%] px-1 md:max-w-[341px]  mt-8   pl-5 py-5     rounded-[10px] font-normal text-[.9rem]  md:text-[1.125rem] leading-[1.75] tracking-[0.015em]  self-end  ${regularaeonikFont.className}  `}>
               I was just wondering on what to
               prepare for upcoming Stripe OA.
             </div>
-            <div className="mt-8 ml-5 flex gap-5 items-center">
-
-              <Image src={c} alt="" width={40} height={42} className="" />
-              <div className="bg-[#CFFF92]/[.2] rounded-[10px] w-[56px] h-[24px] "></div>
+            <div className="mt-8 ml-5 mb-4 flex gap-5 items-center">
+              <div className='rounded-[20px] h-[40px] flex text-center  justify-center w-[40px]   bg-[#cfff92]'>
+                <h1 className={`text-[1.9rem] mt-[-7px] text-[#000]/[.5] ${mediumaeonikFont.className}  font-medium`}>c</h1>
+                {/* c */}
+              </div>
+              {/* <Image src={c} alt="" width={40} height={42} className="" /> */}
+              <div className="bg-[#CFFF92]/[.2] rounded-[10px] w-[56px] h-[28px] "></div>
             </div>
 
           </div>
@@ -73,9 +84,9 @@ export default function Home() {
 
       {/* meet cuegrad */}
 
-      <div className="   overflow-hidden flex relative w-full tml:px-4 tml:pb-4  btl:px-6 btl:pb-6 bmLLL:px-16 bmLLL:pb-16 pb-10  px-16 flex-none h-min justify-center flex-col items-center">
+      <div className="   overflow-hidden flex relative w-full tml:px-2 tml:pb-4  btl:px-6 btl:pb-6 bmLLL:px-16 bmLLL:pb-16 pb-10  px-16 flex-none h-min justify-center flex-col items-center">
 
-        <Revealcompo css={"bg-[#FDF3EA] bmLLL:max-w-[1180px] bmL4k:max-w-[1312px] max-w-[1640px] flex items-center tml:p-3 p-16 rounded-[30px]  text-[#F9576E] flex-grow flex-shrink-0 basis-0 flex-col w-full"}>
+        <Revealcompo css={"bg-[#FDF3EA] bmLLL:max-w-[1180px] bmL4k:max-w-[1312px] max-w-[1640px] flex items-center tml:p-3 p-16 rounded-[30px]  text-[#F9576E] flex-grow flex-shrink-0 basis-0 flex-col pt-2 px-2 w-full"}>
 
           <h1 className={`${mediumaeonikFont.className} font-medium tml:text-[1.3rem] text-[2rem] md:text-[3.25rem] leading-[2] tracking-normal`}>Meet CueGrad</h1>
           <p className={`${regularaeonikFont.className} font-normal max-w-[600px] lg:max-w-[717px] text-center tml:text-[1.1rem] text-[1.5rem] md:text-[1.75rem] leading-[2] tracking-wide`}>your personalized assistant designed to help you excel
@@ -86,7 +97,7 @@ export default function Home() {
 
       {/* students have to say about Cuegrad */}
 
-      <div className="bmLLL:pt-0 bmLLL:px-16 bmLLL:pb-16 flex items-center flex-none w-full h-min justify-center overflow-hidden relative btl:pt-0 btl:px-6 btl:pb-6 btl:py-0 tml:p-4 py-16 px-0">
+      <div className="bmLLL:pt-0 bmLLL:px-16 bmLLL:pb-16 flex items-center flex-none w-full h-min justify-center overflow-hidden relative btl:pt-0 btl:px-6 btl:pb-6 btl:py-0 tml:p-4 tml:px-2 py-16 px-0">
         <div className="items-center rounded-[30px]  flex-grow flex-shrink-0 basis-0 flex-col h-min max-w-[1640px] overflow-hidden relative bmL4k:max-w-[1312px] ">
           <div className="bg-[#977DE0] rounded-[30px] tml:pt-12 tml:px-4 tml:pb-6 tml:gap-11 pt-16 px-11 pb-11 w-full flex  flex-col gap-16 h-min  items-center justify-start overflow-hidden ">
             <h2 className={`${mediumaeonikFont.className} font-medium tml:text-start text-center text-[1.5rem] lg:text-[2rem] mt-3 leading-[1.8] text-white tracking-normal`}>Here’s what students have to say about Cuegrad</h2>
@@ -125,7 +136,7 @@ export default function Home() {
 
       {/* oncampus placemnt assistant */}
 
-      <div className="bg-white flex flex-none w-full relative overflow-hidden justify-center items-center h-min bmLLL:py-[64px] bmLLL:pr-0 tml:pt-16 tml:px-4 tml:pb-4 btl:py-[48px]  py-16 px-0 ">
+      <div className="bg-white flex flex-none w-full relative overflow-hidden justify-center items-center h-min bmLLL:py-[64px] bmLLL:pr-0 tml:pt-16 tml:px-2 tml:pb-4 btl:py-[48px]  py-16 px-0 ">
         <div className="flex flex-grow flex-shrink-0 basis-0 flex-col h-min justify-start max-w-[1640px] bmL4k:max-w-[1312px] overflow-hidden p-0 relative ">
 
           <div className="flex flex-col flex-none w-full relative items-center justify-start tml:gap-10 gap-[64px] h-min p-0">
@@ -204,7 +215,7 @@ export default function Home() {
 
       {/* new feature  */}
 
-      <div className="flex items-center flex-none h-min justify-center overflow-hidden btl:pt-0 btl:px-6 btl:pb-6 bmLLL:pt-0 tml:pt-6 tml:px-4 tml:pb-4 bmLLL:px-16 bmLLL:pb-16 py-16 px-0 relative w-full">
+      <div className="flex items-center flex-none h-min justify-center overflow-hidden btl:pt-0 btl:px-6 btl:pb-6 bmLLL:pt-0 tml:pt-6 tml:px-2 tml:pb-2 bmLLL:px-16 bmLLL:pb-16 py-16 px-0 relative w-full">
 
         <Revealcompo css={" bmL4k:max-w-[1312px]  max-w-[1640px] flex items-center rounded-3xl flex-grow flex-shrink-0 basis-0 flex-col justify-start overflow-hidden p-0 relative"}>
           <div className="bg-[#977DE0]   rounded-[5px] tml:gap-6 tml:pt-16 tml:px-4 tml:pb-4 btl:pt-16 btl:px-6 btl:pb-11 pt-16 px-11 pb-20 md:rounded-[24px] overflow-hidden w-full flex flex-col  gap-3 md:gap-16 justify-center items-center h-min ">
@@ -275,7 +286,7 @@ export default function Home() {
 
       {/* take control of your placement journey with Cuegrad */}
 
-      <div className=" flex items-center flex-none h-min justify-center overflow-hidden btl:pt-0 btl:px-6 btl:pb-6 bmLLL:pt-0 tml:pt-16 tml:px-4 tml:pb-4 bmLLL:px-16 bmLLL:pb-16 py-16 px-0 relative w-full">
+      <div className=" flex items-center flex-none h-min justify-center overflow-hidden btl:pt-0 btl:px-6 btl:pb-6 bmLLL:pt-0 tml:pt-16 tml:px-2 tml:pb-4 bmLLL:px-16 bmLLL:pb-16 py-16 px-0 relative w-full">
 
 
         <Revealcompo css={"bmLLL:max-w-[1180px] bmL4k:max-w-[1312px]  max-w-[1640px] flex items-center rounded-[30px] flex-grow flex-shrink-0 basis-0 flex-col justify-start overflow-hidden p-0 relative "}>

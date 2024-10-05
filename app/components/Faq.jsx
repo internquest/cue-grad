@@ -29,7 +29,7 @@ const Faq = () => {
     ]
 
     return (
-        <div className='tml:py-12 tml:px-4 py-[64px] px-0 flex items-center justify-center overflow-hidden flex-none h-min w-full relative '>
+        <div className='tml:py-12 tml:px-2 py-[64px] px-0 flex items-center justify-center overflow-hidden flex-none h-min w-full relative '>
 
             <Revealcompo css={'flex flex-col items-center flex-grow-[1] flex-shrink-0 basis-0 tml:gap-6 gap-16 h-min justify-start bmL4k:max-w-[1312px] max-w-[1640px] p-0 relative'}>
                 <div className='flex flex-col justify-start flex-shrink-0  flex-none w-full relative h-auto whitespace-pre-wrap '>
