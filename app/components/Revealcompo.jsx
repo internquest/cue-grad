@@ -19,7 +19,7 @@ const Revealcompo = ({ children, css, delay = 500 }) => {
         }
 
         return () => window.removeEventListener('load', handleLoad)
-    }, [delay])
+    }, [])
 
     return (
         <motion.div style={{

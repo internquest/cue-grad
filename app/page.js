@@ -1,6 +1,6 @@
 'use client'
 import { useInView } from 'framer-motion'
-import React, { useRef } from 'react'
+import React, { useRef, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { boldaeonikFont, mediumaeonikFont, regularaeonikFont } from "@/utils/font";
 import Image from "next/image";
@@ -14,7 +14,29 @@ import Faq from "./components/Faq";
 import Revealcompo from './components/Revealcompo';
 
 export default function Home() {
+  useEffect(() => {
+    // Add a class to hide overflow
+    document.body.classList.add('overflow-hidden');
 
+    const handleLoad = () => {
+      // Wait for 500ms after load before enabling scroll
+      setTimeout(() => {
+        document.body.classList.remove('overflow-hidden');
+      }, 7400);
+    };
+
+    if (document.readyState === 'complete') {
+      handleLoad();
+    } else {
+      window.addEventListener('load', handleLoad);
+    }
+
+    // Clean up
+    return () => {
+      window.removeEventListener('load', handleLoad);
+      document.body.classList.remove('overflow-hidden');
+    };
+  }, []);
 
   return (
     <div className="  flex flex-col bg-white min-h-screen w-auto h-min justify-start p-0 relative ">
