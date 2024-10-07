@@ -1,10 +1,11 @@
 'use client'
-import { boldaeonikFont, mediumaeonikFont } from '@/utils/font'
+import { almarai, boldaeonikFont, epilogue, mediumaeonikFont } from '@/utils/font'
 import React, { useEffect, useRef, useState } from 'react'
 import { useWindowSize } from '@uidotdev/usehooks'
 import Image from 'next/image'
 import prnetuslogo from '@/public/prentuslogo.svg'
 import { useMotionValueEvent, useScroll, motion, animate, useInView } from 'framer-motion'
+import Link from 'next/link'
 
 const Navbar = () => {
     const [open, setOpen] = useState(false)
@@ -128,51 +129,51 @@ const Navbar = () => {
                     <div className="flex  h-min flex-nowrap   overflow-visible p-[16px] relative items-center justify-center py-6 px-16 w-full bg-[rgba(255,249,243,.08)] shadow-none ">
                         <div className="flex-none bg-[rgba(255,249,242,0)]  bmL4k:max-w-[1312px] max-w-[1640px] w-full flex items-center flex-nowrap h-min justify-between overflow-hidden p-0 relative ">
                             <div className='flex justify-center flex-1 amLL:flex-none w-min relative overflow-hidden p-0 items-center h-min'>
-                                <a href="" className='flex-none h-[60px]  relative w-[111px] '>
-                                    <div className='w-full h-full bg-[#015840] flex items-center justify-center rounded-tl-[20px] rounded-tr-[50px] text-white text-[2rem] font-medium  leading-[1.9] rounded-br-[50px]'>
+                                <Link href="/" className='flex-none h-[60px]  relative w-[111px] '>
+                                    <div className={`w-full h-full bg-[#015840] flex items-center justify-center rounded-tl-[20px] rounded-tr-[50px] text-white text-[2rem] font-medium  leading-[1.9] rounded-br-[50px]  ${epilogue.className} `}>
                                         cue.
                                     </div>
-                                </a>
+                                </Link>
                             </div>
                             <div className='flex items-center justify-center flex-none border-solid border-[1.5px] border-[#311f40] rounded-[1000px] gap-6 p-2 bg-[rgba(255,255,255,0.8)]  relative w-min'>
                                 <div className='flex-none h-auto relative w-auto'>
-                                    <a href="" className='py-2 px-3 bg-[rgba(207,255,145,0)] duration-200 hover:bg-[rgba(207,255,145)]  rounded-[100px] opacity-[1] w-min flex items-center justify-center cursor-pointer flex-nowrap relative '>
+                                    <Link href="/students" className='py-2 px-3 bg-[rgba(207,255,145,0)] duration-200 hover:bg-[rgba(207,255,145)]  rounded-[100px] opacity-[1] w-min flex items-center justify-center cursor-pointer flex-nowrap relative '>
                                         <div className=''>
-                                            <p className={`${mediumaeonikFont.className} text-[1rem] font-normal tracking-normal text-[#010032] leading-[24px] whitespace-nowrap`}>Job Seekers</p>
+                                            <p className={`${almarai.className} text-[1rem] font-normal tracking-normal text-[#010032] leading-[24px] whitespace-nowrap`}>Students</p>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className='flex-none h-auto relative w-auto'>
-                                    <a href="" className='py-2 px-3 bg-[rgba(207,255,145,0)] duration-200 hover:bg-[rgba(207,255,145)] rounded-[100px] opacity-[1] w-min flex items-center justify-center cursor-pointer flex-nowrap relative '>
+                                    <Link href="/about" className='py-2 px-3 bg-[rgba(207,255,145,0)] duration-200 hover:bg-[rgba(207,255,145)] rounded-[100px] opacity-[1] w-min flex items-center justify-center cursor-pointer flex-nowrap relative '>
                                         <div className=''>
-                                            <p className={`${mediumaeonikFont.className} text-[1rem] font-normal tracking-normal text-[#010032] leading-[24px] whitespace-nowrap `}>Career Centers</p>
+                                            <p className={`${almarai.className} text-[1rem] font-normal tracking-normal text-[#010032] leading-[24px] whitespace-nowrap `}>About</p>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className='flex-none h-auto relative w-auto'>
-                                    <a href="" className='py-2 px-3 bg-[rgba(207,255,145,0)] duration-200 hover:bg-[rgba(207,255,145)] rounded-[100px] opacity-[1] w-min flex items-center justify-center cursor-pointer flex-nowrap relative '>
+                                    <Link href="/internship" className='py-2 px-3 bg-[rgba(207,255,145,0)] duration-200 hover:bg-[rgba(207,255,145)] rounded-[100px] opacity-[1] w-min flex items-center justify-center cursor-pointer flex-nowrap relative '>
                                         <div className=''>
-                                            <p className={`${mediumaeonikFont.className} text-[1rem] font-normal tracking-normal text-[#010032] leading-[24px] whitespace-nowrap `}>Employers</p>
+                                            <p className={`${almarai.className} text-[1rem] font-normal tracking-normal text-[#010032] leading-[24px] whitespace-nowrap `}>Internship</p>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className='h-auto w-auto relative flex-none'>
-                                    <a href="" className='py-2 px-3 bg-[rgba(207,255,145,0)] duration-200 hover:bg-[rgba(207,255,145)] rounded-[100px] opacity-[1] w-min flex items-center justify-center cursor-pointer flex-nowrap relative '>
+                                    <Link href="" className='py-2 px-3 bg-[rgba(207,255,145,0)] duration-200 hover:bg-[rgba(207,255,145)] rounded-[100px] opacity-[1] w-min flex items-center justify-center cursor-pointer flex-nowrap relative '>
                                         <div className=''>
-                                            <p className={`${mediumaeonikFont.className} text-[1rem] font-normal tracking-normal text-[#010032] leading-[24px] whitespace-nowrap `}>Pricing</p>
+                                            <p className={`${almarai.className} text-[1rem] font-normal tracking-normal text-[#010032] leading-[24px] whitespace-nowrap `}>Feedback</p>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className='flex items-center justify-center gap-3  relative w-min'>
                                 <div className="flex-none h-auto relative w-auto">
                                     <a href="" className='flex items-center border hover:border-solid border-transparent hover:border-[#311f40] duration-200 rounded-[100px] justify-center cursor-pointer py-4 px-6 relative w-min'>
-                                        <p className={`${mediumaeonikFont.className} font-normal text-[#311f40] text-[1.125rem] leading-[1] `}>Login</p>
+                                        <p className={`${almarai.className} font-normal text-[#311f40] text-[1.125rem] leading-[1] `}>Login</p>
                                     </a>
                                 </div>
                                 <div className='flex-none h-auto relative w-auto'>
                                     <a href="" className='bg-[#311f40] hover:bg-[#987de1] duration-200 rounded-[100px] cursor-pointer flex items-center justify-center py-4 px-6 w-min relative'>
-                                        <p className={`${mediumaeonikFont.className} font-normal text-[#fff9f3] text-[1.125rem] leading-[1] whitespace-nowrap`}>Sign Up</p>
+                                        <p className={`${almarai.className} font-normal text-[#fff9f3] text-[1.125rem] leading-[1] whitespace-nowrap`}>Sign Up</p>
                                     </a>
                                 </div>
                             </div>
@@ -184,7 +185,7 @@ const Navbar = () => {
                         variants={open ? navbaropen : navbarclose} className={`backdrop-blur-[22px] ${open ? 'bg-[rgb(255,249,243)]' : ' bg-[rgba(255,249,243,.08)]'} bg-[#fff9f3] transition-transform w-full p-4 pb-0 ${open ? 'min-h-screen  overflow-hidden flex-col h-[640px] gap-0 ' : ''} `}>
                         <motion.div className={`max-w-[1312px] flex-1 h-min ${open ? 'flex-none w-full' : ''} items-center overflow-hidden bg-white/[0] relative origin-center p-0 `}>
                             <div className={`flex ${open ? '' : 'flex-grow flex-shrink-0 basis-0'}  justify-between items-center h-min  overflow-hidden p-0 relative`}>
-                                <a href="" className='flex-none h-[60px] relative w-[111px] block' >
+                                <a href="/" className='flex-none h-[60px] relative w-[111px] block' >
                                     <div className='w-full h-full bg-[#015840] flex items-center justify-center rounded-tl-[20px] rounded-tr-[50px] text-white text-[2rem] font-medium  leading-[1.9] rounded-br-[50px]'>
                                         cue.
                                     </div>
@@ -210,22 +211,22 @@ const Navbar = () => {
 
                                         <div className='flex flex-col justify-start flex-shrink-0 flex-none h-auto relative whitespace-pre-wrap w-full break-words'>
                                             <p className={`${boldaeonikFont.className} font-normal text-[#311f40] text-[1.75rem] tracking-[-.02em] leading-[36px] text-start `}>
-                                                <a href="" className=''>For Jobseekers</a>
+                                                <a href="/" className=''>Students</a>
                                             </p>
                                         </div>
                                         <div className='flex flex-col justify-start flex-shrink-0 flex-none h-auto relative whitespace-pre-wrap w-full break-words'>
                                             <p className={`${boldaeonikFont.className} font-normal text-[#311f40] text-[1.75rem] tracking-[-.02em] leading-[36px] text-start `}>
-                                                <a href="" className=''>For Employers</a>
+                                                <a href="/about" className=''> About</a>
                                             </p>
                                         </div>
                                         <div className='flex flex-col justify-start flex-shrink-0 flex-none h-auto relative whitespace-pre-wrap w-full break-words'>
                                             <p className={`${boldaeonikFont.className} font-normal text-[#311f40] text-[1.75rem] tracking-[-.02em] leading-[36px] text-start `}>
-                                                <a href="" className=''>For Schools</a>
+                                                <a href="/internship" className=''>Internship </a>
                                             </p>
                                         </div>
                                         <div className='flex flex-col justify-start flex-shrink-0 flex-none h-auto relative whitespace-pre-wrap w-full break-words'>
                                             <p className={`${boldaeonikFont.className} font-normal text-[#311f40] text-[1.75rem] tracking-[-.02em] leading-[36px] text-start `}>
-                                                <a href="" className=''>Pricing</a>
+                                                <a href="" className=''>Feedback</a>
                                             </p>
                                         </div>
 

@@ -1,15 +1,22 @@
 'use client'
 import { useInView, motion } from 'framer-motion'
 import React, { useRef, useState, useEffect } from 'react'
+import { usePathname } from 'next/navigation'
 
 const Revealcompo = ({ children, css, delay = 500 }) => {
     const comporef = useRef(null)
     const [isReady, setIsReady] = useState(false)
     const inview = useInView(comporef, { margin: "0px 100px -250px 0px", once: true })
+    const pathname = usePathname()
 
     useEffect(() => {
         const handleLoad = () => {
-            setTimeout(() => setIsReady(true), 6400)
+            console.log(pathname);
+            if (pathname === '/') {
+                setTimeout(() => setIsReady(true), 6900)
+            } else {
+                setIsReady(true)
+            }
         }
 
         if (document.readyState === 'complete') {
@@ -19,7 +26,7 @@ const Revealcompo = ({ children, css, delay = 500 }) => {
         }
 
         return () => window.removeEventListener('load', handleLoad)
-    }, [])
+    }, [pathname])
 
     return (
         <motion.div style={{

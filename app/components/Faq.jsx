@@ -1,6 +1,6 @@
 import React from 'react'
 import FaqIndividual from './FaqIndividual'
-import { boldaeonikFont, mediumaeonikFont } from '@/utils/font'
+import { boldaeonikFont, epilogue, mediumaeonikFont } from '@/utils/font'
 import Revealcompo from './Revealcompo'
 
 const Faq = () => {
@@ -33,7 +33,7 @@ const Faq = () => {
 
             <Revealcompo css={'flex flex-col items-center flex-grow-[1] flex-shrink-0 basis-0 tml:gap-6 gap-16 h-min justify-start bmL4k:max-w-[1312px] max-w-[1640px] p-0 relative'}>
                 <div className='flex flex-col justify-start flex-shrink-0  flex-none w-full relative h-auto whitespace-pre-wrap '>
-                    <h2 className={`${mediumaeonikFont.className} font-normal text-[#311f40] text-[2.8rem] tracking-[.01em] leading-[1.2]  text-center  m-0 p-0`}>Your questions <span className='text-[#987de1]'>answered</span></h2>
+                    <h2 className={`${epilogue.className} font-semibold text-[#311f40] text-[2.8rem] tracking-[.01em] leading-[1.2]  text-center  m-0 p-0`}>Your questions <span className='text-[#987de1]'>answered</span></h2>
                 </div>
                 <div className='flex flex-col gap-2 flex-none items-center justify-center h-min overflow-hidden p-0 w-full relative'>
                     <div className='contents'>

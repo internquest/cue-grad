@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import black from '@/public/AI Job Search Platform _ Prentus/download (3).svg'
 import white from '@/public/AI Job Search Platform _ Prentus/download (2).svg'
-import { mediumaeonikFont, regularaeonikFont } from '@/utils/font'
+import { almarai, epilogue, mediumaeonikFont, regularaeonikFont } from '@/utils/font'
 
 const FaqIndividual = ({ defaultstate, question, solution, indexed }) => {
     const [open, setOpen] = useState(defaultstate)
@@ -20,11 +20,11 @@ const FaqIndividual = ({ defaultstate, question, solution, indexed }) => {
             <div className='flex flex-none tml:gap-4 gap-6 h-min justify-center items-center w-full p-0'>
                 <div className='flex justify-center tml:items-start items-center flex-grow-[1] flex-shrink-0 basis-0 tml:gap-2 gap-12 h-min p-0'>
                     <div className='outline-none flex-none h-auto relative w-[42px]'>
-                        <h3 className={`${mediumaeonikFont.className} ${!open ? "text-[#987de1]" : "text-[#015840]"} font-normal tml:text-[1.25rem]  text-[32px]  tracking-tight tml:leading-[1.3] leading-[1.2rem] text-center `}>0{indexed + 1}</h3>
+                        <h3 className={`${epilogue.className} ${!open ? "text-[#987de1]" : "text-[#015840]"} font-normal tml:text-[1.25rem]  text-[32px]  tracking-tight tml:leading-[1.3] leading-[1.2rem] text-center `}>0{indexed + 1}</h3>
                     </div>
 
                     <div className='flex flex-col justify-center flex-grow-[1] flex-shrink-0 basis-0 h-auto relative whitespace-pre-wrap '>
-                        <h3 className={`font-normal text-[#311f40] tml:text-[1.25rem] text-[32px] text-start  tracking-[.01em] leading-[1.2] ${mediumaeonikFont.className} `}>
+                        <h3 className={`font-medium text-[#311f40] tml:text-[1.25rem] text-[32px] text-start  tracking-[.01em] leading-[1.2] ${epilogue.className} `}>
                             {question}
                         </h3>
                     </div>
@@ -42,7 +42,7 @@ const FaqIndividual = ({ defaultstate, question, solution, indexed }) => {
             <motion.div initial={{ y: '-40px' }} animate={open ? { y: 0, transitionDuration: '.3s', transitionTimingFunction: 'linear' } : {}} className={`${!open ? "hidden" : "flex"} flex-none items-center justify-center tml:gap-3  gap-12 h-min overflow-hidden relative w-full `}>
                 <div className='w-[42px] flex flex-none self-stretch '></div>
                 <div className='flex flex-grow-[1] flex-shrink-0 basis-0 items-center justify-center relative'>
-                    <p className={`${regularaeonikFont.className} font-normal tml:text-[.875rem] text-[20px] text-[#015840] tracking-[.02em] tml:leading-[1.4] leading-[2rem] text-start `}>{solution}</p>
+                    <p className={`${almarai.className} font-normal tml:text-[.875rem] text-[20px] text-[#015840] tracking-[.02em] tml:leading-[1.4] leading-[2rem] text-start `}>{solution}</p>
                 </div>
                 <div className='w-[48px] flex flex-none self-stretch '></div>
             </motion.div>

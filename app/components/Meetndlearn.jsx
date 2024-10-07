@@ -3,7 +3,7 @@ import Image from "next/image";
 import Options from "./Options";
 import { useEffect, useState } from "react";
 import MobileOptions from "./MobileOptions";
-import { boldaeonikFont, mediumaeonikFont, regularaeonikFont } from "@/utils/font";
+import { boldaeonikFont, epilogue, mediumaeonikFont, regularaeonikFont } from "@/utils/font";
 import Revealcompo from "./Revealcompo";
 
 const Main = () => {
@@ -59,8 +59,8 @@ const Main = () => {
 
 
                                     {/* <div className="flex-grow h-min w-auto md:whitespace-pre flex-shrink-0 order-1 basis-0 "> */}
-                                    <h2 className={`font-normal text-[#015840] hidden amLL:block text-[44px] tracking-[.01em] leading-[1]  text-center ${boldaeonikFont.className} `}>Meet and learn from our community</h2>
-                                    <h2 className={`font-normal text-[#015840] amLL:hidden tml:text-[38px]   md:text-[32px] order-1 amLL:text-[44px]   tracking-[.01em] tml:text-start leading-[1.2] text-center  ${boldaeonikFont.className} `}>Powered <span className="text-[#987de1]">by</span> and <span className="text-[#987de1]">for</span> the people</h2>
+                                    <h2 className={`font-bold text-[#015840] hidden amLL:block text-[44px] tracking-[.01em] leading-[1]  text-center ${epilogue.className} `}>Meet and learn from our community</h2>
+                                    <h2 className={`font-bold text-[#015840] amLL:hidden tml:text-[38px]   md:text-[32px] order-1 amLL:text-[44px]   tracking-[.01em] tml:text-start leading-[1.2] text-center  ${epilogue.className} `}>Powered <span className="text-[#987de1]">by</span> and <span className="text-[#987de1]">for</span> the people</h2>
                                     {/* </div> */}
 
 
@@ -78,7 +78,7 @@ const Main = () => {
                                 </div>
 
                                 <div className="flex-none hidden amLL:block h-auto relative whitespace-pre-wrap w-[720px] break-words ">
-                                    <p className={`text-[#015840] font-normal text-[20px] tracking-[.02em] leading-[1.6] text-center m-0 p-0 ${regularaeonikFont.className}`}>An active and supportive community of like-minded job-seekers to help you navigate this major life change.</p>
+                                    <p className={`text-[#015840] font-semibold text-[20px] tracking-[.02em] leading-[1.6] text-center  m-0 p-0 ${epilogue.className}`}>An active and supportive community of like-minded job-seekers to help you navigate this major life change.</p>
                                 </div>
                             </div>
                             <div className="hidden amLL:block w-full">

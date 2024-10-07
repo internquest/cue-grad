@@ -12,6 +12,30 @@ const Loading = () => {
     const sentences = [`It's Time to Reimagine`, `the World of Social`]
 
     useEffect(() => {
+        // Add a class to hide overflow
+        document.body.classList.add('overflow-hidden');
+
+        const handleLoad = () => {
+            // Wait for 500ms after load before enabling scroll
+            setTimeout(() => {
+                document.body.classList.remove('overflow-hidden');
+            }, 6400);
+        };
+
+        if (document.readyState === 'complete') {
+            handleLoad();
+        } else {
+            window.addEventListener('load', handleLoad);
+        }
+
+        // Clean up
+        return () => {
+            window.removeEventListener('load', handleLoad);
+            document.body.classList.remove('overflow-hidden');
+        };
+    }, []);
+
+    useEffect(() => {
         // Immediately start text transition
         setTextloaded(true);
         console.log('Component mounted, starting text transition');
@@ -38,6 +62,7 @@ const Loading = () => {
             }, 1500);
         }
     }, [loadingperc])
+
 
     console.log(textloaded);
     console.log(isLoaded);
