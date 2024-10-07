@@ -9,7 +9,7 @@ const Revealcompo = ({ children, css, delay = 500 }) => {
 
     useEffect(() => {
         const handleLoad = () => {
-            setTimeout(() => setIsReady(true), 7400)
+            setTimeout(() => setIsReady(true), 6400)
         }
 
         if (document.readyState === 'complete') {

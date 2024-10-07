@@ -75,7 +75,7 @@ const Loading = () => {
     console.log(scaleloadingperc);
 
     return (
-        <div style={{ opacity: loadfull && 0, transitionDuration: loadfull && '1s', pointerEvents: loadfull && 'none' }} className='fixed top-0 bottom-0 right-0 left-0 bg-[#000815] z-[11] flex transition-opacity duration-[2s] ease-[cubic-bezier(0.42,0,0.33,1)] '>
+        <div style={{ opacity: loadfull && 0, transitionDuration: loadfull ? '.3s' : '2s', pointerEvents: loadfull && 'none' }} className='fixed top-0 bottom-0 right-0 left-0 bg-[#000815] z-[11] flex transition-opacity  ease-[cubic-bezier(0.42,0,0.33,1)] '>
             <div className='transition-opacity duration-[1s] ease-[cubic-bezier(0.42,0,0.33,1)] self-center overflow-hidden py-[6.944444vw] px-0 grid grid-cols-12 gap-[1.6666667vw] w-full mx-auto max-w-[calc(100vw-(2*3.33333vw))] '>
                 <div className='[grid-column:4/-4] flex flex-col justify-center items-center'>
                     <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.2, ease: [0.42, 0, 0.33, 1] }} className='md:mb-[3.333333vw] duration-[1.2s] transition-opacity text-center text-[#ffda59] ease-[cubic-bezier(0.42,0,0.33,1)]'>{loadingperc}</motion.span>

@@ -22,7 +22,7 @@ export default function Home() {
       // Wait for 500ms after load before enabling scroll
       setTimeout(() => {
         document.body.classList.remove('overflow-hidden');
-      }, 7400);
+      }, 6400);
     };
 
     if (document.readyState === 'complete') {
