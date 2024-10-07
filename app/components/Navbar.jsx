@@ -128,8 +128,10 @@ const Navbar = () => {
                     <div className="flex  h-min flex-nowrap   overflow-visible p-[16px] relative items-center justify-center py-6 px-16 w-full bg-[rgba(255,249,243,.08)] shadow-none ">
                         <div className="flex-none bg-[rgba(255,249,242,0)]  bmL4k:max-w-[1312px] max-w-[1640px] w-full flex items-center flex-nowrap h-min justify-between overflow-hidden p-0 relative ">
                             <div className='flex justify-center flex-1 amLL:flex-none w-min relative overflow-hidden p-0 items-center h-min'>
-                                <a href="" className='flex-none h-[46px] relative w-[200px] '>
-                                    <Image src={prnetuslogo} alt='' fill={true} className='w-full h-full' />
+                                <a href="" className='flex-none h-[60px]  relative w-[111px] '>
+                                    <div className='w-full h-full bg-[#015840] flex items-center justify-center rounded-tl-[20px] rounded-tr-[50px] text-white text-[2rem] font-medium  leading-[1.9] rounded-br-[50px]'>
+                                        cue.
+                                    </div>
                                 </a>
                             </div>
                             <div className='flex items-center justify-center flex-none border-solid border-[1.5px] border-[#311f40] rounded-[1000px] gap-6 p-2 bg-[rgba(255,255,255,0.8)]  relative w-min'>
@@ -179,12 +181,14 @@ const Navbar = () => {
                     :
                     <motion.div initial={open && count ? 'initial' : 'initial'}
                         animate='animate'
-                        variants={open ? navbaropen : navbarclose} className={`backdrop-blur-[22px] ${open ? 'bg-[rgb(255,249,243)]' : ' bg-[rgba(255,249,243,.08)]'} bg-[#fff9f3] transition-transform w-full p-4 ${open ? 'min-h-screen  overflow-hidden flex-col h-[640px] gap-0 ' : ''} `}>
+                        variants={open ? navbaropen : navbarclose} className={`backdrop-blur-[22px] ${open ? 'bg-[rgb(255,249,243)]' : ' bg-[rgba(255,249,243,.08)]'} bg-[#fff9f3] transition-transform w-full p-4 pb-0 ${open ? 'min-h-screen  overflow-hidden flex-col h-[640px] gap-0 ' : ''} `}>
                         <motion.div className={`max-w-[1312px] flex-1 h-min ${open ? 'flex-none w-full' : ''} items-center overflow-hidden bg-white/[0] relative origin-center p-0 `}>
                             <div className={`flex ${open ? '' : 'flex-grow flex-shrink-0 basis-0'}  justify-between items-center h-min  overflow-hidden p-0 relative`}>
-                                <a href="" className='flex-none h-[46px] relative w-[200px] block' >
-
-                                    <Image src={prnetuslogo} alt='' fill={true} />
+                                <a href="" className='flex-none h-[60px] relative w-[111px] block' >
+                                    <div className='w-full h-full bg-[#015840] flex items-center justify-center rounded-tl-[20px] rounded-tr-[50px] text-white text-[2rem] font-medium  leading-[1.9] rounded-br-[50px]'>
+                                        cue.
+                                    </div>
+                                    {/* <Image src={prnetuslogo} alt='' fill={true} /> */}
 
                                 </a>
                                 <div className='cursor-pointer flex w-[24px] h-[24px]'>

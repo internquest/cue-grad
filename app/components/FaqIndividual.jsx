@@ -16,7 +16,7 @@ const FaqIndividual = ({ defaultstate, question, solution, indexed }) => {
 
 
     return (
-        <motion.div initial={!open ? { transform: 'scale(1,1.8)', } : { transform: 'scale(1,0.5)', }} animate={{ transform: 'scale(1,1)' }} onClick={() => handleClick()} className={`w-full ${!open ? "hover:bg-[#fdf3ea] bg-[rgb(252,242,232,0)]" : "bg-[rgb(207,255,145)]"} rounded-[24px] flex flex-col tml:gap-4 gap-6 h-min items-center justify-center overflow-hidden bmLLL:p-7 tml:p-6 btl:p-7 p-[48px] relative transition-all duration-500`}>
+        <motion.div initial={!open ? { transform: 'scale(1,1.8)', } : { transform: 'scale(1,0.5)', }} animate={{ transform: 'scale(1,1)' }} onClick={() => handleClick()} className={`w-full ${!open ? "hover:bg-[#fdf3ea] bg-[rgb(252,242,232,0)]" : "bg-[rgb(207,255,145)]"} rounded-[24px] flex flex-col tml:gap-4 gap-6 h-min items-center justify-center overflow-hidden bmLLL:p-7 tml:p-6 tml:px-2 btl:p-7 p-[48px] relative transition-all duration-500`}>
             <div className='flex flex-none tml:gap-4 gap-6 h-min justify-center items-center w-full p-0'>
                 <div className='flex justify-center tml:items-start items-center flex-grow-[1] flex-shrink-0 basis-0 tml:gap-2 gap-12 h-min p-0'>
                     <div className='outline-none flex-none h-auto relative w-[42px]'>

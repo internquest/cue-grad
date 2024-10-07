@@ -18,7 +18,7 @@ export default function Home() {
 
   return (
     <div className="  flex flex-col bg-white min-h-screen w-auto h-min justify-start p-0 relative ">
-      <div className="   overflow-hidden flex relative w-full btl:pt-[80px] btl:px-6 btl:pb-6 bmLLL:pt-[116px] bmLLL:px-16 bmLLL:pb-16 tml:pt-[116px] tml:px-2 tml:pb-4 pt-[116px] px-16 pb-16 flex-none h-min justify-center flex-col items-center">
+      <div className="   overflow-hidden flex relative w-full btl:pt-[80px] btl:px-6 btl:pb-6 bmLLL:pt-[116px] bmLLL:px-16 bmLLL:pb-16 tml:pt-[116px] tml:px-2 tml:pb-4 pt-[126px] px-16 pb-16 flex-none h-min justify-center flex-col items-center">
 
         <Revealcompo css={"bg-[#CFFF92]  bmL4k:max-w-[1312px]  max-w-[1640px] flex tml:items-start items-center tml:justify-start tml:rounded-bl-[0px] tml:rounded-br-[0px] rounded-[30px]  flex-grow flex-shrink-0 basis-0 flex-col h-auto   px-2 w-full "}>
 
