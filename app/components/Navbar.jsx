@@ -6,6 +6,7 @@ import Image from 'next/image'
 import prnetuslogo from '@/public/prentuslogo.svg'
 import { useMotionValueEvent, useScroll, motion, animate, useInView } from 'framer-motion'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 const Navbar = () => {
     const [open, setOpen] = useState(false)
@@ -15,6 +16,7 @@ const Navbar = () => {
     const { width: windowWidth } = useWindowSize()
     const { scrollY } = useScroll()
     const [prevScrollPos, setPrevScrollPos] = useState(0);
+    const pathname = usePathname()
 
     const inview = useInView(navref, { once: true })
     // const [variantsvalue, setVariantsValue] = useState(
@@ -135,32 +137,32 @@ const Navbar = () => {
                                     </div>
                                 </Link>
                             </div>
-                            <div className='flex items-center justify-center flex-none border-solid border-[1.5px] border-[#311f40] rounded-[1000px] gap-6 p-2 bg-[rgba(255,255,255,0.8)]  relative w-min'>
+                            <div className='flex items-center justify-center flex-none border-solid border-[1.5px] border-[#311f40] rounded-[1000px] gap-1 p-2 bg-[rgba(255,255,255,0.8)]  relative w-min'>
                                 <div className='flex-none h-auto relative w-auto'>
-                                    <Link href="/students" className='py-2 px-3 bg-[rgba(207,255,145,0)] duration-200 hover:bg-[rgba(207,255,145)]  rounded-[100px] opacity-[1] w-min flex items-center justify-center cursor-pointer flex-nowrap relative '>
+                                    <Link href="/" className={`${pathname === '/' ? 'bg-[rgba(207,255,145)] hover:bg-[rgba(122,209,87)]' : ''} py-2 px-3 bg-[rgba(207,255,145,0)] duration-200 hover:bg-[rgba(207,255,145)]  rounded-[100px] opacity-[1] w-min flex items-center justify-center cursor-pointer flex-nowrap relative `}>
                                         <div className=''>
-                                            <p className={`${almarai.className} text-[1rem] font-normal tracking-normal text-[#010032] leading-[24px] whitespace-nowrap`}>Students</p>
+                                            <p className={`${almarai.className} text-[1rem] font-normal tracking-[.015625em] text-[#010032] leading-[24px] whitespace-nowrap`}>Students</p>
                                         </div>
                                     </Link>
                                 </div>
                                 <div className='flex-none h-auto relative w-auto'>
-                                    <Link href="/about" className='py-2 px-3 bg-[rgba(207,255,145,0)] duration-200 hover:bg-[rgba(207,255,145)] rounded-[100px] opacity-[1] w-min flex items-center justify-center cursor-pointer flex-nowrap relative '>
+                                    <Link href="/about" className={`${pathname === '/about' ? 'bg-[rgba(207,255,145)] hover:bg-[rgba(122,209,87)]' : ''} py-2 px-3 bg-[rgba(207,255,145,0)] duration-200 hover:bg-[rgba(207,255,145)] rounded-[100px] opacity-[1] w-min flex items-center justify-center cursor-pointer flex-nowrap relative `}>
                                         <div className=''>
-                                            <p className={`${almarai.className} text-[1rem] font-normal tracking-normal text-[#010032] leading-[24px] whitespace-nowrap `}>About</p>
+                                            <p className={`${almarai.className} text-[1rem] font-normal tracking-[.015625em] text-[#010032] leading-[24px] whitespace-nowrap `}>About</p>
                                         </div>
                                     </Link>
                                 </div>
                                 <div className='flex-none h-auto relative w-auto'>
-                                    <Link href="/internship" className='py-2 px-3 bg-[rgba(207,255,145,0)] duration-200 hover:bg-[rgba(207,255,145)] rounded-[100px] opacity-[1] w-min flex items-center justify-center cursor-pointer flex-nowrap relative '>
+                                    <Link href="/internship" className={`${pathname === '/internship' ? 'bg-[rgba(207,255,145)] hover:bg-[rgba(122,209,87)]' : ''} py-2 px-3 bg-[rgba(207,255,145,0)] duration-200 hover:bg-[rgba(207,255,145)] rounded-[100px] opacity-[1] w-min flex items-center justify-center cursor-pointer flex-nowrap relative `}>
                                         <div className=''>
-                                            <p className={`${almarai.className} text-[1rem] font-normal tracking-normal text-[#010032] leading-[24px] whitespace-nowrap `}>Internship</p>
+                                            <p className={`${almarai.className} text-[1rem] font-normal tracking-[.015625em] text-[#010032] leading-[24px] whitespace-nowrap `}>Internship</p>
                                         </div>
                                     </Link>
                                 </div>
                                 <div className='h-auto w-auto relative flex-none'>
                                     <Link href="" className='py-2 px-3 bg-[rgba(207,255,145,0)] duration-200 hover:bg-[rgba(207,255,145)] rounded-[100px] opacity-[1] w-min flex items-center justify-center cursor-pointer flex-nowrap relative '>
                                         <div className=''>
-                                            <p className={`${almarai.className} text-[1rem] font-normal tracking-normal text-[#010032] leading-[24px] whitespace-nowrap `}>Feedback</p>
+                                            <p className={`${almarai.className} text-[1rem] font-normal tracking-[.015625em] text-[#010032] leading-[24px] whitespace-nowrap `}>Feedback</p>
                                         </div>
                                     </Link>
                                 </div>
@@ -186,7 +188,7 @@ const Navbar = () => {
                         <motion.div className={`max-w-[1312px] flex-1 h-min ${open ? 'flex-none w-full' : ''} items-center overflow-hidden bg-white/[0] relative origin-center p-0 `}>
                             <div className={`flex ${open ? '' : 'flex-grow flex-shrink-0 basis-0'}  justify-between items-center h-min  overflow-hidden p-0 relative`}>
                                 <a href="/" className='flex-none h-[60px] relative w-[111px] block' >
-                                    <div className='w-full h-full bg-[#015840] flex items-center justify-center rounded-tl-[20px] rounded-tr-[50px] text-white text-[2rem] font-medium  leading-[1.9] rounded-br-[50px]'>
+                                    <div className={`w-full h-full bg-[#015840] flex items-center justify-center rounded-tl-[20px] rounded-tr-[50px] text-white text-[2rem] font-medium  tracking-[-.5px] leading-[1.9] rounded-br-[50px] ${epilogue.className} `}>
                                         cue.
                                     </div>
                                     {/* <Image src={prnetuslogo} alt='' fill={true} /> */}
@@ -210,23 +212,23 @@ const Navbar = () => {
                                     <div className='flex flex-col items-center flex-none gap-6 h-min justify-center p-0 relative w-full'>
 
                                         <div className='flex flex-col justify-start flex-shrink-0 flex-none h-auto relative whitespace-pre-wrap w-full break-words'>
-                                            <p className={`${boldaeonikFont.className} font-normal text-[#311f40] text-[1.75rem] tracking-[-.02em] leading-[36px] text-start `}>
-                                                <a href="/" className=''>Students</a>
+                                            <p className={`${almarai.className} font-normal text-[#311f40] text-[1.75rem] tracking-[.15625em] leading-[36px] text-start `}>
+                                                <a href="/" className='capitalize'>Students</a>
                                             </p>
                                         </div>
                                         <div className='flex flex-col justify-start flex-shrink-0 flex-none h-auto relative whitespace-pre-wrap w-full break-words'>
-                                            <p className={`${boldaeonikFont.className} font-normal text-[#311f40] text-[1.75rem] tracking-[-.02em] leading-[36px] text-start `}>
-                                                <a href="/about" className=''> About</a>
+                                            <p className={`${almarai.className} font-normal text-[#311f40] text-[1.75rem] tracking-[.15625em] leading-[36px] text-start `}>
+                                                <a href="/about" className='capitalize'> About</a>
                                             </p>
                                         </div>
                                         <div className='flex flex-col justify-start flex-shrink-0 flex-none h-auto relative whitespace-pre-wrap w-full break-words'>
-                                            <p className={`${boldaeonikFont.className} font-normal text-[#311f40] text-[1.75rem] tracking-[-.02em] leading-[36px] text-start `}>
-                                                <a href="/internship" className=''>Internship </a>
+                                            <p className={`${almarai.className} font-normal text-[#311f40] text-[1.75rem] tracking-[.15625em] leading-[36px] text-start `}>
+                                                <a href="/internship" className='capitalize '>Internship </a>
                                             </p>
                                         </div>
                                         <div className='flex flex-col justify-start flex-shrink-0 flex-none h-auto relative whitespace-pre-wrap w-full break-words'>
-                                            <p className={`${boldaeonikFont.className} font-normal text-[#311f40] text-[1.75rem] tracking-[-.02em] leading-[36px] text-start `}>
-                                                <a href="" className=''>Feedback</a>
+                                            <p className={`${almarai.className} font-normal text-[#311f40] text-[1.75rem] tracking-[.15625em] leading-[36px] text-start `}>
+                                                <a href="" className='capitalize  '>Feedback</a>
                                             </p>
                                         </div>
 

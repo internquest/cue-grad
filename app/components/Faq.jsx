@@ -7,23 +7,24 @@ const Faq = () => {
 
     const faqs = [
         {
-            question: 'Who is Prentus best for?',
-            solution: `Prentus is built to make job searching simple and fun for everyone. But it's especially useful if you haven't ran a formal job search before and you're looking for a white collar job where things like your LinkedIn matter. If you're a bootcamp grad, recent college grad, or someone learning new skills on your own, Prentus can guide you to your dream job.`,
+            question: 'What is Cue?',
+            solution: `Cue is an AI powered intelligent placement guide designed to assist students during on-campus placement drives`,
             default: true
         },
         {
-            question: 'Is Prentus a job board?',
-            solution: 'NO! The Job Board today consists of AI-filtered, junior tech roles that we scrape from the web - think LinkedIn, Indeed, etc. We filter out those fake junior roles and only add entry-level jobs that require 0-3 years of experience. Jobs are there for convenience but are just a bonus to add to our toolkit and community.',
+            question: 'How do I access Cue?',
+            solution: 'If your college or university is affiliated with Cue, you can simply get started by signing up with your student ID',
             default: false
         },
         {
-            question: 'Does Prentus offer group licenses for bootcamps, universities, or other workforce orgs?',
-            solution: 'Yes! Not only that, our all-in-one career success platform will simplify your life by bringing together every component you need to get people hired. If you want to see how you can save coaches 25 hours per week while delighting your students, schedule a demo.',
+            question: 'Is Cue simply another career assistant built on top of existing AI models like ChatGPT or Claude?',
+            solution: `
+Cue is not built on top of existing AI models like ChatGPT or Claude. Our team has been developing a proprietary AI model trained exclusively on data related to on-campus placement drives at our partnered colleges. This allows Cue to deeply understand the unique context and requirements of the on-campus hiring ecosystem at different colleges, enabling us to provide significantly more relevant and actionable assistance to students of respective colleges`,
             default: false
         },
         {
-            question: 'Can I try Prentus out?',
-            solution: `Yes, you can start a 7-day trial of our Plus or Pro plan to see what it's like job searching with a community that has your back.`,
+            question: `What if Cue can't help me with my question?`,
+            solution: `While Cue is trained to answer a wide range of questions, we understand that some queries might fall outside its current knowledge base. In such cases, Cue will politely inform you and promptly directs the query to training & placement team, ensuring your question is answered`,
             default: false
         }
     ]
@@ -33,7 +34,7 @@ const Faq = () => {
 
             <Revealcompo css={'flex flex-col items-center flex-grow-[1] flex-shrink-0 basis-0 tml:gap-6 gap-16 h-min justify-start bmL4k:max-w-[1312px] max-w-[1640px] p-0 relative'}>
                 <div className='flex flex-col justify-start flex-shrink-0  flex-none w-full relative h-auto whitespace-pre-wrap '>
-                    <h2 className={`${epilogue.className} font-semibold text-[#311f40] text-[2.8rem] tracking-[.01em] leading-[1.2]  text-center  m-0 p-0`}>Your questions <span className='text-[#987de1]'>answered</span></h2>
+                    <h2 className={`${epilogue.className} font-semibold text-[#311f40] tml:text-[1.875rem] text-[2.8rem] tracking-[-.5px] leading-[1.2]  text-center  m-0 p-0`}>Your questions <span className='text-[#987de1]'>answered</span></h2>
                 </div>
                 <div className='flex flex-col gap-2 flex-none items-center justify-center h-min overflow-hidden p-0 w-full relative'>
                     <div className='contents'>

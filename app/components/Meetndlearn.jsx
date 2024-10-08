@@ -10,6 +10,22 @@ const Main = () => {
     const [activedesc, setActivedesc] = useState(1)
     const facilities = [
         {
+            title: 'AI-Driven Conversation Prompts',
+            desc: 'Have questions you wanna ask recruiters? Use Cue to generate question prompts to seem professional in your conversations with recruiters'
+        },
+        {
+            title: 'Post-Drive Reflection Tool',
+            desc: 'After each on-campus drive, quickly log your impressions and receive AI-generated suggestions for follow-up actions'
+        },
+        {
+            title: 'Placement Season Stress Manager',
+            desc: `Cue provides personalized stress management techniques based on the student's emotional state throughout the placement process.`
+        },
+        {
+            title: 'Interview Wardrobe Advisor',
+            desc: `Cue suggests appropriate interview attire based on the company culture, role, and current fashion trends`
+        },
+        {
             title: 'Peer-to-peer Q&A',
             desc: 'When Google, ChatGPT, and Stack Overflow don’t have your answer, ask a Prentus peer.',
         },
@@ -33,7 +49,7 @@ const Main = () => {
         const key = setInterval(() => {
 
             setActivedesc(prev => {
-                if (prev > 3) {
+                if (prev > 7) {
                     return 1
                 } else {
 
@@ -59,8 +75,8 @@ const Main = () => {
 
 
                                     {/* <div className="flex-grow h-min w-auto md:whitespace-pre flex-shrink-0 order-1 basis-0 "> */}
-                                    <h2 className={`font-bold text-[#015840] hidden amLL:block text-[44px] tracking-[.01em] leading-[1]  text-center ${epilogue.className} `}>Meet and learn from our community</h2>
-                                    <h2 className={`font-bold text-[#015840] amLL:hidden tml:text-[38px]   md:text-[32px] order-1 amLL:text-[44px]   tracking-[.01em] tml:text-start leading-[1.2] text-center  ${epilogue.className} `}>Powered <span className="text-[#987de1]">by</span> and <span className="text-[#987de1]">for</span> the people</h2>
+                                    <h2 className={`font-bold text-[#015840] hidden amLL:block text-[44px] tracking-[-.5px] leading-[1]  text-center ${epilogue.className} `}>Meet and learn from our community</h2>
+                                    <h2 className={`font-bold text-[#015840] amLL:hidden tml:text-[38px]   md:text-[32px] order-1 amLL:text-[44px]   tracking-[-.5px] tml:text-start leading-[1.2] text-center  ${epilogue.className} `}>Powered <span className="text-[#987de1]">by</span> and <span className="text-[#987de1]">for</span> the people</h2>
                                     {/* </div> */}
 
 
@@ -78,7 +94,7 @@ const Main = () => {
                                 </div>
 
                                 <div className="flex-none hidden amLL:block h-auto relative whitespace-pre-wrap w-[720px] break-words ">
-                                    <p className={`text-[#015840] font-semibold text-[20px] tracking-[.02em] leading-[1.6] text-center  m-0 p-0 ${epilogue.className}`}>An active and supportive community of like-minded job-seekers to help you navigate this major life change.</p>
+                                    <p className={`text-[#015840] font-semibold text-[20px] tracking-[-.5px] leading-[1.6] text-center  m-0 p-0 ${epilogue.className}`}>An active and supportive community of like-minded job-seekers to help you navigate this major life change.</p>
                                 </div>
                             </div>
                             <div className="hidden amLL:block w-full">

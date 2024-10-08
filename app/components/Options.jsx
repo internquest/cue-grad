@@ -23,7 +23,7 @@ const Options = ({ desc, title, indexed, activedesc }) => {
                     </div>
 
                     <div className={`${indexed + 1 === activedesc ? ' border-[#015840]' : ' border-[#7ad157]'} flex flex-grow-[1] border-b-[1px]  flex-shrink-0 basis-0 py-[56px] px-0 relative items-center h-min justify-start `}>
-                        <p className={` ${epilogue.className} ${indexed + 1 === activedesc ? 'text-[#015840]' : 'text-[#7ad157]'}   tracking-[.01em] font-semibold leading-[40px] text-start  m-0
+                        <p className={` ${epilogue.className} ${indexed + 1 === activedesc ? 'text-[#015840]' : 'text-[#7ad157]'}   tracking-[-.5px] font-semibold leading-[40px] text-start  m-0
      p-0 text-[2.25rem]`}>{title}</p>
                     </div>
 

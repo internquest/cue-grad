@@ -11,7 +11,7 @@ const Revealcompo = ({ children, css, delay = 500 }) => {
 
     useEffect(() => {
         const handleLoad = () => {
-            console.log(pathname);
+            // console.log(pathname);
             if (pathname === '/') {
                 setTimeout(() => setIsReady(true), 6900)
             } else {
