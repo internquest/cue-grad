@@ -102,9 +102,9 @@ export default function Home() {
 
         <div className="bmLLL:pt-0 bmLLL:px-16 bmLLL:pb-16 flex items-center flex-none w-full h-min justify-center overflow-hidden relative btl:pt-0 btl:px-6 btl:pb-6 btl:py-0 tml:p-4 tml:px-2 py-16 px-0">
           <div className="items-center rounded-[30px]  flex-grow flex-shrink-0 basis-0 flex-col h-min max-w-[1640px] overflow-hidden relative bmL4k:max-w-[1312px] ">
-            <div className="bg-[#977DE0] rounded-[30px] tml:pt-12 tml:px-4 tml:pb-6 tml:gap-11 pt-16 px-11 pb-11 w-full flex  flex-col gap-16 h-min  items-center justify-start overflow-hidden ">
+            <div className="bg-[#977DE0] rounded-[30px] tml:pt-8 tml:px-2 tml:pb-6 tml:gap-11 pt-16 px-11 pb-11 w-full flex  flex-col gap-16 h-min  items-center justify-start overflow-hidden ">
               <h2 className={`${epilogue.className}  font-medium tml:text-start text-center text-[1.5rem] lg:text-[2rem] mt-3 leading-[1.8] text-white tracking-[-.5px]`}>Here’s what students have to say about Cuegrad</h2>
-              <div className={`${almarai.className} flex flex-col lg:flex-row lg:items-stretch gap-2 lg:gap-4 px-2 `}>
+              <div className={`${almarai.className} flex flex-col lg:flex-row lg:items-stretch gap-2 lg:gap-4 tml:px-0 px-2 `}>
                 <div className={` bg-black lg:w-[33%]    rounded-[10px] px-4 lg:px-7 lg:pr-9 py-10`}>
                   <p className={` font-medium  text-white/[.9] text-[1rem] lg:text-[1.13rem] leading-[2] tracking-[.005em]`}>This AI assistant sounds like a
                     fantastic idea! Having personalized
