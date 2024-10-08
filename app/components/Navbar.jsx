@@ -187,13 +187,13 @@ const Navbar = () => {
                         variants={open ? navbaropen : navbarclose} className={`backdrop-blur-[22px] ${open ? 'bg-[rgb(255,249,243)]' : ' bg-[rgba(255,249,243,.08)]'} bg-[#fff9f3] transition-transform w-full p-4 pb-0 ${open ? 'min-h-screen  overflow-hidden flex-col h-[640px] gap-0 ' : ''} `}>
                         <motion.div className={`max-w-[1312px] flex-1 h-min ${open ? 'flex-none w-full' : ''} items-center overflow-hidden bg-white/[0] relative origin-center p-0 `}>
                             <div className={`flex ${open ? '' : 'flex-grow flex-shrink-0 basis-0'}  justify-between items-center h-min  overflow-hidden p-0 relative`}>
-                                <a href="/" className='flex-none h-[60px] relative w-[111px] block' >
+                                <Link href="/" className='flex-none h-[60px] relative w-[111px] block' >
                                     <div className={`w-full h-full bg-[#015840] flex items-center justify-center rounded-tl-[20px] rounded-tr-[50px] text-white text-[2rem] font-medium  tracking-[-.5px] leading-[1.9] rounded-br-[50px] ${epilogue.className} `}>
                                         cue.
                                     </div>
                                     {/* <Image src={prnetuslogo} alt='' fill={true} /> */}
 
-                                </a>
+                                </Link>
                                 <div className='cursor-pointer flex w-[24px] h-[24px]'>
                                     <div onClick={() => handleNav()} className='h-[24px] w-[24px] flex-none relative'>
                                         {open ?
@@ -209,26 +209,26 @@ const Navbar = () => {
                             open &&
                             <div className='w-full bg-[#fff9f3] flex  items-center flex-1 flex-col flex-nowrap justify-start relative p-0 '>
                                 <div className='rounded-[1000px] gap-[48px] flex items-start flex-1 flex-col flex-nowrap justify-start pt-[46px] px-0 pb-[64px] relative w-full z-[1]'>
-                                    <div className='flex flex-col items-center flex-none gap-6 h-min justify-center p-0 relative w-full'>
+                                    <div className='flex flex-col items-center flex-none gap-6 h-min justify-start p-0 relative w-full'>
 
                                         <div className='flex flex-col justify-start flex-shrink-0 flex-none h-auto relative whitespace-pre-wrap w-full break-words'>
-                                            <p className={`${almarai.className} font-normal text-[#311f40] text-[1.75rem] tracking-[.15625em] leading-[36px] text-start `}>
-                                                <a href="/" className='capitalize'>Students</a>
+                                            <p className={`${almarai.className} font-normal text-[#311f40] text-[1.75rem] tracking-[.015625em] leading-[36px] text-start `}>
+                                                <Link href="/" className='capitalize'>Students</Link>
                                             </p>
                                         </div>
                                         <div className='flex flex-col justify-start flex-shrink-0 flex-none h-auto relative whitespace-pre-wrap w-full break-words'>
-                                            <p className={`${almarai.className} font-normal text-[#311f40] text-[1.75rem] tracking-[.15625em] leading-[36px] text-start `}>
-                                                <a href="/about" className='capitalize'> About</a>
+                                            <p className={`${almarai.className} font-normal text-[#311f40] text-[1.75rem] tracking-[.015625em] leading-[36px] text-start `}>
+                                                <Link href="/about" className='capitalize'>About</Link>
                                             </p>
                                         </div>
                                         <div className='flex flex-col justify-start flex-shrink-0 flex-none h-auto relative whitespace-pre-wrap w-full break-words'>
-                                            <p className={`${almarai.className} font-normal text-[#311f40] text-[1.75rem] tracking-[.15625em] leading-[36px] text-start `}>
-                                                <a href="/internship" className='capitalize '>Internship </a>
+                                            <p className={`${almarai.className} font-normal text-[#311f40] text-[1.75rem] tracking-[.015625em] leading-[36px] text-start `}>
+                                                <Link href="/internship" className='capitalize '>Internship </Link>
                                             </p>
                                         </div>
                                         <div className='flex flex-col justify-start flex-shrink-0 flex-none h-auto relative whitespace-pre-wrap w-full break-words'>
-                                            <p className={`${almarai.className} font-normal text-[#311f40] text-[1.75rem] tracking-[.15625em] leading-[36px] text-start `}>
-                                                <a href="" className='capitalize  '>Feedback</a>
+                                            <p className={`${almarai.className} font-normal text-[#311f40] text-[1.75rem] tracking-[.015625em] leading-[36px] text-start `}>
+                                                <Link href="" className='capitalize  '>Feedback</Link>
                                             </p>
                                         </div>
 
@@ -237,12 +237,12 @@ const Navbar = () => {
                                 <div className='flex flex-col items-center btl:items-start justify-center gap-3  relative w-full'>
                                     <div className="flex-none order-1 h-auto relative w-full btl:w-min">
                                         <a href="" className='flex items-center btl:items-start justify-center cursor-pointer py-4 px-6 relative w-full'>
-                                            <p className={`${mediumaeonikFont.className} font-normal text-[#311f40] text-[1.125rem] text-center leading-[1] `}>Login</p>
+                                            <p className={`${almarai.className} font-normal text-[#311f40] text-[1.125rem] text-center leading-[1] `}>Login</p>
                                         </a>
                                     </div>
                                     <div className='flex-none h-auto relative btl:w-min w-full'>
                                         <a href="" className='bg-[#311f40] rounded-[100px] cursor-pointer flex items-center btl:items-start justify-center py-4 px-6 w-full relative'>
-                                            <p className={`${mediumaeonikFont.className} font-normal text-[#fff9f3] text-[1.125rem] leading-[1] whitespace-nowrap`}>Sign Up</p>
+                                            <p className={`${almarai.className} font-normal text-[#fff9f3] text-[1.125rem] leading-[1] whitespace-nowrap`}>Sign Up</p>
                                         </a>
                                     </div>
                                 </div>

@@ -4,7 +4,7 @@ import spiral from '@/public/internship/internshipherospiral.png'
 import doublestars from '@/public/internship/doublestars.png'
 import Image from 'next/image'
 import { almarai, epilogue, mediumaeonikFont, regularaeonikFont } from '@/utils/font'
-
+import stareqborder from '@/public/internship/starequalborder.png'
 const page = () => {
     return (
         <div className='min-h-screen w-auto overflow-hidden xl:overflow-visible  mx-auto flex flex-col items-center justify-start h-min p-0 relative'>
@@ -35,7 +35,7 @@ const page = () => {
                     <div className='absolute tml:hidden bottom-0 right-[8%] w-[121px] h-[50px] bg-[#FFAE67]'>
 
                     </div>
-                    <div className='flex justify-center flex-grow items-center tml:py-10 px-10 '>
+                    <div className='flex justify-center flex-grow items-center tml:px-5 tml:py-10 px-10 '>
                         <p className={`text-[#33200CCC]/[80%] ${almarai.className} tml:text-[1.3rem] text-[1.5rem] font-medium leading-[2.2] text-center tracking-[0.02em] max-w-[701px]`}>We are thrilled to announce the launch of our Entrepreneur in
                             Residence Internship Program, a unique opportunity for
                             aspiring innovators & entrepreneurial minds to join us in
@@ -185,7 +185,11 @@ export default page
 const BuckleUpchildwrapper = ({ children }) => {
     return (
         <div className='tml:max-w-none tml:w-full max-w-[350px] flex flex-col border-4 border-solid border-[#39333d] rounded-[20px]  bg-[#846AC1] p-4'>
-            <div className='tml:max-w-none max-w-[309px] bg-white pt-6 pb-4 pr-6 pl-5 rounded-[20px]'>
+            <div className='tml:max-w-none max-w-[309px] bg-white pt-6 pb-4 pr-6 pl-5 relative rounded-[20px]'>
+                <Image src={stareqborder} alt='' width={40} height={40} className='absolute top-[-20px] left-[-20px]' />
+                <Image src={stareqborder} alt='' width={40} height={40} className='absolute top-[-20px] right-[-20px]' />
+                <Image src={stareqborder} alt='' width={40} height={40} className='absolute bottom-[-20px] right-[-20px]' />
+                <Image src={stareqborder} alt='' width={40} height={40} className='absolute bottom-[-20px] left-[-20px]' />
                 {children}
             </div>
         </div>

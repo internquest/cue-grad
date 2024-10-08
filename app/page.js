@@ -178,7 +178,7 @@ export default function Home() {
                     {/* <Image src={sdebackend} alt="" fill={true} className="w-full h-full" /> */}
                     <Imagecomponet image={'https://ik.imagekit.io/ysp4xwrz9/website/Group%201468.svg'} />
                   </div>
-                  <div className={`${epilogue.className} tml:order-0 text-[#2C2C2C]  flex items-start flex-grow flex-shrink-0 tml:flex-none tml:w-full bmLLL:pl-[70px] basis-0 flex-col justify-start   gap-2`}>
+                  <div className={`${epilogue.className} tml:order-0 text-[#2C2C2C]  flex items-start flex-grow flex-shrink-0 tml:flex-none tml:w-full bmLLL:pl-[70px] basis-0 flex-col justify-start  pl-4 gap-2`}>
                     <h2 className="text-[#3111f40] text-[1.2rem] lg:text-[1.625rem]  font-medium leading-[2] tracking-[-.5px]">AI feedback</h2>
                     <p className={`${almarai.className} font-normal   pt-0 text-[1rem] lg:text-[1.125rem] leading-[1.9] tracking-normal`}>When a company announces an on-campus placement drive,
                       it’s not just another opportunity—it’s your chance to shine. But
