@@ -100,7 +100,7 @@ const Footer = () => {
                                             </p>
                                         </div>
                                         <div className=' flex flex-col justify-start flex-shrink-0 flex-none h-auto relative whitespace-pre-wrap w-full '>
-                                            <p className={`${regularaeonikFont.className} font-normal text-[#ffffff] text-[1rem] tracking-normal leading-[1.8] text-start `}>
+                                            <p className={` font-normal text-[#ffffff] text-[1rem] tracking-normal leading-[1.8] text-start `}>
                                                 <a href="" className=''>Job Placement Tracking</a>
                                             </p>
                                         </div>

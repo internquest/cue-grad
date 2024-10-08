@@ -106,14 +106,14 @@ export default function Home() {
               <h2 className={`${epilogue.className}  font-medium tml:text-start text-center text-[1.5rem] lg:text-[2rem] mt-3 leading-[1.8] text-white tracking-[-.5px]`}>Here’s what students have to say about Cuegrad</h2>
               <div className={`${almarai.className} flex flex-col lg:flex-row lg:items-stretch gap-2 lg:gap-4 tml:px-0 px-2 `}>
                 <div className={` bg-black lg:w-[33%]    rounded-[10px] px-4 lg:px-7 lg:pr-9 py-10`}>
-                  <p className={` font-medium  text-white/[.9] text-[1rem] lg:text-[1.13rem] leading-[2] tracking-[.005em]`}>This AI assistant sounds like a
+                  <p className={` font-normal  text-white/[.9] text-[1rem] lg:text-[1.13rem] leading-[2] tracking-[.005em]`}>This AI assistant sounds like a
                     fantastic idea! Having personalized
                     advice and support throughout the
                     on-campus placement process
                     could be incredibly helpful.</p>
                 </div>
                 <div className="bg-black  lg:w-[33%]   rounded-[10px] px-4 lg:px-7 lg:pr-9 py-10">
-                  <p className={` font-medium  text-white/[.9] text-[1rem] lg:text-[1.13rem] leading-[2] tracking-[.005em]`}>I’m really impressed by this AI career
+                  <p className={` font-normal  text-white/[.9] text-[1rem] lg:text-[1.13rem] leading-[2] tracking-[.005em]`}>I’m really impressed by this AI career
                     assistant idea. The thought of having
                     interactive AI tools for on-campus
                     placement prep is fantastic. It seems
@@ -122,7 +122,7 @@ export default function Home() {
                     season</p>
                 </div>
                 <div className="bg-black  lg:w-[33%]  md:h-min rounded-[10px] px-4 lg:px-7 lg:pr-5 py-10">
-                  <p className={` font-medium   text-white/[.9] text-[1rem] lg:text-[1.13rem] leading-[2] tracking-[.02em]`}>This AI-powered on-campus placement
+                  <p className={` font-normal   text-white/[.9] text-[1rem] lg:text-[1.13rem] leading-[2] tracking-[.02em]`}>This AI-powered on-campus placement
                     assistant sounds like it could be a
                     game-changer for placements. The
                     idea of having a tool that tracks
