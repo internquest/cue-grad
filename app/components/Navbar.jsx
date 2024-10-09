@@ -7,6 +7,7 @@ import prnetuslogo from '@/public/prentuslogo.svg'
 import { useMotionValueEvent, useScroll, motion, animate, useInView } from 'framer-motion'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import NavLink from './NavLInk'
 
 const Navbar = () => {
     const [open, setOpen] = useState(false)
@@ -20,7 +21,7 @@ const Navbar = () => {
 
     const inview = useInView(navref, { once: true })
     // const [variantsvalue, setVariantsValue] = useState(
-    //     {
+    //     {    
     //         initialclose: {
     //             transform: 'translate3d(0px,-250px,0px) scale(1,0.5)',
     //             // y: -250,
@@ -123,6 +124,7 @@ const Navbar = () => {
     // const variantsvalue = open && count ? navbaropen : navbarclose
     // console.log(variantsvalue);
     // console.log(open);
+    // console.log(pathname === '/');
 
     return (
         <div className='contents'>
@@ -139,32 +141,21 @@ const Navbar = () => {
                             </div>
                             <div className='flex items-center justify-center flex-none border-solid border-[1.5px] border-[#311f40] rounded-[1000px] gap-1 p-2 bg-[rgba(255,255,255,0.8)]  relative w-min'>
                                 <div className='flex-none h-auto relative w-auto'>
-                                    <Link href="/" className={`${pathname === '/' ? 'bg-[rgba(207,255,145)] hover:bg-[rgba(122,209,87)]' : ''} py-2 px-3 bg-[rgba(207,255,145,0)] duration-200 hover:bg-[rgba(207,255,145)]  rounded-[100px] opacity-[1] w-min flex items-center justify-center cursor-pointer flex-nowrap relative `}>
-                                        <div className=''>
-                                            <p className={`${almarai.className} text-[1rem] font-normal tracking-[.015625em] text-[#010032] leading-[24px] whitespace-nowrap`}>Students</p>
-                                        </div>
-                                    </Link>
+                                    <NavLink href="/" text="Students" pathname={pathname} />
                                 </div>
                                 <div className='flex-none h-auto relative w-auto'>
-                                    <Link href="/about" className={`${pathname === '/about' ? 'bg-[rgba(207,255,145)] hover:bg-[rgba(122,209,87)]' : ''} py-2 px-3 bg-[rgba(207,255,145,0)] duration-200 hover:bg-[rgba(207,255,145)] rounded-[100px] opacity-[1] w-min flex items-center justify-center cursor-pointer flex-nowrap relative `}>
+                                    {/* <Link href="/about" className={`${pathname === '/about' ? 'bg-[rgba(207,255,145)] hover:bg-[rgba(122,209,87)]' : ''} py-2 px-3 bg-[rgba(207,255,145,0)] duration-200 hover:bg-[rgba(207,255,145)] rounded-[100px] opacity-[1] w-min flex items-center justify-center cursor-pointer flex-nowrap relative `}>
                                         <div className=''>
                                             <p className={`${almarai.className} text-[1rem] font-normal tracking-[.015625em] text-[#010032] leading-[24px] whitespace-nowrap `}>About</p>
                                         </div>
-                                    </Link>
+                                    </Link> */}
+                                    <NavLink href="/about" text="About" pathname={pathname} />
                                 </div>
                                 <div className='flex-none h-auto relative w-auto'>
-                                    <Link href="/internship" className={`${pathname === '/internship' ? 'bg-[rgba(207,255,145)] hover:bg-[rgba(122,209,87)]' : ''} py-2 px-3 bg-[rgba(207,255,145,0)] duration-200 hover:bg-[rgba(207,255,145)] rounded-[100px] opacity-[1] w-min flex items-center justify-center cursor-pointer flex-nowrap relative `}>
-                                        <div className=''>
-                                            <p className={`${almarai.className} text-[1rem] font-normal tracking-[.015625em] text-[#010032] leading-[24px] whitespace-nowrap `}>Internship</p>
-                                        </div>
-                                    </Link>
+                                    <NavLink href="/internship" text="Internship" pathname={pathname} />
                                 </div>
                                 <div className='h-auto w-auto relative flex-none'>
-                                    <Link href="" className='py-2 px-3 bg-[rgba(207,255,145,0)] duration-200 hover:bg-[rgba(207,255,145)] rounded-[100px] opacity-[1] w-min flex items-center justify-center cursor-pointer flex-nowrap relative '>
-                                        <div className=''>
-                                            <p className={`${almarai.className} text-[1rem] font-normal tracking-[.015625em] text-[#010032] leading-[24px] whitespace-nowrap `}>Feedback</p>
-                                        </div>
-                                    </Link>
+                                    <NavLink href="" text="Feedback" pathname={pathname} />
                                 </div>
                             </div>
                             <div className='flex items-center justify-center gap-3  relative w-min'>

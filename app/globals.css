@@ -37,6 +37,15 @@ body {
   }
 } */
 @layer components {
+
+  .link-active {
+    background-color: rgba(207, 255, 145);
+
+    &::before {
+      background-color: rgba(122, 209, 87);
+    }
+  }
+
   .loading-bar {
     &::after {
       content: "";
@@ -53,6 +62,8 @@ body {
       border-radius: 1px;
     }
   }
+
+
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
