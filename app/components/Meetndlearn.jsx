@@ -6,43 +6,45 @@ import MobileOptions from "./MobileOptions";
 import { boldaeonikFont, epilogue, mediumaeonikFont, regularaeonikFont } from "@/utils/font";
 import Revealcompo from "./Revealcompo";
 
+const facilities = [
+    {
+        title: 'AI-Driven Conversation Prompts',
+        desc: 'Have questions you wanna ask recruiters? Use Cue to generate question prompts to seem professional in your conversations with recruiters'
+    },
+    {
+        title: 'Post-Drive Reflection Tool',
+        desc: 'After each on-campus drive, quickly log your impressions and receive AI-generated suggestions for follow-up actions'
+    },
+    {
+        title: 'Placement Season Stress Manager',
+        desc: `Cue provides personalized stress management techniques based on the student's emotional state throughout the placement process.`
+    },
+    {
+        title: 'Interview Wardrobe Advisor',
+        desc: `Cue suggests appropriate interview attire based on the company culture, role, and current fashion trends`
+    },
+    {
+        title: 'Peer-to-peer Q&A',
+        desc: 'When Google, ChatGPT, and Stack Overflow don’t have your answer, ask a Prentus peer.',
+    },
+    {
+        title: 'Curated Resource Hub',
+        desc: 'A robust record of resources that range from past discussions from active coaches to external blogs and previously popular threads.',
+    },
+    {
+        title: 'Weekly Office Hours',
+        desc: 'Let one of our coaches answer your most-pressing questions, like how to get hired faster or if drinking Celsius at 8pm the night before an interview is a bad idea.',
+    },
+    {
+        title: 'Down in the DMs',
+        desc: 'Connect privately with other Prentus users to solve problems or encourage each other to get your points up.',
+    },
+
+]
+
 const Main = () => {
     const [activedesc, setActivedesc] = useState(1)
-    const facilities = [
-        {
-            title: 'AI-Driven Conversation Prompts',
-            desc: 'Have questions you wanna ask recruiters? Use Cue to generate question prompts to seem professional in your conversations with recruiters'
-        },
-        {
-            title: 'Post-Drive Reflection Tool',
-            desc: 'After each on-campus drive, quickly log your impressions and receive AI-generated suggestions for follow-up actions'
-        },
-        {
-            title: 'Placement Season Stress Manager',
-            desc: `Cue provides personalized stress management techniques based on the student's emotional state throughout the placement process.`
-        },
-        {
-            title: 'Interview Wardrobe Advisor',
-            desc: `Cue suggests appropriate interview attire based on the company culture, role, and current fashion trends`
-        },
-        {
-            title: 'Peer-to-peer Q&A',
-            desc: 'When Google, ChatGPT, and Stack Overflow don’t have your answer, ask a Prentus peer.',
-        },
-        {
-            title: 'Curated Resource Hub',
-            desc: 'A robust record of resources that range from past discussions from active coaches to external blogs and previously popular threads.',
-        },
-        {
-            title: 'Weekly Office Hours',
-            desc: 'Let one of our coaches answer your most-pressing questions, like how to get hired faster or if drinking Celsius at 8pm the night before an interview is a bad idea.',
-        },
-        {
-            title: 'Down in the DMs',
-            desc: 'Connect privately with other Prentus users to solve problems or encourage each other to get your points up.',
-        },
 
-    ]
 
     // console.log(activedesc);
     useEffect(() => {
@@ -64,7 +66,8 @@ const Main = () => {
     }, [])
 
     return (
-        <div className="tml:pt-16 tml:px-2 tml:pb-4 btl:pt-0 btl:px-6 btl:pb-6 bmLLL:pt-0  bmLLL:px-[64px] bmLLL:pb-[64px] py-16 px-0  w-full flex items-center flex-none h-min justify-center relative overflow-hidden">
+        <div
+            className="tml:pt-16 tml:px-2 tml:pb-4 btl:pt-0 btl:px-6 btl:pb-6 bmLLL:pt-0  bmLLL:px-[64px] bmLLL:pb-[64px] py-16 px-0  w-full flex items-center flex-none h-min justify-center relative overflow-hidden">
 
             <Revealcompo css={"flex flex-grow-[1] flex-shrink-0 basis-0 h-min mx-auto bmL4k:max-w-[1312px] max-w-[1640px] overflow-hidden"}>
                 <div className="contents">

@@ -29,10 +29,11 @@ const Revealcompo = ({ children, css, delay = 500 }) => {
     }, [pathname])
 
     return (
-        <motion.div style={{
-            transform: isReady && inview ? 'translate3d(0,0,0)' : `translate3d(0,50px,0)`,
-            opacity: isReady && inview ? 1 : 0
-        }} ref={comporef} className={`${css} duration-500`}>
+        <motion.div
+            style={{
+                transform: isReady && inview ? 'translate3d(0,0,0)' : `translate3d(0,50px,0)`,
+                opacity: isReady && inview ? 1 : 0
+            }} ref={comporef} className={`${css} duration-500`}>
             {children}
         </motion.div>
     )

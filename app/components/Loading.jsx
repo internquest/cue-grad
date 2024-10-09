@@ -108,7 +108,11 @@ const Loading = () => {
         <div style={{ opacity: loadfull ? 0 : 1, transitionDuration: loadfull ? '.3s' : '2s', pointerEvents: loadfull && 'none' }} className='fixed top-0 bottom-0 right-0 left-0 bg-[#015840] z-[11] flex transition-opacity  ease-[cubic-bezier(0.42,0,0.33,1)] '>
             <div className='transition-opacity duration-[1s] ease-[cubic-bezier(0.42,0,0.33,1)] self-center overflow-hidden py-[6.944444vw] px-0 grid grid-cols-12 gap-[1.6666667vw] w-full mx-auto tml:max-w-full  max-w-[calc(100vw-(2*3.33333vw))] '>
                 <div className='tml:[grid-cols:1/-1] [grid-column:3/-3] flex flex-col justify-center items-center'>
-                    <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.2, ease: [0.42, 0, 0.33, 1] }} className={`${epilogue.className} md:mb-[1.533333vw] duration-[1.2s] transition-opacity text-center text-[#ffda59] ease-[cubic-bezier(0.42,0,0.33,1)] tml:text-[20px] text-[16px] tracking-[.5px] leading-[150%]`}>{loadingperc}</motion.span>
+                    <motion.span
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1.2, ease: [0.42, 0, 0.33, 1] }}
+                        className={`${epilogue.className} md:mb-[1.533333vw] duration-[1.2s] transition-opacity text-center text-[#ffda59] ease-[cubic-bezier(0.42,0,0.33,1)] tml:text-[20px] text-[16px] tracking-[.5px] leading-[150%]`}>{loadingperc}</motion.span>
                     <h2 className={`mb-[4.4444444vw] text-white text-center tml:text-[1.05rem] text-[2rem] leading-[2] font-normal tracking-[-.25px] ${epilogue.className}`}>
                         {sentences.map((sentence, sentenceIndex) => {
                             const previousSentencesLength = sentences

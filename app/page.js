@@ -20,8 +20,8 @@ export default function Home() {
   return (
     <>
       <Loading />
-      <div className="  flex flex-col bg-white min-h-screen w-auto h-min justify-start p-0 relative ">
-        <div className="   overflow-hidden flex relative w-full btl:pt-[80px] btl:px-6 btl:pb-6 bmLLL:pt-[116px] bmLLL:px-16 bmLLL:pb-16 tml:pt-[116px] tml:px-2 tml:pb-4 pt-[126px] px-16 pb-16 flex-none h-min justify-center flex-col items-center">
+      <div className=" flex flex-col bg-white min-h-screen w-auto h-min justify-start p-0 relative ">
+        <div className=" overflow-hidden  relative w-full btl:pt-[80px] btl:px-6 btl:pb-6 bmLLL:pt-[116px] bmLLL:px-16 bmLLL:pb-16 tml:pt-[116px] tml:px-2 tml:pb-4 pt-[126px] px-16 pb-16 flex-none h-min justify-center flex-col items-center">
 
           <Revealcompo css={"bg-[#CFFF92]  bmL4k:max-w-[1312px]  max-w-[1640px] flex tml:items-start items-center tml:justify-start tml:rounded-bl-[0px] tml:rounded-br-[0px] rounded-[30px]  flex-grow flex-shrink-0 basis-0 flex-col h-auto   px-2 w-full "}>
 
@@ -139,7 +139,7 @@ export default function Home() {
 
         {/* oncampus placemnt assistant */}
 
-        <div className="bg-white flex flex-none w-full relative overflow-hidden justify-center items-center h-min bmLLL:py-[64px] bmLLL:pr-0 tml:pt-16 tml:px-2 tml:pb-4 btl:py-[48px]  py-16 px-0 ">
+        <div className="bg-white flex flex-none w-full relative overflow-hidden justify-center items-center h-min bmLLL:py-[64px] bmLLL:pr-0 tml:pt-16 tml:px-2 tml:pr-0 tml:pb-4 btl:py-[48px]  py-16 px-0 ">
           <div className="flex flex-grow flex-shrink-0 basis-0 flex-col h-min justify-start max-w-[1640px] bmL4k:max-w-[1312px] overflow-hidden p-0 relative ">
 
             <div className="flex flex-col flex-none w-full relative items-center justify-start tml:gap-10 gap-[64px] h-min p-0">
@@ -156,7 +156,7 @@ export default function Home() {
 
 
                 <Revealcompo css={"flex  flex-row tml:flex-col tml:pl-0 pl-4  tml:gap-5 gap-5 md:gap-24 p-0 w-full h-min relative flex-none justify-center  items-center"}>
-                  <div className={`${epilogue.className} flex tml:flex-none tml:w-full bmLLL:pl-16 items-start flex-col flex-grow flex-shrink-0 basis-0 gap-5 h-min justify-start p-0 relative `}>
+                  <div className={`${epilogue.className} flex tml:flex-none tml:w-full bmLLL:pl-16 pr-4 items-start flex-col flex-grow flex-shrink-0 basis-0 gap-5 h-min justify-start p-0 relative `}>
                     <h2 className="text-[#977DE0] text-[1.2rem] lg:text-[1.625rem]  font-medium leading-[1.1] tracking-[-.5px]">Personalized Skill Gap Analyzer</h2>
                     <p className={`${almarai.className} font-normal   text-[1rem] lg:text-[1.25rem] leading-[1.5] tracking-[.02em]`}>Evaluate your skills against the job requirements of
                       companies participating in the placement drive. Identify
@@ -164,7 +164,7 @@ export default function Home() {
                       improvement</p>
                   </div>
 
-                  <div className=" tml:h-auto btl:h-auto  h-[582px]  tml:flex-none tml:w-full flex-grow flex-shrink-0 basis-0 tml:aspect-square rounded-[20px] btl:aspect-square  relative">
+                  <div className=" tml:h-auto btl:h-auto  h-[582px]  tml:flex-none tml:w-full flex-grow flex-shrink-0 basis-0  rounded-[20px]   relative">
                     {/* <Image src={sdebackend} alt="" fill={true} className="w-full h-full" /> */}
                     <Imagecomponet image={'https://ik.imagekit.io/ysp4xwrz9/website/Group%201442.svg'} />
                     {/* <Image src={sdebackend} alt="" fill={true} sizes="max((min(max(100vw - 128px, 1px), 1640px) - 96px) / 2, 1px)" /> */}
@@ -174,11 +174,11 @@ export default function Home() {
 
 
                 <Revealcompo css={"flex flex-row  tml:flex-col tml:gap-5 gap-5 md:gap-24 p-0  w-full h-min relative flex-none justify-center  items-center"}>
-                  <div className=" tml:h-auto btl:h-auto rounded-[20px] h-[582px]  tml:flex-none tml:w-full flex-grow tml:order-1 flex-shrink-0 basis-0 tml:aspect-[1/1] btl:aspect-square  relative">
+                  <div className=" tml:h-auto btl:h-auto rounded-[20px] h-[582px]  tml:flex-none tml:w-full flex-grow tml:order-1 flex-shrink-0 basis-0   relative">
                     {/* <Image src={sdebackend} alt="" fill={true} className="w-full h-full" /> */}
                     <Imagecomponet image={'https://ik.imagekit.io/ysp4xwrz9/website/Group%201468.svg'} />
                   </div>
-                  <div className={`${epilogue.className} tml:order-0 text-[#2C2C2C]  flex items-start flex-grow flex-shrink-0 tml:flex-none tml:w-full bmLLL:pl-[70px] basis-0 flex-col justify-start  pl-4 gap-2`}>
+                  <div className={`${epilogue.className} tml:order-0 text-[#2C2C2C]  flex items-start  flex-grow  pr-2 flex-shrink-0 tml:flex-none tml:w-full btl:pl-[35px] bmLLL:pl-[90px] basis-0 flex-col justify-start    gap-2`}>
                     <h2 className="text-[#3111f40] text-[1.2rem] lg:text-[1.625rem]  font-medium leading-[2] tracking-[-.5px]">AI feedback</h2>
                     <p className={`${almarai.className} font-normal   pt-0 text-[1rem] lg:text-[1.125rem] leading-[1.9] tracking-normal`}>When a company announces an on-campus placement drive,
                       it’s not just another opportunity—it’s your chance to shine. But
@@ -194,7 +194,7 @@ export default function Home() {
 
 
                 <Revealcompo css={"flex flex-row  tml:flex-col tml:pl-0 pl-4 tml:gap-5  gap-5 md:gap-24 p-0  w-full h-min relative flex-none justify-center  items-center"}>
-                  <div className={`${epilogue.className} tml:flex-none tml:w-full bmLLL:pl-16 text-[#2C2C2C]  flex items-start flex-grow flex-shrink-0 basis-0 flex-col justify-start   gap-2 `}>
+                  <div className={`${epilogue.className} tml:flex-none tml:w-full bmLLL:pl-16 text-[#2C2C2C] pr-4 flex items-start flex-grow flex-shrink-0 basis-0 flex-col justify-start   gap-2 `}>
                     <h2 className="text-[#F9576E] text-[1.2rem] lg:text-[1.625rem]  font-medium leading-[2] tracking-[-.5px]">Tailored to Each Company</h2>
                     <p className={`${almarai.className} font-normal   text-[1rem] lg:text-[1.125rem] leading-[1.9] tracking-[.005em]`}>Every company looks for something different in their ideal candidates.
                       Our platform analyzes the specific requirements and preferences of
@@ -204,7 +204,7 @@ export default function Home() {
                       skills, experiences, and resume with what the company is looking for
                       —ensuring that you’re presenting yourself in the best possible light.</p>
                   </div>
-                  <div className="   rounded-[20px]  w-[610px] h-[582px]   flex-grow flex-shrink-0 basis-0      relative">
+                  <div className="   tml:h-auto btl:h-auto rounded-[20px] h-[582px]  tml:flex-none tml:w-full flex-grow tml:order-1 flex-shrink-0 basis-0   relative">
                     {/* <Image src={sdebackend} alt="" fill={true} className="w-full h-full" /> */}
                     <Imagecomponet image={'https://ik.imagekit.io/ysp4xwrz9/website/Group%201469.svg'} />
                   </div>
@@ -297,7 +297,7 @@ export default function Home() {
             <div className="bg-[#FFAE67] text-[#015840]  rounded-[30px]  items-center flex flex-col h-min justify-center  btl:pt-[60px] xl:pt-[40px] tml:p-6 tml:pb-0 btl:px-[150px] px-[209px] relative gap-8 w-full flex-none ">
               <h2 className={`${epilogue.className}   text-center mx-auto font-normal text-[1.5rem] md:text-[2rem] leading-[1.9] tracking-[-.5px] `}>Take control of your placement journey with</h2>
 
-              <h1 className={`max-w-[594px] ${epilogue.className} font-extrabold tml:mb-[-35px] mb-[-65px] tml:text-[9rem] text-[13rem] tml:text-start text-center xl:text-[18.75rem] tracking-[-.5px] mx-auto leading-[1]`}>CUE</h1>
+              <h1 className={`max-w-[594px] ${epilogue.className} font-extrabold tml:mb-[-35px] btl:mb-[-45px] mb-[-65px] tml:text-[9rem] text-[13rem] tml:text-start text-center xl:text-[18.75rem] tracking-[-.5px] mx-auto leading-[1]`}>CUE</h1>
             </div>
           </Revealcompo>
 
