@@ -185,9 +185,9 @@ export default function Home() {
 
                 <Revealcompo css={"flex flex-row  tml:flex-col tml:gap-5 gap-5 md:gap-24 p-0  w-full h-min relative flex-none justify-center  items-center"}>
                   <div className="  rounded-[20px] h-[582px]  tml:flex-none tml:w-full flex-grow tml:order-1 flex-shrink-0 basis-0 bg-no-repeat bg-[url('https://ik.imagekit.io/ysp4xwrz9/website/Group%201472-min.svg')] flex items-center relative">
-                    <div className='bg-white h-[476px]  max-w-[500px]  ml-11 -mt-5 flex flex-col gap-5 rounded-[20px] px-5  py-6'>
+                    <div className='bg-white h-[476px]  max-w-[500px]  ml-11 -mt-5 flex flex-col gap-5 rounded-[20px]  px-5 tml:pr-1  py-6'>
                       <h3 className={`${almarai.className} text-[1.125rem] text-[#3A472E]/[.8] font-semibold leading-[1.3] tracking-[-..5px]`}>AI FEEDBACK</h3>
-                      <div className={`${almarai.className} text-[1.25rem] font-normal leading-[2.1] bg-[#CFFF92]/[.3] p-8 pt-12 pr-16 rounded-[20px] tracking-[-.5px]`}>
+                      <div className={`${almarai.className} text-[1.25rem] font-normal leading-[2.1] bg-[#CFFF92]/[.3] p-8 pt-12 pr-16 rounded-[20px] tml:pr-1 tracking-[-.5px]`}>
                         Consider adding some projects in Golang.
                         Including projects with expertise
                         demonstrated in building microservices
