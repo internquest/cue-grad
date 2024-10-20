@@ -170,13 +170,13 @@ export default function Home() {
                     {/* <Image src={sdebackend} alt="" fill={true} className="w-full h-full" /> */}
                     {/* <Imagecomponet image={'https://ik.imagekit.io/ysp4xwrz9/website/Group%201442.svg'} /> */}
                     {/* <Image src={sdebackend} alt="" fill={true} sizes="max((min(max(100vw - 128px, 1px), 1640px) - 96px) / 2, 1px)" /> */}
-                    <div className='bg-white h-[476px] w-[450px] mt-6 ml-10 flex flex-col gap-10 rounded-[10px] px-6 pl-14 text-[#4242be] py-16'>
+                    <div className='bg-white h-[476px] max-w-[500px] mt-4 ml-11 flex flex-col gap-10 rounded-[10px] px-6 pl-14 text-[#4242be] py-16'>
                       <p className={`text-[1.5rem] ${almarai.className} leading-[2]`}>
                         Practice the following leetcode questions for the upcoming OA
                       </p>
-                      <div className='rounded-[20px] bg-[#8d8de2]/[20] h-[25px] w-[287px] '></div>
-                      <div className='rounded-[20px] bg-[#8d8de2]/[20] h-[25px] w-[287px] '></div>
-                      <div className='rounded-[20px] bg-[#8d8de2]/[20] h-[25px] w-[287px] '></div>
+                      <div className='rounded-[20px] bg-[#8d8de2]/[.2] h-[25px] w-[287px] '></div>
+                      <div className='rounded-[20px] bg-[#8d8de2]/[.2] h-[25px] w-[287px] '></div>
+                      <div className='rounded-[20px] bg-[#8d8de2]/[.2] h-[25px] w-[287px] '></div>
                     </div>
                   </div>
                 </Revealcompo>
@@ -185,9 +185,9 @@ export default function Home() {
 
                 <Revealcompo css={"flex flex-row  tml:flex-col tml:gap-5 gap-5 md:gap-24 p-0  w-full h-min relative flex-none justify-center  items-center"}>
                   <div className="  rounded-[20px] h-[582px]  tml:flex-none tml:w-full flex-grow tml:order-1 flex-shrink-0 basis-0 bg-no-repeat bg-[url('https://ik.imagekit.io/ysp4xwrz9/website/Group%201472-min.svg')] flex items-center relative">
-                    <div className='bg-white  w-[450px]  ml-10 flex flex-col gap-5 rounded-[10px] px-5  py-6'>
-                      <h3 className={`${almarai.className} text-[1.125rem] text-[#3A472ECC]/[80] font-semibold leading-[1.3] tracking-[-..5px]`}>AI FEEDBACK</h3>
-                      <div className={`${almarai.className} text-[1.25rem] font-normal leading-[2] bg-[#CFFF924D]/[30] p-6 rounded-[20px] tracking-[-.5px]`}>
+                    <div className='bg-white h-[476px]  max-w-[500px]  ml-11 -mt-5 flex flex-col gap-5 rounded-[20px] px-5  py-6'>
+                      <h3 className={`${almarai.className} text-[1.125rem] text-[#3A472E]/[.8] font-semibold leading-[1.3] tracking-[-..5px]`}>AI FEEDBACK</h3>
+                      <div className={`${almarai.className} text-[1.25rem] font-normal leading-[2.1] bg-[#CFFF92]/[.3] p-8 pt-12 pr-16 rounded-[20px] tracking-[-.5px]`}>
                         Consider adding some projects in Golang.
                         Including projects with expertise
                         demonstrated in building microservices
@@ -226,9 +226,18 @@ export default function Home() {
                       skills, experiences, and resume with what the company is looking for
                       —ensuring that you’re presenting yourself in the best possible light.</p>
                   </div>
-                  <div className="   tml:h-auto btl:h-auto rounded-[20px] h-[582px]  tml:flex-none tml:w-full flex-grow tml:order-1 flex-shrink-0 basis-0   relative">
+                  <div className="   tml:self-start rounded-[20px] h-[582px] max-w-[630px] border-t-[6px] border-r-[10px] border-b-[6px] border-l-[6px] border-[#311f40]  tml:flex-none tml:w-full flex-grow tml:order-1 flex-shrink-0 basis-0  bg-[#F9677C]  relative">
+                    <div className='max-w-[501px] h-[476px] bg-white mt-14 flex items-start flex-col justify-center ml-14  rounded-[20px] text-[#F9576E] pl-14 pr-32'>
+
+                      <p className='text-[1.375rem] '>Hi Cue,</p>
+                      <p className='text-[1.4rem] mt-10 leading-[2] '>Can you anazlyze the
+                        requirements for CultFit
+                        Campus Drive & give
+                        personalized recommendations</p>
+
+                    </div>
                     {/* <Image src={sdebackend} alt="" fill={true} className="w-full h-full" /> */}
-                    <Imagecomponet image={'https://ik.imagekit.io/ysp4xwrz9/website/Group%201469.svg'} />
+                    {/* <Imagecomponet image={'https://ik.imagekit.io/ysp4xwrz9/website/Group%201469.svg'} /> */}
                   </div>
                 </Revealcompo>
 
