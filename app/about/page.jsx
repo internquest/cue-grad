@@ -21,12 +21,12 @@ const page = () => {
       <div className='tml:pt-[92px] tml:px-2 tml:pb-4 btl:pt-20 btl:px-6 btl:pb-6 bmLLL:pt-[116px] lg:mx-auto bmLLL:px-[64px] bmLLL:pb-[64px] pt-[116px] px-16 pb-12 flex items-center flex-none h-min justify-center relative w-full '>
 
         <Revealcompo css={'flex flex-col bg-[#cfff92] rounded-[20px] flex-grow-[1] flex-shrink-0 basis-0 tml:h-auto gap-0 tml:min-h-0 min-h-[600px] justify-start  items-center bmL4k:max-w-[1312px] max-w-[1640px] p-0 relative w-full'}>
-          <div className=' bmLLL:p-[64px] bmL4k:p-[64px] tml:p-3 p-16 bmLLL:pt-0 bmL4k:pt-0 pt-0 tml:w-full bmLLL:w-full w-[75%] flex flex-col flex-none items-center justify-start gap-6 h-min relative'>
+          <div className=' bmLLL:p-[64px] bmL4k:p-[64px] tml:p-3 p-16 bmLLL:pt-0 bmL4k:pt-0 pt-0 tml:w-full bmLLL:w-full w-[85%] flex flex-col flex-none items-center justify-start gap-6 h-min relative'>
             <div className='flex justify-start flex-col flex-shrink-0 mt-20 flex-none h-auto relative whitespace-pre-wrap w-full'>
               <p className={`${epilogue.className} font-semibold text-[#015840] text-[20px] tracking-[-.5px] leading-[2rem] text-center tml:p-2  m-0 p-0`}>About Cue</p>
             </div>
             <div className='flex-none h-auto relative flex justify-center mt-2  whitespace-pre-wrap w-full'>
-              <h2 className={` ${epilogue.className} font-medium text-[#015840]/[.85] text-[1.65rem]   tml:w-full btl:w-[80%] w-[70%]  tracking-[-.5px] leading-[1em] md:leading-[2]  text-center `}>
+              <h2 className={` ${epilogue.className} font-medium  text-[#015840]/[.85] text-[1.65rem]   tml:w-full max-w-[650px]   tracking-[-.5px] leading-[1em] md:leading-[2]  text-center `}>
                 Our mission is to be the trusted AI partner for students,
                 simplifying the on-campus placement process and
                 helping them land their dream jobs

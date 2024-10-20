@@ -13,9 +13,9 @@ const Options = ({ desc, title, indexed, activedesc }) => {
                         <div className='flex-grow-[.7] flex-shrink-0 basis-0 h-auto relative '>
                             <p className={`font-normal text-[#01584d] text-[20px] tracking-[.01em] leading-[1.5] text-start  m-0 p-0 ${almarai.className}`}>{desc}</p>
                         </div>
-                        <div className='aspect-square absolute left-0 overflow-hidden top-[-120px] w-[120px] z-[1]'>
+                        {/* <div className='aspect-square absolute left-0 overflow-hidden top-[-120px] w-[120px] z-[1]'>
                             <Image src='https://framerusercontent.com/images/CP7s7vbrxLKtcUpXxXxJq0gJm0Y.png' alt='' fill={true} />
-                        </div>
+                        </div> */}
                     </div>
 
                     <div style={indexed + 1 === activedesc ? { opacity: 1 } : { opacity: 0 }} className='[image-rendering:pixelated] flex-shrink-0 fill-black text-black flex-none h-[86px] relative w-[112px] '>

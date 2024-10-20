@@ -20,6 +20,12 @@ const Navbar = () => {
     const pathname = usePathname()
 
     const inview = useInView(navref, { once: true })
+
+
+
+    useEffect(() => {
+        setOpen(false)
+    }, [pathname])
     // const [variantsvalue, setVariantsValue] = useState(
     //     {    
     //         initialclose: {

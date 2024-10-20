@@ -23,22 +23,7 @@ const facilities = [
         title: 'Interview Wardrobe Advisor',
         desc: `Cue suggests appropriate interview attire based on the company culture, role, and current fashion trends`
     },
-    {
-        title: 'Peer-to-peer Q&A',
-        desc: 'When Google, ChatGPT, and Stack Overflow don’t have your answer, ask a Prentus peer.',
-    },
-    {
-        title: 'Curated Resource Hub',
-        desc: 'A robust record of resources that range from past discussions from active coaches to external blogs and previously popular threads.',
-    },
-    {
-        title: 'Weekly Office Hours',
-        desc: 'Let one of our coaches answer your most-pressing questions, like how to get hired faster or if drinking Celsius at 8pm the night before an interview is a bad idea.',
-    },
-    {
-        title: 'Down in the DMs',
-        desc: 'Connect privately with other Prentus users to solve problems or encourage each other to get your points up.',
-    },
+
 
 ]
 
@@ -51,7 +36,7 @@ const Main = () => {
         const key = setInterval(() => {
 
             setActivedesc(prev => {
-                if (prev > 7) {
+                if (prev > 3) {
                     return 1
                 } else {
 
@@ -88,7 +73,7 @@ const Main = () => {
                                             <Image src='https://framerusercontent.com/images/wfmxi15XMBJCiHQkO5ys2fnxxE.png' fill={true} alt="" className="rounded-[inherit] relative " />
                                         </div>
                                     </div>
-                                    <div className="tml:hidden  rounded-[40px] opacity-[1] order-2 aspect-square  amLL:-bottom-[102px]  amLL:right-[-11px] flex-none h-[56px] amLL:h-[80px]  amLL:absolute w-auto amLL:w-[80px] z-[1]">
+                                    <div className="tml:hidden  rounded-[40px] opacity-[1] order-2 aspect-square  amLL:-bottom-[102px]  amLL:right-[070px] flex-none h-[56px] amLL:h-[80px]  amLL:absolute w-auto amLL:w-[80px] z-[1]">
                                         <div className=" relative amLL:absolute rounded-[inherit] w-full h-full ">
                                             <Image src='https://framerusercontent.com/images/wfmxi15XMBJCiHQkO5ys2fnxxE.png' fill={true} alt="" className="rounded-[inherit] relative " />
                                         </div>
