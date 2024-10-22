@@ -83,7 +83,7 @@ export default function Home() {
         <div className="bg-white flex flex-none w-full relative overflow-hidden justify-center items-center h-min bmLLL:py-[64px] bmLLL:pr-0 tml:pt-16 tml:px-2 tml:pr-2 tml:pb-4 btl:py-[48px]  py-16 px-0 ">
           <div className="flex flex-grow flex-shrink-0 basis-0 flex-col h-min justify-start max-w-[1640px] bmL4k:max-w-[1312px] overflow-hidden p-0 relative ">
 
-            <div className="flex flex-col flex-none w-full relative items-center justify-start tml:gap-10 gap-[64px] h-min p-2 pr-0 tml:pr-2">
+            <div className="flex flex-col flex-none w-full relative items-center justify-start tml:gap-10 gap-[64px] h-min p-2 pl-0 tml:pl-2 pr-0 tml:pr-2">
 
               <Revealcompo css={"flex flex-col items-center flex-none p-0 w-full gap-3 h-min justify-start "} >
                 <h1 className={`font-medium tml:text-start text-[1.7rem] md:text-[2.25rem] mx-auto text-center text-black leading-[1.7] tracking-[-.5px] max-w-[580px]  ${epilogue.className}`}>On-Campus Placements Assistant to
@@ -105,7 +105,7 @@ export default function Home() {
                       improvement</p>
                   </div>
 
-                  <div className=" overflow-hidden tml:hidden flex flex-col justify-center items-center  h-[582px]  tml:flex-none tml:w-full tml:mx-4 flex-grow flex-shrink basis-0 tml:px-4 rounded-[20px] bg-cover bg-[url('https://ik.imagekit.io/ysp4xwrz9/website/Group%201471-min.svg')] relative">
+                  <div className=" overflow-hidden tml:hidden flex flex-col justify-center items-center  h-[582px]  tml:flex-none tml:w-full tml:mx-4 flex-grow flex-shrink basis-0 px-4 rounded-[25px] bg-cover bg-[url('https://ik.imagekit.io/ysp4xwrz9/website/Group%201471.svg')] border-t-[6px] border-r-[10px] border-b-[6px] border-l-[6px] border-[#311f40] relative">
                     {/* <Image src={sdebackend} alt="" fill={true} className="w-full h-full" /> */}
                     {/* <Imagecomponet image={'https://ik.imagekit.io/ysp4xwrz9/website/Group%201442.svg'} /> */}
                     {/* <Image src={sdebackend} alt="" fill={true} sizes="max((min(max(100vw - 128px, 1px), 1640px) - 96px) / 2, 1px)" /> */}
@@ -120,7 +120,7 @@ export default function Home() {
                   </div>
 
 
-                  <div className=" overflow-hidden tml:flex  hidden  justify-center items-center tml:p-6 tml:h-auto  h-[582px]   tml:basis-auto tml:w-full tml:mx-4 flex-grow flex-shrink basis-0 tml:px-4 rounded-[20px] bg-[#A18AE3] relative">
+                  <div className=" overflow-hidden tml:flex  hidden  justify-center items-center tml:p-6 tml:h-auto  h-[582px]   tml:basis-auto tml:w-full tml:mx-4 flex-grow flex-shrink basis-0 tml:px-2 px-4 rounded-[20px] bg-[#A18AE3] border-t-[6px] border-r-[10px] border-b-[6px] border-l-[6px] border-[#311f40] relative">
                     {/* <Image src={sdebackend} alt="" fill={true} className="w-full h-full" /> */}
                     {/* <Imagecomponet image={'https://ik.imagekit.io/ysp4xwrz9/website/Group%201442.svg'} /> */}
                     {/* <Image src={sdebackend} alt="" fill={true} sizes="max((min(max(100vw - 128px, 1px), 1640px) - 96px) / 2, 1px)" /> */}
@@ -138,7 +138,7 @@ export default function Home() {
 
 
                 <Revealcompo css={"flex flex-row  tml:flex-col tml:gap-5 gap-5 md:gap-24 p-0  w-full h-min relative flex-none justify-center  items-center"}>
-                  <div className=" tml:hidden  rounded-[20px] h-[582px]  tml:flex-none tml:w-full flex-grow tml:order-1 flex-shrink basis-0 bg-no-repeat bg-[url('https://ik.imagekit.io/ysp4xwrz9/website/Group%201472-min.svg')] flex items-center justify-center relative">
+                  <div className=" tml:hidden  rounded-[25px] h-[582px]  tml:flex-none tml:w-full flex-grow tml:order-1 flex-shrink basis-0 px-4 bg-no-repeat bg-[url('https://ik.imagekit.io/ysp4xwrz9/website/Group%201472.svg')] flex border-t-[6px] border-r-[10px] border-b-[6px] border-l-[6px] border-[#311f40]  items-center justify-center relative">
                     <div className='bg-white h-[476px]  max-w-[500px]   flex flex-col gap-5 rounded-[20px]  px-5 tml:pr-1  py-6'>
                       <h3 className={`${almarai.className} text-[1.125rem] text-[#3A472E]/[.8] font-semibold leading-[1.3] tracking-[-.5px]`}>AI FEEDBACK</h3>
                       <div className={`${almarai.className} text-[1.25rem] font-normal leading-[2.1] bg-[#CFFF92]/[.3] p-8 pt-12 pr-16 rounded-[20px] tml:pr-1 tracking-[-.3px]`}>
@@ -156,7 +156,7 @@ export default function Home() {
                   </div>
 
 
-                  <div className=" tml:flex hidden rounded-[20px] tml:p-6 tml:h-auto h-[582px]  tml:flex-none tml:w-full flex-grow tml:order-1 flex-shrink basis-0 tml:px-4 bg-[#BAF484]  items-center justify-center relative">
+                  <div className=" tml:flex hidden rounded-[20px] tml:p-6 tml:h-auto h-[582px]  tml:flex-none tml:w-full flex-grow tml:order-1 flex-shrink basis-0 tml:px-2 px-4 bg-[#BAF484]  items-center justify-center border-t-[6px] border-r-[10px] border-b-[6px] border-l-[6px] border-[#311f40] relative">
                     <div className='bg-white tml:h-auto h-[476px]  max-w-[500px]   flex flex-col gap-5 rounded-[20px]  px-5 tml:pr-5  py-6'>
                       <h3 className={`${almarai.className} text-[1.125rem] text-[#3A472E]/[.8] font-semibold leading-[1.3] tracking-[-.5px]`}>AI FEEDBACK</h3>
                       <div className={`${almarai.className} text-[1.25rem] font-normal leading-[2.1] bg-[#CFFF92]/[.3] p-8 tml:p-4  pt-12 pr-16 rounded-[20px] tml:pr-4 tracking-[-.3px]`}>
@@ -199,7 +199,7 @@ export default function Home() {
                       skills, experiences, and resume with what the company is looking for
                       —ensuring that you’re presenting yourself in the best possible light.</p>
                   </div>
-                  <div className="   tml:self-start rounded-[20px] tml:p-6 tml:h-auto h-[582px] tml:max-w-full max-w-[630px] border-t-[6px] border-r-[10px] border-b-[6px] border-l-[6px] border-[#311f40]   flex justify-center items-center tml:flex-none tml:w-full flex-grow tml:order-1 flex-shrink-0 basis-0  bg-[#F9677C]  relative">
+                  <div className="   tml:self-start rounded-[20px] tml:p-6 tml:h-auto h-[582px] tml:max-w-full max-w-[630px] border-t-[6px] border-r-[10px] px-4 border-b-[6px] border-l-[6px] border-[#311f40]   flex justify-center items-center tml:flex-none tml:w-full flex-grow tml:order-1 flex-shrink-0 basis-0  bg-[#F9677C]  relative">
                     <div className='max-w-[501px] tml:h-auto  h-[476px] bg-white tml:py-4 flex items-start flex-col justify-center   rounded-[20px] text-[#F9576E] p-6 '>
                       <div className='bg-[#FDF3EA]/[0.5] pl-14 tml:pl-6 tml:pr-3 pr-28 py-14 rounded-[20px]'>
                         <p className='text-[1.375rem] '>Hi Cue,</p>
