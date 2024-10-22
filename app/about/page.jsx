@@ -1,72 +1,17 @@
 import { almarai, boldaeonikFont, epilogue, mediumaeonikFont, regularaeonikFont } from '@/utils/font'
 import React from 'react'
 import Image from 'next/image'
-import laughingstar from '@/public/about/laughingstar.png'
-import ai from '@/public/about/Ai.png'
-import assistant from '@/public/about/assistant.png'
-import oncampus from '@/public/about/on-campus.png'
-import drives from '@/public/about/drives.png'
-import eyeemji from '@/public/about/eyeemoji.png'
-import worryemoji from '@/public/about/worryemoji.png'
-import happyemoji from '@/public/about/happyemoji.png'
-import bgdesign from '@/public/about/bgdesign.png'
+
 import cuebg from '@/public/about/star ladder.svg'
 import headingstar from '@/public/about/heading star.svg'
 import Revealcompo from '../components/Revealcompo'
+import About from '../components/About/About'
 const page = () => {
   return (
     <div className='min-h-screen w-auto overflow-hidden xl:overflow-visible  mx-auto flex flex-col items-center justify-start h-min p-0 relative'>
 
       {/* about cue */}
-      <div className='tml:pt-[92px] tml:px-2 tml:pb-4 btl:pt-20 btl:px-6 btl:pb-6 bmLLL:pt-[116px] lg:mx-auto bmLLL:px-[64px] bmLLL:pb-[64px] pt-[116px] px-16 pb-12 flex items-center flex-none h-min justify-center relative w-full '>
-
-        <Revealcompo css={'flex flex-col bg-[#cfff92] rounded-[20px] flex-grow-[1] flex-shrink-0 basis-0 tml:h-auto gap-0 tml:min-h-0 min-h-[600px] justify-start  items-center bmL4k:max-w-[1312px] max-w-[1640px] p-0 relative w-full'}>
-          <div className=' bmLLL:p-[64px] bmL4k:p-[64px] tml:p-3 p-16 bmLLL:pt-0 bmL4k:pt-0 pt-0 tml:w-full bmLLL:w-full w-[85%] flex flex-col flex-none items-center justify-start gap-6 h-min relative'>
-            <div className='flex justify-start flex-col flex-shrink-0 mt-20 flex-none h-auto relative whitespace-pre-wrap w-full'>
-              <p className={`${epilogue.className} font-semibold text-[#015840] text-[20px] tracking-[-.5px] leading-[2rem] text-center tml:p-2  m-0 p-0`}>About Cue</p>
-            </div>
-            <div className='flex-none h-auto relative flex justify-center mt-2  whitespace-pre-wrap w-full'>
-              <h2 className={` ${epilogue.className} font-medium  text-[#015840]/[.85] text-[1.65rem]   tml:w-full max-w-[650px]   tracking-[-.5px] leading-[1em] md:leading-[2]  text-center `}>
-                Our mission is to be the trusted AI partner for students,
-                simplifying the on-campus placement process and
-                helping them land their dream jobs
-              </h2>
-            </div>
-          </div>
-          <div className='bmLLL:h-auto   flex-none relative w-full  '>
-            <div className='flex justify-center items-end'>
-              <div className=' relative flex-grow  tml:hidden max-w-[150px] h-[150px] lg:max-w-[200px] lg:h-[200px]'>
-
-                <Image src={laughingstar} alt='' fill={true} />
-              </div>
-              <div className=' relative flex-grow max-w-[80px] h-[80px] lg:max-w-[101px] -ml-3 lg:h-[100px]'>
-
-                <Image src={ai} alt='' fill={true} />
-              </div>
-              <div className=' relative tml:hidden flex-grow max-w-[170px] h-[170px] lg:max-w-[281px] -mb-3  lg:mb-16 -ml-3 lg:-ml-5 lg:h-[114px]'>
-
-                <Image src={assistant} alt='' width={170} height={70} className='lg:hidden absolute bottom-0' />
-                <Image src={assistant} alt='' width={281} height={114} className='hidden lg:block' />
-              </div>
-              <div className=' relative flex-grow max-w-[170px] h-[70px] lg:max-w-[293px]  lg:-ml-12 lg:h-[100px]'>
-
-                <Image src={oncampus} alt='' fill={true} />
-              </div>
-              <div className=' relative flex-grow max-w-[50px] h-[180px] lg:max-w-[75px]  ml-2 -mb-16 lg:h-[294px]'>
-
-                <Image src={drives} alt='' fill={true} />
-              </div>
-              <div className=' tml:hidden relative flex-grow max-w-[120px] h-[120px] lg:max-w-[180px]  ml-2  lg:h-[180px]'>
-
-                <Image src={eyeemji} alt='' fill={true} />
-              </div>
-              {/* <div className='absolute  amLL:hidden  w-full h-full'>
-              {/* <Image src={herosmall} alt='' fill={true} /> */}
-              {/* </div> */}
-            </div>
-          </div>
-        </Revealcompo>
-      </div>
+      <About />
 
       {/* the problem */}
 
@@ -156,12 +101,12 @@ const page = () => {
       <div className='mt-10 w-full flex flex-none items-center justify-center  overflow-hidden tml:p-4 btl:pt-0 btl:px-6 btl:pb-6  bmLLL:pt-0 bmLLL:px-16 bmLLL:pb-16 py-16 px-0 relative '>
 
         <Revealcompo css={'bmLLL:max-w-[1180px] bmL4k:max-w-[1312px] max-w-[1640px] flex items-center rounded-[30px] flex-grow flex-shrink-0 basis-0 flex-col h-min justify-start overflow-hidden p-0 relative '}>
-          <div className='flex flex-none items-center rounded-[24px] tml:h-min h-[574px] btl:justify-center justify-end bg-[#005840] tml:p-6 p-11 py-28 relative w-full'>
+          <div className='flex tml:flex-col flex-none items-center rounded-[24px] tml:h-min h-[574px] btl:justify-center justify-end bg-[#005840] tml:p-6 p-11 py-28 relative w-full'>
 
-            <div className=' absolute  left-[-1px] flex-grow   flex items-center flex-none h-min justify-center overflow-hidden top-[32%] w-min translate-y-[-50%] z-0 '>
-              <div className='flex-none  [aspect-ratio:1/1] relative w-[448px]   h-full'>
+            <div className=' tml:relative absolute tml:left-[0%] left-[-1px] flex-grow   flex items-center flex-none h-min justify-center overflow-hidden tml:top-auto top-[32%] w-min tml:translate-y-0 translate-y-[-50%] z-0 '>
+              <div className='flex-none tml:aspect-auto  [aspect-ratio:1/1] relative tml:w-[600px] tml:h-[300px] w-[448px]   h-full'>
 
-                <Image src={cuebg} alt='' fill={true} />
+                <Image src={cuebg} alt='' fill={true} className='object-cover' />
               </div>
             </div>
             <div className='flex flex-col gap-5 tml:w-full  md:bottom-[95px] right-5 lg:right-12 tml:justify-start justify-end px-3 md:px-0 items-center md:items-end '>

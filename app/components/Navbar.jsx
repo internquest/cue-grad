@@ -140,7 +140,7 @@ const Navbar = () => {
                         <div className="flex-none bg-[rgba(255,249,242,0)]  bmL4k:max-w-[1312px] max-w-[1640px] w-full flex items-center flex-nowrap h-min justify-between overflow-hidden p-0 relative ">
                             <div className='flex justify-center flex-1 amLL:flex-none w-min relative overflow-hidden p-0 items-center h-min'>
                                 <Link href="/" className='flex-none h-[60px]  relative w-[111px] '>
-                                    <div className={`w-full h-full bg-[#015840] flex items-center justify-center rounded-tl-[20px] rounded-tr-[50px] text-white text-[2rem] font-medium  leading-[1.9] rounded-br-[50px]  ${epilogue.className} `}>
+                                    <div className={`w-full h-full text-black flex items-center justify-center rounded-tl-[20px] rounded-tr-[50px]  text-[2.5rem] font-medium  leading-[1.9] rounded-br-[50px]  ${epilogue.className} `}>
                                         cue.
                                     </div>
                                 </Link>
@@ -161,10 +161,22 @@ const Navbar = () => {
                                     <NavLink href="/internship" text="Internship" pathname={pathname} />
                                 </div>
                                 <div className='h-auto w-auto relative flex-none'>
-                                    <NavLink href="" text="Feedback" pathname={pathname} />
+
+                                    <a href="https://tally.so/r/nWp9RQ" target='_blank' className={`py-2 px-3 bg-[rgba(207,255,145,0)] duration-200 hover:bg-[rgba(207,255,145)]  rounded-[100px] opacity-[1] w-min flex items-center justify-center cursor-pointer flex-nowrap relative    `}>
+                                        <div className=''>
+                                            <p className={`${almarai.className} text-[1rem] font-normal tracking-[.015625em] text-[#010032] leading-[24px] whitespace-nowrap`}>Feedback</p>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
-                            <div className='flex items-center justify-center gap-3  relative w-min'>
+
+                            <a href='https://tally.so/r/nWp9RQ' target='_blank' class=" tml:self-start  flex  justify-center items-center cursor-pointer  gap-[10px] h-min overflow-visible px-[24px] py-[16px] relative no-underline w-min hover:bg-[#ff7a05] bg-[rgb(255,_143,_62)] opacity-100  rounded-[100px]">
+                                <div class="   h-auto whitespace-pre w-auto outline-[none] flex flex-col justify-start flex-shrink-0 transform-none opacity-100">
+                                    <p class={`box-border  m-0 p-0 ${epilogue.className} text-[1rem] `}>Get Started</p>
+                                </div>
+                            </a>
+
+                            {/* <div className='flex items-center justify-center gap-3  relative w-min'>
                                 <div className="flex-none h-auto relative w-auto">
                                     <a href="" className='flex items-center border hover:border-solid border-transparent hover:border-[#311f40] duration-200 rounded-[100px] justify-center cursor-pointer py-4 px-6 relative w-min'>
                                         <p className={`${almarai.className} font-normal text-[#311f40] text-[1.125rem] leading-[1] `}>Login</p>
@@ -175,7 +187,7 @@ const Navbar = () => {
                                         <p className={`${almarai.className} font-normal text-[#fff9f3] text-[1.125rem] leading-[1] whitespace-nowrap`}>Sign Up</p>
                                     </a>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     :
@@ -185,7 +197,7 @@ const Navbar = () => {
                         <motion.div className={`max-w-[1312px] flex-1 h-min ${open ? 'flex-none w-full' : ''} items-center overflow-hidden bg-white/[0] relative origin-center p-0 `}>
                             <div className={`flex ${open ? '' : 'flex-grow flex-shrink-0 basis-0'}  justify-between items-center h-min  overflow-hidden p-0 relative`}>
                                 <Link href="/" className='flex-none h-[60px] relative w-[111px] block' >
-                                    <div className={`w-full h-full bg-[#015840] flex items-center justify-center rounded-tl-[20px] rounded-tr-[50px] text-white text-[2rem] font-medium  tracking-[-.5px] leading-[1.9] rounded-br-[50px] ${epilogue.className} `}>
+                                    <div className={`w-full h-full  flex items-center justify-center rounded-tl-[20px] rounded-tr-[50px] text-black text-[3rem] font-medium  tracking-[-.5px] leading-[1.9] rounded-br-[50px] ${epilogue.className} `}>
                                         cue.
                                     </div>
                                     {/* <Image src={prnetuslogo} alt='' fill={true} /> */}
@@ -225,13 +237,19 @@ const Navbar = () => {
                                         </div>
                                         <div className='flex flex-col justify-start flex-shrink-0 flex-none h-auto relative whitespace-pre-wrap w-full break-words'>
                                             <p className={`${almarai.className} font-normal text-[#311f40] text-[1.75rem] tracking-[.015625em] leading-[36px] text-start `}>
-                                                <Link href="" className='capitalize  '>Feedback</Link>
+                                                <a href="https://tally.so/r/nWp9RQ" target='_blank' className='capitalize  '>Feedback</a>
                                             </p>
                                         </div>
 
                                     </div>
                                 </div>
-                                <div className='flex flex-col items-center btl:items-start justify-center gap-3  relative w-full'>
+
+                                <a href='https://tally.so/r/nWp9RQ' target='_blank' class=" tml:self-start  flex flex-grow items-center cursor-pointer  gap-[10px] h-min overflow-visible px-[24px] py-[16px] relative no-underline w-min hover:bg-[#ff7a05] bg-[rgb(255,_143,_62)] opacity-100  rounded-[100px]">
+                                    <div class="   h-auto whitespace-pre w-auto outline-[none] flex flex-col justify-start flex-shrink-0 transform-none opacity-100">
+                                        <p class={`box-border  m-0 p-0 ${epilogue.className} text-[1rem] `}>Get Started</p>
+                                    </div>
+                                </a>
+                                {/* <div className='flex flex-col items-center btl:items-start justify-center gap-3  relative w-full'>
                                     <div className="flex-none order-1 h-auto relative w-full btl:w-min">
                                         <a href="" className='flex items-center btl:items-start justify-center cursor-pointer py-4 px-6 relative w-full'>
                                             <p className={`${almarai.className} font-normal text-[#311f40] text-[1.125rem] text-center leading-[1] `}>Login</p>
@@ -242,7 +260,7 @@ const Navbar = () => {
                                             <p className={`${almarai.className} font-normal text-[#fff9f3] text-[1.125rem] leading-[1] whitespace-nowrap`}>Sign Up</p>
                                         </a>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         }
                     </motion.div>

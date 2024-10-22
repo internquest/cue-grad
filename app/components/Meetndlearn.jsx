@@ -67,7 +67,7 @@ const Main = () => {
                                     <h2 className={`font-bold text-[#015840] amLL:hidden tml:text-[38px]   md:text-[32px] order-1 amLL:text-[44px]   tracking-[-.5px] tml:text-start leading-[1.2] text-center  ${epilogue.className} `}>Powered <span className="text-[#987de1]">by</span> and <span className="text-[#987de1]">for</span> the people</h2>
                                     {/* </div> */}
 
-
+                                    {/* 
                                     <div className=" tml:hidden  rounded-[40px] order-0 amLL:order-1 opacity-[1] aspect-square order-0 amLL:-bottom-[111px] flex-none h-[56px] amLL:h-[80px] left-[50px]  amLL:absolute  w-auto amLL:w-[80px] z-[1]">
                                         <div className=" relative amLL:absolute rounded-[inherit] w-full h-full ">
                                             <Image src='https://framerusercontent.com/images/wfmxi15XMBJCiHQkO5ys2fnxxE.png' fill={true} alt="" className="rounded-[inherit] relative " />
@@ -77,7 +77,7 @@ const Main = () => {
                                         <div className=" relative amLL:absolute rounded-[inherit] w-full h-full ">
                                             <Image src='https://framerusercontent.com/images/wfmxi15XMBJCiHQkO5ys2fnxxE.png' fill={true} alt="" className="rounded-[inherit] relative " />
                                         </div>
-                                    </div>
+                                    </div> */}
 
                                 </div>
 

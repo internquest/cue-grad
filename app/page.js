@@ -13,6 +13,7 @@ import Meetndlearn from '@/app/components/Meetndlearn'
 import Faq from "./components/Faq";
 import Revealcompo from './components/Revealcompo';
 import Loading from './components/Loading';
+import Hero from './components/Home/Hero';
 
 export default function Home() {
 
@@ -21,69 +22,7 @@ export default function Home() {
     <>
       <Loading />
       <div className=" flex flex-col bg-white min-h-screen w-auto h-min justify-start p-0 relative ">
-        <div className=" overflow-hidden  relative w-full btl:pt-[80px] btl:px-6 btl:pb-6 bmLLL:pt-[116px] bmLLL:px-16 bmLLL:pb-16 tml:pt-[116px] tml:px-2 tml:pb-4 pt-[126px] px-16 pb-16 flex-none h-min justify-center flex-col items-center">
-
-          <Revealcompo css={"bg-[#CFFF92] mx-auto  bmL4k:max-w-[1312px]  max-w-[1640px] flex tml:items-start items-center tml:justify-start tml:rounded-bl-[0px] tml:rounded-br-[0px] rounded-[30px]  flex-grow flex-shrink-0 basis-0 flex-col h-auto   px-2 w-full "}>
-
-            <h2 className={`w-full hidden md:block tml:mt-10 pl-2 mt-20 lg:mt-36 ${epilogue.className} font-semibold text-black/90 tml:text-[2rem] tml:text-start text-[2rem] md:text-[3rem] tml:leading-[1.6]   leading-[1.7]   text-center`}>
-              <span className="inline-block tracking-[-.5px]">
-                Your smart companion for
-              </span>
-              <br /><span className="inline-block ml-1 tracking-[-.5px]">
-
-                on-campus placement success
-              </span>
-            </h2>
-            <h2 className={`w-full px-2  md:hidden  text-left mt-16 ${epilogue.className} font-semibold text-[2rem] text-black/90 leading-[1.7] tracking-[-0.5px] text-center`}>
-              <span className="inline-block text-left ">
-                Your smart companion for  on-campus placement success
-              </span>
-
-            </h2>
-
-            <p className={`px-2 ${almarai.className} font-normal max-w-[659px]  xl:w-[70%] text-[1.1rem] md:text-[1.375rem] leading-[2] tracking-[.015em] tml:text-start text-center text-[#2C2C2C] mt-4 `}>
-              Transform your on-campus placement experience with cutting-
-              edge AI solutions designed to guide, support, and empower you
-              every step of the way.
-            </p>
-            <a href='/signup' class=" tml:self-start  flex flex-grow items-center cursor-pointer  gap-[10px] h-min overflow-visible px-[24px] py-[16px] relative no-underline w-min hover:bg-[#ff7a05] bg-[rgb(255,_143,_62)] opacity-100 mt-8 rounded-[100px]">
-              <div class="   h-auto whitespace-pre w-auto outline-[none] flex flex-col justify-start flex-shrink-0 transform-none opacity-100">
-                <p class={`box-border  m-0 p-0 ${epilogue.className} text-[1rem] `}>Try free for 7 days →</p>
-              </div>
-            </a>
-
-            <div className="w-full md:max-w-[519px] tml:h-min h-[672px] bg-white tml:border-[5px] border-[10px] mt-12 flex flex-col  pr-5 rounded-t-[40px] border-[#CFFF92]/[.5]">
-              <div className='rounded-[20px] h-[40px] flex text-center  justify-center w-[40px] mt-14 ml-5  bg-[#cfff92]'>
-                <h1 className={`text-[1.9rem] mt-[-2px] text-[#000]/[.5] ${epilogue.className}  font-medium`}>c</h1>
-                {/* c */}
-              </div>
-              {/* <Image src={c} alt="" width={40} height={42} className="mt-14 ml-5" /> */}
-              <div className={`bg-[#CFFF92]/[.2] w-[80%] md:max-w-[412px] tml:h-min h-[288px] ml-5 mt-3 rounded-[10px] flex flex-col gap-5 py-5   px-5 pr-2 text-[#000000]/[.8] ${almarai.className}`} >
-                <p className=" text-[1rem] md:text-[1.25rem] leading-[2] font-normal tracking-wide">
-                  Hello
-                </p>
-                <p className=" max-w-[344px] tracking-[.015em] text-[.9rem] md:text-[1.125rem] font-normal leading-[2]">I’m your helpful AI assistant to navigate
-                  on-campus placements like a pro. Let
-                  me know what you need help with to get
-                  started!</p>
-              </div>
-              <div className={`bg-[#E2FFBD] w-[80%] px-1 md:max-w-[341px]  mt-8   pl-5 tml:pr-4 py-5     rounded-[10px] font-normal text-[.9rem]  md:text-[1.125rem] leading-[1.75] tracking-[0.015em]  self-end  ${almarai.className}  `}>
-                I was just wondering on what to
-                prepare for upcoming Stripe OA.
-              </div>
-              <div className="mt-8 ml-5 mb-4 flex gap-5 items-center">
-                <div className='rounded-[20px] h-[40px] flex text-center  justify-center w-[40px]   bg-[#cfff92]'>
-                  <h1 className={`text-[1.9rem] mt-[-2px] text-[#000]/[.5] ${epilogue.className}  font-medium`}>c</h1>
-                  {/* c */}
-                </div>
-                {/* <Image src={c} alt="" width={40} height={42} className="" /> */}
-                <div className="bg-[#CFFF92]/[.2] rounded-[10px] w-[56px] h-[28px] "></div>
-              </div>
-
-            </div>
-
-          </Revealcompo>
-        </div>
+        <Hero />
 
         {/* meet cuegrad */}
 
@@ -141,10 +80,10 @@ export default function Home() {
 
         {/* oncampus placemnt assistant */}
 
-        <div className="bg-white flex flex-none w-full relative overflow-hidden justify-center items-center h-min bmLLL:py-[64px] bmLLL:pr-0 tml:pt-16 tml:px-2 tml:pr-0 tml:pb-4 btl:py-[48px]  py-16 px-0 ">
+        <div className="bg-white flex flex-none w-full relative overflow-hidden justify-center items-center h-min bmLLL:py-[64px] bmLLL:pr-0 tml:pt-16 tml:px-2 tml:pr-2 tml:pb-4 btl:py-[48px]  py-16 px-0 ">
           <div className="flex flex-grow flex-shrink-0 basis-0 flex-col h-min justify-start max-w-[1640px] bmL4k:max-w-[1312px] overflow-hidden p-0 relative ">
 
-            <div className="flex flex-col flex-none w-full relative items-center justify-start tml:gap-10 gap-[64px] h-min p-2 pr-0 tml:pr-0">
+            <div className="flex flex-col flex-none w-full relative items-center justify-start tml:gap-10 gap-[64px] h-min p-2 pr-0 tml:pr-2">
 
               <Revealcompo css={"flex flex-col items-center flex-none p-0 w-full gap-3 h-min justify-start "} >
                 <h1 className={`font-medium tml:text-start text-[1.7rem] md:text-[2.25rem] mx-auto text-center text-black leading-[1.7] tracking-[-.5px] max-w-[580px]  ${epilogue.className}`}>On-Campus Placements Assistant to
@@ -159,19 +98,34 @@ export default function Home() {
 
                 <Revealcompo css={"flex  flex-row tml:flex-col tml:pl-0 pl-4  tml:gap-5 gap-5 md:gap-24 p-0 w-full h-min relative flex-none justify-center  items-center"}>
                   <div className={`${epilogue.className} flex tml:flex-none tml:w-full bmLLL:pl-16 pr-4 items-start flex-col flex-grow flex-shrink-0 basis-0 gap-5 h-min justify-start p-0 relative `}>
-                    <h2 className="text-[#977DE0] text-[1.2rem] lg:text-[1.625rem]  font-medium leading-[1.1] tracking-[-.5px]">Personalized Skill Gap Analyzer</h2>
-                    <p className={`${almarai.className} font-normal   text-[1rem] lg:text-[1.25rem] leading-[1.5] tracking-[.02em]`}>Evaluate your skills against the job requirements of
+                    <h2 className="text-[#977DE0] text-[1.2rem] lg:text-[1.625rem]  font-medium leading-[2] tracking-[-.5px]">Personalized Skill Gap Analyzer</h2>
+                    <p className={`${almarai.className} font-normal   text-[1rem] lg:text-[1.25rem] leading-[1.9] tracking-[.005em]`}>Evaluate your skills against the job requirements of
                       companies participating in the placement drive. Identify
                       specific skill gaps to focus on the most critical areas for
                       improvement</p>
                   </div>
 
-                  <div className=" overflow-hidden   h-[582px]  tml:flex-none tml:w-full flex-grow flex-shrink-0 basis-0  rounded-[20px] bg-no-repeat bg-[url('https://ik.imagekit.io/ysp4xwrz9/website/Group%201471-min.svg')] relative">
+                  <div className=" overflow-hidden tml:hidden flex flex-col justify-center items-center  h-[582px]  tml:flex-none tml:w-full tml:mx-4 flex-grow flex-shrink basis-0 tml:px-4 rounded-[20px] bg-cover bg-[url('https://ik.imagekit.io/ysp4xwrz9/website/Group%201471-min.svg')] relative">
                     {/* <Image src={sdebackend} alt="" fill={true} className="w-full h-full" /> */}
                     {/* <Imagecomponet image={'https://ik.imagekit.io/ysp4xwrz9/website/Group%201442.svg'} /> */}
                     {/* <Image src={sdebackend} alt="" fill={true} sizes="max((min(max(100vw - 128px, 1px), 1640px) - 96px) / 2, 1px)" /> */}
-                    <div className='bg-white h-[476px] max-w-[500px] mt-4 ml-11 flex flex-col gap-10 rounded-[10px] px-6 pl-14 text-[#4242be] py-16'>
-                      <p className={`text-[1.5rem] ${almarai.className} leading-[2]`}>
+                    <div className='bg-white h-[476px]  max-w-[500px] self-center flex flex-col gap-10 rounded-[10px] tml:px-4 px-6 pl-14 text-[#4242be] py-16'>
+                      <p className={`text-[1.5rem] tracking-[-.1px] text-balance ${almarai.className} leading-[2]`}>
+                        Practice the following leetcode questions for the upcoming OA
+                      </p>
+                      <div className='rounded-[20px] bg-[#8d8de2]/[.2] h-[25px] w-[287px] '></div>
+                      <div className='rounded-[20px] bg-[#8d8de2]/[.2] h-[25px] w-[287px] '></div>
+                      <div className='rounded-[20px] bg-[#8d8de2]/[.2] h-[25px] w-[287px] '></div>
+                    </div>
+                  </div>
+
+
+                  <div className=" overflow-hidden tml:flex  hidden  justify-center items-center tml:p-6 tml:h-auto  h-[582px]   tml:basis-auto tml:w-full tml:mx-4 flex-grow flex-shrink basis-0 tml:px-4 rounded-[20px] bg-[#A18AE3] relative">
+                    {/* <Image src={sdebackend} alt="" fill={true} className="w-full h-full" /> */}
+                    {/* <Imagecomponet image={'https://ik.imagekit.io/ysp4xwrz9/website/Group%201442.svg'} /> */}
+                    {/* <Image src={sdebackend} alt="" fill={true} sizes="max((min(max(100vw - 128px, 1px), 1640px) - 96px) / 2, 1px)" /> */}
+                    <div className='bg-white mx-auto tml:h-auto h-[476px]  max-w-[500px] self-center flex flex-col gap-10 rounded-[10px] tml:p-4 px-6 pl-14 text-[#4242be] py-16'>
+                      <p className={`text-[1.5rem] tracking-[-.1px] text-balance ${almarai.className} leading-[2]`}>
                         Practice the following leetcode questions for the upcoming OA
                       </p>
                       <div className='rounded-[20px] bg-[#8d8de2]/[.2] h-[25px] w-[287px] '></div>
@@ -184,10 +138,10 @@ export default function Home() {
 
 
                 <Revealcompo css={"flex flex-row  tml:flex-col tml:gap-5 gap-5 md:gap-24 p-0  w-full h-min relative flex-none justify-center  items-center"}>
-                  <div className="  rounded-[20px] h-[582px]  tml:flex-none tml:w-full flex-grow tml:order-1 flex-shrink-0 basis-0 bg-no-repeat bg-[url('https://ik.imagekit.io/ysp4xwrz9/website/Group%201472-min.svg')] flex items-center relative">
-                    <div className='bg-white h-[476px]  max-w-[500px]  ml-11 -mt-5 flex flex-col gap-5 rounded-[20px]  px-5 tml:pr-1  py-6'>
-                      <h3 className={`${almarai.className} text-[1.125rem] text-[#3A472E]/[.8] font-semibold leading-[1.3] tracking-[-..5px]`}>AI FEEDBACK</h3>
-                      <div className={`${almarai.className} text-[1.25rem] font-normal leading-[2.1] bg-[#CFFF92]/[.3] p-8 pt-12 pr-16 rounded-[20px] tml:pr-1 tracking-[-.5px]`}>
+                  <div className=" tml:hidden  rounded-[20px] h-[582px]  tml:flex-none tml:w-full flex-grow tml:order-1 flex-shrink basis-0 bg-no-repeat bg-[url('https://ik.imagekit.io/ysp4xwrz9/website/Group%201472-min.svg')] flex items-center justify-center relative">
+                    <div className='bg-white h-[476px]  max-w-[500px]   flex flex-col gap-5 rounded-[20px]  px-5 tml:pr-1  py-6'>
+                      <h3 className={`${almarai.className} text-[1.125rem] text-[#3A472E]/[.8] font-semibold leading-[1.3] tracking-[-.5px]`}>AI FEEDBACK</h3>
+                      <div className={`${almarai.className} text-[1.25rem] font-normal leading-[2.1] bg-[#CFFF92]/[.3] p-8 pt-12 pr-16 rounded-[20px] tml:pr-1 tracking-[-.3px]`}>
                         Consider adding some projects in Golang.
                         Including projects with expertise
                         demonstrated in building microservices
@@ -200,13 +154,32 @@ export default function Home() {
                     {/* <Image src={sdebackend} alt="" fill={true} className="w-full h-full" /> */}
                     {/* <Imagecomponet image={'https://ik.imagekit.io/ysp4xwrz9/website/Group%201468.svg'} /> */}
                   </div>
+
+
+                  <div className=" tml:flex hidden rounded-[20px] tml:p-6 tml:h-auto h-[582px]  tml:flex-none tml:w-full flex-grow tml:order-1 flex-shrink basis-0 tml:px-4 bg-[#BAF484]  items-center justify-center relative">
+                    <div className='bg-white tml:h-auto h-[476px]  max-w-[500px]   flex flex-col gap-5 rounded-[20px]  px-5 tml:pr-5  py-6'>
+                      <h3 className={`${almarai.className} text-[1.125rem] text-[#3A472E]/[.8] font-semibold leading-[1.3] tracking-[-.5px]`}>AI FEEDBACK</h3>
+                      <div className={`${almarai.className} text-[1.25rem] font-normal leading-[2.1] bg-[#CFFF92]/[.3] p-8 tml:p-4  pt-12 pr-16 rounded-[20px] tml:pr-4 tracking-[-.3px]`}>
+                        Consider adding some projects in Golang.
+                        Including projects with expertise
+                        demonstrated in building microservices
+                        using Golang & any other tech stack might
+                        significantly increase your chances to get
+                        shortlisted for the further rounds of coding
+                        interviews
+                      </div>
+                    </div>
+                    {/* <Image src={sdebackend} alt="" fill={true} className="w-full h-full" /> */}
+                    {/* <Imagecomponet image={'https://ik.imagekit.io/ysp4xwrz9/website/Group%201468.svg'} /> */}
+                  </div>
+
                   <div className={`${epilogue.className} tml:order-0 text-[#2C2C2C]  flex items-start  flex-grow  pr-2 flex-shrink-0 tml:flex-none tml:w-full btl:pl-[35px] bmLLL:pl-[90px] basis-0 flex-col justify-start    gap-2`}>
                     <h2 className="text-[#3111f40] text-[1.2rem] lg:text-[1.625rem]  font-medium leading-[2] tracking-[-.5px]">AI feedback</h2>
-                    <p className={`${almarai.className} font-normal   pt-0 text-[1rem] lg:text-[1.125rem] leading-[1.9] tracking-normal`}>When a company announces an on-campus placement drive,
+                    <p className={`${almarai.className} font-normal   pt-0 text-[1rem] lg:text-[1.125rem] leading-[1.9] tracking-[.005em]`}>When a company announces an on-campus placement drive,
                       it’s not just another opportunity—it’s your chance to shine. But
                       how can you make sure you’re standing out from the crowd?
                     </p>
-                    <p className={`${almarai.className} font-normal mt-1 md:mt-5  text-[1rem] lg:text-[1.125rem] leading-[1.9] tracking-normal`}>
+                    <p className={`${almarai.className} font-normal mt-1 md:mt-5  text-[1rem] lg:text-[1.125rem] leading-[1.9] tracking-[.005em]`}>
                       Cue gives you immediate feedback on what you can do to
                       increase your chances of getting shortlisted, providing you with
                       the precise actions needed to catch recruiters’ attention</p>
@@ -226,15 +199,15 @@ export default function Home() {
                       skills, experiences, and resume with what the company is looking for
                       —ensuring that you’re presenting yourself in the best possible light.</p>
                   </div>
-                  <div className="   tml:self-start rounded-[20px] h-[582px] max-w-[630px] border-t-[6px] border-r-[10px] border-b-[6px] border-l-[6px] border-[#311f40]  tml:flex-none tml:w-full flex-grow tml:order-1 flex-shrink-0 basis-0  bg-[#F9677C]  relative">
-                    <div className='max-w-[501px] h-[476px] bg-white mt-14 flex items-start flex-col justify-center ml-14  rounded-[20px] text-[#F9576E] pl-14 pr-32'>
-
-                      <p className='text-[1.375rem] '>Hi Cue,</p>
-                      <p className='text-[1.4rem] mt-10 leading-[2] '>Can you anazlyze the
-                        requirements for CultFit
-                        Campus Drive & give
-                        personalized recommendations</p>
-
+                  <div className="   tml:self-start rounded-[20px] tml:p-6 tml:h-auto h-[582px] tml:max-w-full max-w-[630px] border-t-[6px] border-r-[10px] border-b-[6px] border-l-[6px] border-[#311f40]   flex justify-center items-center tml:flex-none tml:w-full flex-grow tml:order-1 flex-shrink-0 basis-0  bg-[#F9677C]  relative">
+                    <div className='max-w-[501px] tml:h-auto  h-[476px] bg-white tml:py-4 flex items-start flex-col justify-center   rounded-[20px] text-[#F9576E] p-6 '>
+                      <div className='bg-[#FDF3EA]/[0.5] pl-14 tml:pl-6 tml:pr-3 pr-28 py-14 rounded-[20px]'>
+                        <p className='text-[1.375rem] '>Hi Cue,</p>
+                        <p className='text-[1.4rem] mt-10 tracking-[-.1px] leading-[2] '>Can you anazlyze the
+                          requirements for CultFit
+                          Campus Drive & give
+                          personalized recommendations</p>
+                      </div>
                     </div>
                     {/* <Image src={sdebackend} alt="" fill={true} className="w-full h-full" /> */}
                     {/* <Imagecomponet image={'https://ik.imagekit.io/ysp4xwrz9/website/Group%201469.svg'} /> */}
@@ -328,7 +301,7 @@ export default function Home() {
             <div className="bg-[#FFAE67] text-[#015840]  rounded-[30px]  items-center flex flex-col h-min justify-center  btl:pt-[60px] xl:pt-[40px] tml:p-6 tml:pb-0 btl:px-[150px] px-[209px] relative gap-8 w-full flex-none ">
               <h2 className={`${epilogue.className}   text-center mx-auto font-normal text-[1.5rem] md:text-[2rem] leading-[1.9] tracking-[-.5px] `}>Take control of your placement journey with</h2>
 
-              <h1 className={`max-w-[594px] ${epilogue.className} font-extrabold tml:mb-[-30px] btl:mb-[-45px] mb-[-65px] tml:text-[9rem] text-[13rem] tml:text-start text-center xl:text-[18.75rem] tracking-[-.5px] mx-auto leading-[1]`}>CUE</h1>
+              <h1 className={`max-w-[594px] ${epilogue.className} font-extrabold tml:mb-[-25px] btl:mb-[-45px] mb-[-55px] tml:text-[9rem] text-[13rem] tml:text-start text-center xl:text-[18.75rem] tracking-[-.5px] mx-auto leading-[1]`}>CUE</h1>
             </div>
           </Revealcompo>
 

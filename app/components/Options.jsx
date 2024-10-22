@@ -11,7 +11,7 @@ const Options = ({ desc, title, indexed, activedesc }) => {
                 <div className='w-full flex cursor-pointer items-center gap-12 justify-start overflow-visible p-0 relative '>
                     <div style={indexed + 1 === activedesc ? { opacity: 1 } : { opacity: 0 }} className='flex self-stretch items-center flex-grow-[.7] flex-shrink-0 basis-0 h-auto justify-center overflow-visible relative'>
                         <div className='flex-grow-[.7] flex-shrink-0 basis-0 h-auto relative '>
-                            <p className={`font-normal text-[#01584d] text-[20px] tracking-[.01em] leading-[1.5] text-start  m-0 p-0 ${almarai.className}`}>{desc}</p>
+                            <p className={`font-normal text-[#01584d] text-[20px] tracking-[-.05px] leading-[1.8] text-start  m-0 p-0 ${almarai.className}`}>{desc}</p>
                         </div>
                         {/* <div className='aspect-square absolute left-0 overflow-hidden top-[-120px] w-[120px] z-[1]'>
                             <Image src='https://framerusercontent.com/images/CP7s7vbrxLKtcUpXxXxJq0gJm0Y.png' alt='' fill={true} />

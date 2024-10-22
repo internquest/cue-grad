@@ -17,9 +17,16 @@ const page = () => {
                         <Image src={doublestars} alt='' fill={true} />
 
                     </div>
-                    <div className='flex justify-center flex-grow items-center tml:py-10 tml:px-2 max-w-[807px] '>
-                        <h1 className={`text-[#FFFfff] relative  text-center  tml:text-[2rem] text-[4rem] font-bold leading-[1.6] tracking-[0.02em] ${epilogue.className} `}>Entrepreneur in Residence Internship</h1>
+                    <div className='flex flex-col gap-10 justify-center flex-grow items-center tml:py-10 tml:px-2 max-w-[807px] '>
+                        <h1 className={`text-[#FFFfff] relative  text-balance text-center  tml:text-[2rem] text-[4rem] font-bold leading-[1.6] tracking-[-0.5px] ${epilogue.className} `}>Entrepreneur in Residence Internship</h1>
+                        <a href='https://tally.so/r/wd2q9N' target='_blank' class="   flex  items-center cursor-pointer  gap-[10px] h-min overflow-visible px-[24px] py-[16px] relative no-underline w-min hover:bg-[#ff7a05] bg-[rgb(255,_143,_62)] opacity-100  rounded-[100px]">
+                            <div class="   h-auto whitespace-pre w-auto outline-[none] flex flex-col justify-start flex-shrink-0 transform-none opacity-100">
+                                <p class={`box-border  m-0 p-0 ${epilogue.className} text-[1rem] `}>Apply</p>
+                            </div>
+                        </a>
                     </div>
+
+
                 </Revealcompo>
             </div>
 
@@ -36,7 +43,7 @@ const page = () => {
 
                     </div>
                     <div className='flex justify-center flex-grow items-center tml:px-5 tml:py-10 px-10 '>
-                        <p className={`text-[#33200CCC]/[80%] ${almarai.className} tml:text-[1.3rem] text-[1.5rem] font-medium leading-[2.2] text-center tracking-[0.02em] max-w-[701px]`}>We are thrilled to announce the launch of our Entrepreneur in
+                        <p className={`text-[#33200CCC]/[80%] ${almarai.className} tml:text-[1.3rem] text-[1.5rem] font-medium leading-[2.2] text-center tracking-[-0.1px] text-balance max-w-[701px]`}>We are thrilled to announce the launch of our Entrepreneur in
                             Residence Internship Program, a unique opportunity for
                             aspiring innovators & entrepreneurial minds to join us in
                             shaping the future of grad-tech.</p>
@@ -105,7 +112,7 @@ const page = () => {
                                 communication with participants etc
                             </div>
 
-                            <div className={`${almarai.className} font-normal absolute tml:top-[100%] tml:left-[0%] tml:translate-x-0 tml:translate-y-0 right-0 top-0 btl:translate-x-[-117%] btl:translate-y-[15%] translate-x-[-117%] translate-y-[15%] rotate-[5deg] tracking-[.02em] leading-[1.9] text-[#FFF9F3] text-[.8rem] amLL:text-[1rem]  rounded-[100px]  tml:w-[90%]  btl:max-w-[360px] max-w-[504px] bg-[#311F40] px-14 z-[3] py-8`}>
+                            <div className={`${almarai.className} font-normal absolute tml:top-[100%] tml:left-[0%] tml:translate-x-0 tml:translate-y-0 right-0 top-0 btl:translate-x-[-157%] btl:translate-y-[15%] translate-x-[-117%] translate-y-[15%] rotate-[5deg] tracking-[.02em] leading-[1.9] text-[#FFF9F3] text-[.8rem] amLL:text-[1rem]  rounded-[100px]  tml:w-[90%]  btl:max-w-[360px] max-w-[504px] bg-[#311F40] px-14 z-[3] py-8`}>
                                 <p className='max-w-[378px]'>
 
                                     The intern will be responsible for leveraging
@@ -173,6 +180,12 @@ const page = () => {
                     </div>
                 </Revealcompo>
             </div >
+
+            <a href='https://tally.so/r/wd2q9N' target='_blank' class="   flex mb-10  items-center cursor-pointer  gap-[10px] h-min overflow-visible px-[24px] py-[16px] relative no-underline w-min hover:bg-[#ff7a05] bg-[rgb(255,_143,_62)] opacity-100  rounded-[100px]">
+                <div class="   h-auto whitespace-pre w-auto outline-[none] flex flex-col justify-start flex-shrink-0 transform-none opacity-100">
+                    <p class={`box-border  m-0 p-0 ${epilogue.className} text-[1rem] `}>Apply</p>
+                </div>
+            </a>
 
         </div >
     )

@@ -39,7 +39,7 @@ const MobileIndividual = ({ desc, title, indexed, activedesc }) => {
                 <motion.div {...motionProps} className={`${open ? 'flex' : 'hidden'} w-full`}>
                     <div className='flex flex-grow-[1] flex-shrink-0 basis-0 h-min justify-center items-center relative '>
                         <div className='flex flex-grow-[1] flex-shrink-0 basis-0 h-auto relative '>
-                            <p className={`${almarai.className} font-normal text-[1rem] leading-[2]  text-start text-[#015840]`}>
+                            <p className={`${almarai.className} font-normal text-[1.05rem] tracking-[-.1px] leading-[1.6]  text-start text-[#015840]`}>
                                 {desc}
                             </p>
                         </div>
