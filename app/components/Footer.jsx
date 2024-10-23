@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import footerbg from '@/public/footerbg.svg'
 import prentuslogo from '@/public/prentusfootlogo.svg'
-import { almarai, epilogue, mediumaeonikFont, regularaeonikFont } from '@/utils/font'
+import { archivo } from '@/utils/font'
 import appstore from '@/public/appstore.svg'
 import playstore from '@/public/playstore.svg'
 import linkdedin from '@/public/linkedin.svg'
@@ -34,7 +34,7 @@ const Footer = () => {
                                     </div>
                                 </Link>
                                 <div className="flex flex-shrink-0 flex-none h-auto relative w-[283px] ">
-                                    <p className={`${epilogue.className} font-normal  text-white text-[1rem] tracking-normal leading-[1.8] text-start m-0 p-0`}>The all-in-one career success platform to get from learning to earning using the power of AI, community, and you.</p>
+                                    <p className={`${archivo.className} font-normal  text-white text-[1rem] tracking-normal leading-[1.8] text-start m-0 p-0`}>The all-in-one career success platform to get from learning to earning using the power of AI, community, and you.</p>
                                 </div>
                                 <div className='flex flex-col flex-none gap-4 h-min rounded-[100px] justify-center overflow-hidden p-0 relative w-min'>
                                     <a href="" className='rounded-[100px] flex items-center float-none h-min relative w-min '>
@@ -54,9 +54,9 @@ const Footer = () => {
                             <div className='flex flex-col md:flex-row items-start flex-grow flex-shrink-0 basis-0 flex-nowrap gap-8 h-min justify-start relative'>
                                 <div className='flex items-start flex-grow flex-shrink-0 basis-0 flex-col flex-nowrap gap-6 h-min justify-start relative p-0'>
                                     <div className='flex-none h-auto relative whitespace-pre-wrap w-full break-words flex flex-shrink-0 flex-col justify-start '>
-                                        <p className={`${epilogue.className} font-normal  text-[#ffffffa3] text-[1rem] tracking-normal  leading-[1.8] text-start m-0 p-0 `}>Jobseekers</p>
+                                        <p className={`${archivo.className} font-normal  text-[#ffffffa3] text-[1rem] tracking-normal  leading-[1.8] text-start m-0 p-0 `}>Jobseekers</p>
                                     </div>
-                                    <div className={`flex flex-col ${almarai.className}  flex-none flex-nowrap gap-3  h-min justify-start relative w-full `}>
+                                    <div className={`flex flex-col ${archivo.className}  flex-none flex-nowrap gap-3  h-min justify-start relative w-full `}>
                                         <div className=' flex flex-col justify-start flex-shrink-0 flex-none h-auto relative whitespace-pre-wrap w-full '>
                                             <p className={` font-normal text-[#ffffff] text-[1rem] tracking-normal leading-[1.8] text-start `}>
                                                 <a href="" className=''>Overview</a>
@@ -76,9 +76,9 @@ const Footer = () => {
                                 </div>
                                 <div className='flex items-start flex-grow flex-shrink-0 basis-0 flex-col flex-nowrap gap-6 h-min justify-start relative p-0'>
                                     <div className='flex-none h-auto relative whitespace-pre-wrap w-full break-words flex flex-shrink-0 flex-col justify-start '>
-                                        <p className={`${epilogue.className} font-normal  text-[#ffffffa3] text-[1rem] tracking-normal  leading-[1.8] text-start m-0 p-0 `}>Schools</p>
+                                        <p className={`${archivo.className} font-normal  text-[#ffffffa3] text-[1rem] tracking-normal  leading-[1.8] text-start m-0 p-0 `}>Schools</p>
                                     </div>
-                                    <div className={`${almarai.className} flex flex-col flex-none flex-nowrap gap-3  h-min justify-start relative w-full `}>
+                                    <div className={`${archivo.className} flex flex-col flex-none flex-nowrap gap-3  h-min justify-start relative w-full `}>
                                         <div className={` flex flex-col justify-start flex-shrink-0 flex-none h-auto relative whitespace-pre-wrap w-full   `}>
                                             <p className={` font-normal text-[#ffffff] text-[1rem] tracking-normal leading-[1.8] text-start `}>
                                                 <a href="" className=''>Overview</a>
@@ -108,9 +108,9 @@ const Footer = () => {
                                 </div>
                                 <div className='flex items-start flex-grow flex-shrink-0 basis-0 flex-col flex-nowrap gap-6 h-min justify-start relative p-0'>
                                     <div className='flex-none h-auto relative whitespace-pre-wrap w-full break-words flex flex-shrink-0 flex-col justify-start '>
-                                        <p className={`${epilogue.className} font-normal  text-[#ffffffa3] text-[1rem] tracking-normal  leading-[1.8] text-start m-0 p-0 `}>Company</p>
+                                        <p className={`${archivo.className} font-normal  text-[#ffffffa3] text-[1rem] tracking-normal  leading-[1.8] text-start m-0 p-0 `}>Company</p>
                                     </div>
-                                    <div className={` ${almarai.className} flex flex-col flex-none flex-nowrap gap-3  h-min justify-start relative w-full `}>
+                                    <div className={` ${archivo.className} flex flex-col flex-none flex-nowrap gap-3  h-min justify-start relative w-full `}>
                                         <div className=' flex flex-col justify-start flex-shrink-0 flex-none h-auto relative whitespace-pre-wrap w-full '>
                                             <p className={` font-normal text-[#ffffff] text-[1rem] tracking-normal leading-[1.8] text-start `}>
                                                 <a href="" className='font-[inherit]'>Hire Talent</a>
@@ -139,7 +139,7 @@ const Footer = () => {
                         <div className='flex flex-col gap-[44px] md:flex-row flex-none md:items-end flex-nowrap h-min justify-between overflow-hidden p-0 relative w-full'>
                             <div className='flex flex-col order-1 md:order-[0] flex-none items-start flex-nowrap gap-6 h-min justify-start relative w-min'>
                                 <div className='flex flex-col justify-start flex-shrink-0 flex-none h-auto relative whitespace-pre w-auto'>
-                                    <p className={`${almarai.className} font-normal text-[#ffffffa3] text-[1rem] tracking-normal leading-[1.8] text-start `}>Chat with us here or on social</p>
+                                    <p className={`${archivo.className} font-normal text-[#ffffffa3] text-[1rem] tracking-normal leading-[1.8] text-start `}>Chat with us here or on social</p>
                                 </div>
                                 <div className='flex flex-none items-start flex-nowrap gap-1 h-min justify-start relative w-min'>
                                     <a href="" className='bg-[#ffffff29] rounded-md flex-none h-[36px] overflow-hidden relative w-[44px] block'>
@@ -173,18 +173,18 @@ const Footer = () => {
                                 </div>
                             </div>
                             <div className='flex flex-col order-2 md:order-1 justify-start flex-shrink-0 flex-none h-auto relative whitespace-pre w-full md:w-auto'>
-                                <p className={`${epilogue.className} text-center font-normal text-white text-[1rem] tracking-normal leading-[1.8] md:text-start   `}>
+                                <p className={`${archivo.className} text-center font-normal text-white text-[1rem] tracking-normal leading-[1.8] md:text-start   `}>
                                     © 2023 Prentus. All rights reserved.
                                 </p>
                             </div>
                             <div className='flex flex-nowrap order-[0] md:order-2 gap-16 items-start h-min justify-start relative w-min'>
                                 <div className='flex flex-col justify-start flex-shrink-0 flex-none h-auto relative whitespace-pre w-auto'>
-                                    <p className={`${almarai.className} font-normal text-white text-[1rem] tracking-normal leading-[1.8]  text-start `}>
+                                    <p className={`${archivo.className} font-normal text-white text-[1rem] tracking-normal leading-[1.8]  text-start `}>
                                         <a href="">Terms</a>
                                     </p>
                                 </div>
                                 <div className='flex flex-col justify-start flex-shrink-0 flex-none h-auto relative whitespace-pre w-auto'>
-                                    <p className={`${almarai.className} font-normal text-white text-[1rem] tracking-normal leading-[1.8]  text-start `}>
+                                    <p className={`${archivo.className} font-normal text-white text-[1rem] tracking-normal leading-[1.8]  text-start `}>
                                         <a href="">Privacy</a>
                                     </p>
                                 </div>

@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react'
 import { motion } from 'framer-motion'
-import { almarai, epilogue, mediumaeonikFont } from '@/utils/font'
+import { archivo } from '@/utils/font'
 
 const MobileIndividual = ({ desc, title, indexed, activedesc }) => {
     const [open, setOpen] = useState(false)
@@ -22,7 +22,7 @@ const MobileIndividual = ({ desc, title, indexed, activedesc }) => {
                 <div onClick={handleClick} className='cursor-pointer flex gap-4 h-min justify-center items-start w-full relative overflow-hidden p-0'>
                     <div className='flex flex-grow-[1] pointer-events-none flex-shrink-0 basis-0 items-start h-min '>
                         <div className='flex flex-grow-[1] flex-shrink-0 basis-0 relative h-auto'>
-                            <p className={`${epilogue.className} text-[#015840] text-2xl  tracking-tight leading-[1.5em] text-start`}>{title}</p>
+                            <p className={`${archivo.className} text-[#015840] text-2xl  tracking-tight leading-[1.5em] text-start`}>{title}</p>
                         </div>
                     </div>
 
@@ -39,7 +39,7 @@ const MobileIndividual = ({ desc, title, indexed, activedesc }) => {
                 <motion.div {...motionProps} className={`${open ? 'flex' : 'hidden'} w-full`}>
                     <div className='flex flex-grow-[1] flex-shrink-0 basis-0 h-min justify-center items-center relative '>
                         <div className='flex flex-grow-[1] flex-shrink-0 basis-0 h-auto relative '>
-                            <p className={`${almarai.className} font-normal text-[1.05rem] tracking-[-.1px] leading-[1.6]  text-start text-[#015840]`}>
+                            <p className={`${archivo.className} font-normal text-[1.05rem] tracking-[-.1px] leading-[1.6]  text-start text-[#015840]`}>
                                 {desc}
                             </p>
                         </div>

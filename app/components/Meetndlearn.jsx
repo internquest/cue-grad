@@ -3,7 +3,7 @@ import Image from "next/image";
 import Options from "./Options";
 import { useEffect, useState } from "react";
 import MobileOptions from "./MobileOptions";
-import { boldaeonikFont, epilogue, mediumaeonikFont, regularaeonikFont } from "@/utils/font";
+import { archivo } from "@/utils/font";
 import Revealcompo from "./Revealcompo";
 
 const facilities = [
@@ -36,7 +36,7 @@ const Main = () => {
         const key = setInterval(() => {
 
             setActivedesc(prev => {
-                if (prev > 3) {
+                if (prev > 7) {
                     return 1
                 } else {
 
@@ -63,26 +63,26 @@ const Main = () => {
 
 
                                     {/* <div className="flex-grow h-min w-auto md:whitespace-pre flex-shrink-0 order-1 basis-0 "> */}
-                                    <h2 className={`font-bold text-[#015840] hidden amLL:block text-[44px] tracking-[-.5px] leading-[1]  text-center ${epilogue.className} `}>Meet and learn from our community</h2>
-                                    <h2 className={`font-bold text-[#015840] amLL:hidden tml:text-[38px]   md:text-[32px] order-1 amLL:text-[44px]   tracking-[-.5px] tml:text-start leading-[1.2] text-center  ${epilogue.className} `}>Powered <span className="text-[#987de1]">by</span> and <span className="text-[#987de1]">for</span> the people</h2>
+                                    <h2 className={`font-bold text-[#015840] hidden amLL:block text-[44px] tracking-[-.5px] leading-[1]  text-center ${archivo.className} `}>Meet and learn from our community</h2>
+                                    <h2 className={`font-bold text-[#015840] amLL:hidden tml:text-[38px]   md:text-[32px] order-1 amLL:text-[44px]   tracking-[-.5px] tml:text-start leading-[1.2] text-center  ${archivo.className} `}>Powered <span className="text-[#987de1]">by</span> and <span className="text-[#987de1]">for</span> the people</h2>
                                     {/* </div> */}
 
-                                    {/* 
+
                                     <div className=" tml:hidden  rounded-[40px] order-0 amLL:order-1 opacity-[1] aspect-square order-0 amLL:-bottom-[111px] flex-none h-[56px] amLL:h-[80px] left-[50px]  amLL:absolute  w-auto amLL:w-[80px] z-[1]">
                                         <div className=" relative amLL:absolute rounded-[inherit] w-full h-full ">
                                             <Image src='https://framerusercontent.com/images/wfmxi15XMBJCiHQkO5ys2fnxxE.png' fill={true} alt="" className="rounded-[inherit] relative " />
                                         </div>
                                     </div>
-                                    <div className="tml:hidden  rounded-[40px] opacity-[1] order-2 aspect-square  amLL:-bottom-[102px]  amLL:right-[070px] flex-none h-[56px] amLL:h-[80px]  amLL:absolute w-auto amLL:w-[80px] z-[1]">
+                                    <div className="tml:hidden  rounded-[40px] opacity-[1] order-2 aspect-square  amLL:-bottom-[102px]  amLL:right-[-11px] flex-none h-[56px] amLL:h-[80px]  amLL:absolute w-auto amLL:w-[80px] z-[1]">
                                         <div className=" relative amLL:absolute rounded-[inherit] w-full h-full ">
                                             <Image src='https://framerusercontent.com/images/wfmxi15XMBJCiHQkO5ys2fnxxE.png' fill={true} alt="" className="rounded-[inherit] relative " />
                                         </div>
-                                    </div> */}
+                                    </div>
 
                                 </div>
 
                                 <div className="flex-none hidden amLL:block h-auto relative whitespace-pre-wrap w-[720px] break-words ">
-                                    <p className={`text-[#015840] font-semibold text-[20px] tracking-[-.5px] leading-[1.6] text-center  m-0 p-0 ${epilogue.className}`}>An active and supportive community of like-minded job-seekers to help you navigate this major life change.</p>
+                                    <p className={`text-[#015840] font-semibold text-[20px] tracking-[-.5px] leading-[1.6] text-center  m-0 p-0 ${archivo.className}`}>An active and supportive community of like-minded job-seekers to help you navigate this major life change.</p>
                                 </div>
                             </div>
                             <div className="hidden amLL:block w-full">

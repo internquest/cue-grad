@@ -1,5 +1,5 @@
 'use client'
-import { almarai, epilogue } from '@/utils/font';
+import { archivo } from '@/utils/font';
 import { useWindowSize } from '@uidotdev/usehooks';
 import { motion } from 'framer-motion';
 import React, { useState, useEffect } from 'react'
@@ -112,8 +112,8 @@ const Loading = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1.2, ease: [0.42, 0, 0.33, 1] }}
-                        className={`${epilogue.className} md:mb-[1.533333vw] duration-[1.2s] transition-opacity text-center text-[#ffda59] ease-[cubic-bezier(0.42,0,0.33,1)] tml:text-[20px] text-[16px] tracking-[.5px] leading-[150%]`}>{loadingperc}</motion.span>
-                    <h2 className={`mb-[4.4444444vw] text-white text-center tml:text-[1.05rem] text-[2rem] leading-[2] font-normal tracking-[-.25px] ${epilogue.className}`}>
+                        className={`${archivo.className} md:mb-[1.533333vw] duration-[1.2s] transition-opacity text-center text-[#ffda59] ease-[cubic-bezier(0.42,0,0.33,1)] tml:text-[20px] text-[16px] tracking-[.5px] leading-[150%]`}>{loadingperc}</motion.span>
+                    <h2 className={`mb-[4.4444444vw] text-white text-center tml:text-[1.05rem] text-[2rem] leading-[2] font-normal tracking-[-.25px] ${archivo.className}`}>
                         {sentences.map((sentence, sentenceIndex) => {
                             const previousSentencesLength = sentences
                                 .slice(0, sentenceIndex)
