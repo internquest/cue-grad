@@ -36,7 +36,7 @@ const Main = () => {
         const key = setInterval(() => {
 
             setActivedesc(prev => {
-                if (prev > 7) {
+                if (prev > 3) {
                     return 1
                 } else {
 

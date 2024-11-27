@@ -138,7 +138,7 @@ export default function Home() {
 
 
                 <Revealcompo css={"flex flex-row  tml:flex-col tml:gap-5 gap-5 md:gap-24 p-0  w-full h-min relative flex-none justify-center  items-center"}>
-                  <div className=" tml:hidden  rounded-[25px] h-[582px]  tml:flex-none tml:w-full flex-grow tml:order-1 flex-shrink basis-0 px-4 bg-no-repeat bg-[url('https://ik.imagekit.io/ysp4xwrz9/website/Group%201472.svg')] flex border-t-[6px] border-r-[10px] border-b-[6px] border-l-[6px] border-[#311f40]  items-center justify-center relative">
+                  <div className=" tml:hidden  rounded-[30px] h-[582px]  tml:flex-none tml:w-full flex-grow tml:order-1 flex-shrink basis-0 px-4 bg-cover bg-[url('https://ik.imagekit.io/ysp4xwrz9/website/Group%201472.svg')] flex border-t-[6px] border-r-[10px] border-b-[6px] border-l-[6px] border-[#311f40]  items-center justify-center relative">
                     <div className='bg-white h-[476px]  max-w-[500px]   flex flex-col gap-5 rounded-[20px]  px-5 tml:pr-1  py-6'>
                       <h3 className={`${archivo.className} text-[1.125rem] text-[#3A472E]/[.8] font-semibold leading-[1.3] tracking-[-.5px]`}>AI FEEDBACK</h3>
                       <div className={`${archivo.className} text-[1.25rem] font-normal leading-[2.1] bg-[#CFFF92]/[.3] p-8 pt-12 pr-16 rounded-[20px] tml:pr-1 tracking-[-.3px]`}>
@@ -173,7 +173,7 @@ export default function Home() {
                     {/* <Imagecomponet image={'https://ik.imagekit.io/ysp4xwrz9/website/Group%201468.svg'} /> */}
                   </div>
 
-                  <div className={`${archivo.className} tml:order-0 text-[#2C2C2C]  flex items-start  flex-grow  pr-2 flex-shrink-0 tml:flex-none tml:w-full btl:pl-[35px] bmLLL:pl-[90px] basis-0 flex-col justify-start    gap-2`}>
+                  <div className={`${archivo.className} tml:order-0 text-[#2C2C2C]  flex items-start  flex-grow  pr-2 flex-shrink tml:flex-none tml:w-full btl:pl-[35px] bmLLL:pl-[15px] basis-0 flex-col justify-start    gap-2`}>
                     <h2 className="text-[#3111f40] text-[1.2rem] lg:text-[1.625rem]  font-medium leading-[2] tracking-[-.5px]">AI feedback</h2>
                     <p className={`${archivo.className} font-normal   pt-0 text-[1rem] lg:text-[1.125rem] leading-[1.9] tracking-[.005em]`}>When a company announces an on-campus placement drive,
                       it’s not just another opportunity—it’s your chance to shine. But
